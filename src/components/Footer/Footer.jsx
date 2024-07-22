@@ -9,7 +9,7 @@ function Footer() {
           © Copyright STUDEM
         </span>
         <span className={styles.designed}>
-          Designed by <a href="#">Cazacu Natalia</a>
+        Designed by <span>Cazacu Natalia</span>
         </span>
       </div>
     </footer>
