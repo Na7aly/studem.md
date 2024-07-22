@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/studem.md/static/css/main.7acaea2f.css",
+    "main.js": "/studem.md/static/js/main.f3258182.js",
+    "index.html": "/studem.md/index.html",
+    "main.7acaea2f.css.map": "/studem.md/static/css/main.7acaea2f.css.map",
+    "main.f3258182.js.map": "/studem.md/static/js/main.f3258182.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.f3258182.js"
+  ]
+}
