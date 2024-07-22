@@ -1,0 +1,46 @@
+/* Testimonial.module.css */
+
+.app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .testimonialList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .testimonialCard {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .role {
+    font-style: italic;
+    color: #555;
+  }
+  
+  .quoteContainer {
+    margin-top: 10px;
+  }
+  
+  .quoteMark {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .quote {
+    display: inline;
+    font-size: 18px;
+  }
+  

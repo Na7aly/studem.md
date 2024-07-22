@@ -1,0 +1,26 @@
+.news {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.news h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.news div {
+  margin-bottom: 20px;
+}
+
+.news h3 {
+  font-size: 1.5em;
+}
+
+.news a {
+  color: #0073aa;
+  text-decoration: none;
+}
+
+.news a:hover {
+  text-decoration: underline;
+}

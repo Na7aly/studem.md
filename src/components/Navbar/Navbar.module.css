@@ -1,0 +1,41 @@
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav items */
+    align-items: center;
+    background-color: #444444;/* Light blue background */
+    height: 70px; /* Set height */
+    padding: 0 20px; /* Padding to add some space on the sides */
+  }
+  
+  .logo {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Bold text */
+    color: blue; /* Blue text color */
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .navContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navList {
+    display: flex;
+    list-style: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+  }
+  
+ 
+  
+  .navList li a {
+    color: #fff; /* Black text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for clickable area */
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  .navList li a:hover {
+    color: #5697d0; /* White text on hover */
+  }
+  

@@ -1,0 +1,42 @@
+/* Contact.module.css */
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .infoItem {
+    margin: 20px;
+    width: calc(50% - 40px);
+  }
+  
+  .infoItem i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #666;
+  }
+  
+  .infoItem span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .infoItem p {
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 600px) {
+    .infoItem {
+      width: 100%;
+    }
+  }
+  

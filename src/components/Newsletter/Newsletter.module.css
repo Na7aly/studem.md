@@ -1,0 +1,58 @@
+/* Newsletter.module.css */
+
+.newsletterContainer {
+    display: flex; /* Flexbox for layout */
+    align-items: center; /* Aligns items vertically centered */
+    justify-content: space-between; /* Distributes space between text and form */
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .textSection {
+    max-width: 50%; /* Ensures the text section doesn't take up too much space */
+  }
+  
+  .textSection h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .textSection p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px; /* Space between paragraph and form */
+  }
+  
+  .formSection {
+    display: flex; /* Aligns input and button in a row */
+    align-items: center; /* Aligns input and button vertically centered */
+  }
+  
+  .emailInput {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 250px; /* Adjust width as needed */
+    margin-right: 10px; /* Space between input and button */
+  }
+  
+  .subscribeBtn {
+    background: #428bca;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background 0.3s;
+    cursor: pointer;
+    position: relative; /* Ensures absolute positioning within the button */
+  }
+  
+  .subscribeBtn:hover {
+    background: #3071a9; /* Darker shade for hover effect */
+  }
+  

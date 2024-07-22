@@ -1,0 +1,31 @@
+/* module.css */
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  
+  .copyright {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .designed {
+    display: inline-block;
+  }
+  
+  .designed a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .designed a:hover {
+    text-decoration: underline;
+  }
