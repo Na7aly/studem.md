@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Team.module.css';
 
-import avatar from '../img/avatar.webp';
+import avatar from '../img/studem.jpg';
 
 const Team = () => {
   const teamMembers = [

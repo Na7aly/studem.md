@@ -1,0 +1,99 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+    flex-direction: column;
+  }
+  
+  .contactWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .contactInfo {
+        /* flex: 1 1; */
+        display: flex;
+        /* flex-direction: column; */
+        gap: 3rem;
+        flex-wrap: wrap;
+        width: 600px;
+    }
+  
+  
+  .infoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 150px;
+    width: 250px;
+  }
+  
+  .infoItem i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+  }
+  
+  .infoItem span {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .infoItem p {
+    line-height: 1.5;
+    color: #6c757d;
+  }
+  
+  .contactForm {
+    flex: 1;
+    padding: 2rem;
+    
+    border-radius: 8px;
+  }
+  
+  .contactForm .section-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .contactForm .section-subheading {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contactForm .form-control {
+    padding: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+  }
+  
+  .contactForm textarea {
+    height: 150px;
+  }
+  
+  .contactForm .btn {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .contactForm .btn:hover {
+    background-color: #2980b9;
+  }
+  .contactContainer{
+    width: 1000px;
+    height: 500px;
+  }

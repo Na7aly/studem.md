@@ -21,6 +21,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+// Endpoint pentru formularul de contact
 app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
 
@@ -33,9 +34,69 @@ app.post('/api/contact', (req, res) => {
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
+      console.error('Error sending email:', error);
       return res.status(500).send({ success: false, message: 'Something went wrong. Please try again later.' });
     }
+    console.log('Email sent:', info.response);
     res.status(200).send({ success: true, message: 'Message sent successfully!' });
+  });
+});
+
+// Endpoint pentru aplicația de spațiu
+app.post('/api/space-application', (req, res) => {
+  const {
+    firstName,
+    lastName,
+    organization,
+    organizationName,
+    phone,
+    date,
+    email,
+    eventName,
+    eventDescription,
+    startTime,
+    endTime,
+    participants,
+    agreement
+  } = req.body;
+
+  // Logare pentru debugging
+  console.log('Received data:', req.body);
+
+  // Validarea datelor
+  if (!firstName || !lastName || !organization || !organizationName || !phone || !date || !email || !eventName || !eventDescription || !startTime || !endTime || !participants || !agreement) {
+    return res.status(400).json({ error: 'Toate câmpurile sunt obligatorii și trebuie completate corect.' });
+  }
+
+  // Configurarea emailului pentru aplicația de spațiu
+  const mailOptions = {
+    from: process.env.OUTLOOK_EMAIL,
+    to: 'tomacnatalia95@gmail.com', // Înlocuiește cu adresa dorită
+    subject: 'New Space Application',
+    text: `
+      First Name: ${firstName}
+      Last Name: ${lastName}
+      Organization: ${organization}
+      Organization Name: ${organizationName}
+      Phone: ${phone}
+      Date: ${date}
+      Email: ${email}
+      Event Name: ${eventName}
+      Event Description: ${eventDescription}
+      Start Time: ${startTime}
+      End Time: ${endTime}
+      Participants: ${participants}
+      Agreement: ${agreement ? 'Yes' : 'No'}
+    `,
+  };
+
+  transporter.sendMail(mailOptions, (error, info) => {
+    if (error) {
+      console.error('Error sending email:', error);
+      return res.status(500).send({ success: false, message: 'Something went wrong. Please try again later.' });
+    }
+    console.log('Email sent:', info.response);
+    res.status(200).send({ success: true, message: 'Application received successfully!' });
   });
 });
 

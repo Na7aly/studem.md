@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
-import leftImage from '../img/avatar.webp';
+import leftImage from '../img/studem.jpg';
 
 const About = () => {
   return (

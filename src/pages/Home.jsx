@@ -5,12 +5,16 @@ import Footer from '../components/Footer/Footer';
 import SectionLinks from '../components/SectionLinks/Sectionlinks';
 import Team from '../components/Team';
 import About from '../components/About';
-import ContactUs from '../components/ContactUs';
+// import ContactUs from '../components/ContactUs';
 import Services from '../components/Services';
 import Testimonial from '../components/Testimonial/Testimonial';
 import Newsletter from '../components/Newsletter/Newsletter';
-import ContactsDetail from '../components/ContactsDetail/Contacts';
+// import ContactsDetail from '../components/ContactsDetail/Contacts';
 import NewsSection from '../components/News/News';
+import Space from 'components/Space/Space';
+import SpaceApplication from 'components/SpaceApplication/SpaceApplication';
+import GrantApplication from 'components/GrantApplication/GrantApplication';
+import ContactPage from 'components/ContactPage/ContactPage';
 
 const Home = () => {
   return (
@@ -22,6 +26,17 @@ const Home = () => {
       <Element name="domains">
         <Services />
       </Element>
+      <Element name="space">
+        <Space />
+      </Element>
+      <Element name="SpaceApplication">
+        <SpaceApplication />
+      </Element>
+      <Element name="GrantApplication">
+        <GrantApplication />
+      </Element>
+
+      
       <Element name="news">
         <NewsSection />
       </Element>
@@ -31,10 +46,13 @@ const Home = () => {
       <Element name="testimonial">
         <Testimonial />
       </Element>
-      <Element name="contact">
-        <ContactsDetail />
+      <Element name="contactpage">
+        <ContactPage />
       </Element>
-      <ContactUs />
+      {/* <Element name="contact">
+        <ContactsDetail />
+      </Element> */}
+      {/* <ContactUs /> */}
       <Newsletter />
       <SectionLinks />
       <Footer />
