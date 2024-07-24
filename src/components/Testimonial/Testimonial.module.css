@@ -1,4 +1,3 @@
-/* Testimonial.module.css */
 .app {
   padding: 20px;
   text-align: center;
@@ -6,8 +5,8 @@
 
 .testimonialList {
   display: flex;
-  flex-wrap: wrap; /* Permite cardurilor să se înfășoare pe mai multe linii */
-  justify-content: center; /* Centrează cardurile pe orizontală */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .testimonialCard {
@@ -19,39 +18,73 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: calc(50% - 20px); /* Două carduri pe rând, cu spațiu între ele */
   box-sizing: border-box;
-  min-height: 200px; /* Asigură că toate cardurile au aceeași înălțime */
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: column; /* Aranjează elementele în coloană */
 }
 
-.content {
-  position: relative;
-  padding: 10px;
+.imageTextContainer {
+  display: flex;
+  align-items: center; /* Aliniază imaginea, numele și rolul pe orizontală */
+  margin-bottom: 10px; /* Spațiu între imagine și citat */
 }
 
-.quoteContainer {
-  position: relative;
-  padding: 20px 0;
-  text-align: center;
+.imageContainer {
+  flex-shrink: 0;
+  margin-right: 20px; /* Spațiu între imagine și text */
 }
 
-.quoteMarkStart,
-.quoteMarkEnd {
-  font-size: 2em;
-  color: #007bff; /* Albastru */
+.image {
+  width: 100px; /* Dimensiunea imaginii */
+  height: 100px; /* Dimensiunea imaginii */
+  border-radius: 10px; /* Colțuri rotunjite */
+  object-fit: cover; /* Asigură că imaginea nu este distorsionată */
 }
 
-.quote {
+.textContainer {
+  display: flex;
+  flex-direction: column; /* Aranjează numele și rolul în coloană */
+  justify-content: center; /* Center-aligns vertical elements */
+  text-align: left; /* Aliniază textul la stânga */
+}
+
+h3 {
   margin: 0;
-  font-style: italic;
+  font-size: 18px; /* Dimensiunea textului numelui */
+  margin-bottom: 5px; /* Spațiu între nume și rol */
 }
 
 .role {
   color: #555;
+  font-size: 14px; /* Dimensiunea textului rolului */
+  margin-bottom: 10px; /* Spațiu între rol și citat */
 }
 
-/* Stiluri pentru punctele de navigare */
+.quoteContainer {
+  position: relative;
+  padding: 10px 20px; /* Spațiu suplimentar pentru ghilimele */
+}
+
+.quoteMark {
+  color: #007bff; /* Ghilimele albastre */
+  font-size: 24px;
+  display: inline-block; /* Permite să fie aliniate cu textul */
+  vertical-align: middle; /* Aliniază ghilimelele pe verticală cu textul */
+}
+
+.quoteMark:first-of-type {
+  margin-right: 10px; /* Spațiu între ghilimele și textul din stânga */
+}
+
+.quoteMark:last-of-type {
+  margin-left: 10px; /* Spațiu între ghilimele și textul din dreapta */
+}
+
+.quote {
+  margin: 0;
+  font-size: 16px;
+  display: inline; /* Permite ca ghilimelele să fie pe aceeași linie cu textul */
+}
+
 .pagination {
   text-align: center;
   margin-top: 20px;
@@ -69,4 +102,46 @@
 
 .paginationDot.active {
   background-color: #0056b3;
+}
+
+/* Media Queries pentru Responsive Design */
+
+/* Ecrane mici */
+@media (max-width: 600px) {
+  .testimonialCard {
+    width: 100%; /* Cardurile vor ocupa întreaga lățime pe ecrane mici */
+  }
+
+  .imageTextContainer {
+    flex-direction: column; /* Aranjează imaginea și textul într-o coloană pe ecrane mici */
+    align-items: flex-start; /* Aliniază imaginea și textul la stânga */
+  }
+
+  .imageContainer {
+    margin-right: 0;
+    margin-bottom: 10px; /* Spațiu între imagine și textul de sub ea */
+  }
+
+  .textContainer {
+    text-align: center; /* Aliniază textul la centru pe ecrane mici */
+  }
+
+  h3 {
+    font-size: 16px; /* Dimensiunea textului numelui pe ecrane mici */
+  }
+
+  .role {
+    font-size: 12px; /* Dimensiunea textului rolului pe ecrane mici */
+  }
+
+  .quote {
+    font-size: 14px; /* Dimensiunea textului citatului pe ecrane mici */
+  }
+}
+
+/* Ecrane medii */
+@media (max-width: 900px) and (min-width: 601px) {
+  .testimonialCard {
+    width: calc(50% - 20px); /* Două carduri pe rând pe ecrane medii */
+  }
 }
