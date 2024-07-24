@@ -10,7 +10,7 @@ const SectionLinks = () => {
           <div className={styles.column}>
             <h3>LINK-URI UTILE</h3>
             <ul className={styles.list}>
-              <li><ScrollLink to="home" smooth={true} duration={500}>Acasa</ScrollLink></li>
+              <li><ScrollLink to="home" smooth={true} duration={500}>Acasă</ScrollLink></li>
               <li><ScrollLink to="about" smooth={true} duration={500}>Despre noi</ScrollLink></li>
               <li><ScrollLink to="domains" smooth={true} duration={500}>Domenii</ScrollLink></li>
               <li><ScrollLink to="team" smooth={true} duration={500}>Echipa</ScrollLink></li>
@@ -21,23 +21,25 @@ const SectionLinks = () => {
           </div>
           <div className={styles.column}>
             <h3>CONTACTE</h3>
-            <ul className={styles.list}>
-              <li>Strada Alexandr Puskin 19, etajul 3</li>
-              <li>Moldova</li>
-              <li>Bălți</li>
-              <li>Telefon: +373 (60) 229996 - Constantin Curca</li>
-              <li>Telefon: +373 (79) 971786 - Ioan-Giuliano Ciomschi</li>
-              <li>Email: youth.center@studem.md</li>
-              <li>Email: studem.balti@gmail.com</li>
-            </ul>
+            <address>
+              <ul className={styles.list}>
+                <li>Strada Alexandr Pușkin 19, etajul 3</li>
+                <li>Moldova</li>
+                <li>Bălți</li>
+                <li>Telefon: <a href="tel:+37360229996">+373 (60) 229996 - Constantin Curca</a></li>
+                <li>Telefon: <a href="tel:+37379971786">+373 (79) 971786 - Ioan-Giuliano Ciomschi</a></li>
+                <li>Email: <a href="mailto:youth.center@studem.md">youth.center@studem.md</a></li>
+                <li>Email: <a href="mailto:studem.balti@gmail.com">studem.balti@gmail.com</a></li>
+              </ul>
+            </address>
           </div>
           <div className={styles.column}>
             <h3>Despre noi</h3>
-            <p>Centrul de Tineret STUDEM este o structură de auto guvernanță a tinerilor din municipiul Bălți înființată în cadrul unui parteneriat Moldo-Danez de lungă durată. Scopul de bază al Centrului este consolidarea democrației în Republica Moldova prin deprinderea cu principiile democratice în rândul tinerilor</p>
+            <p>Centrul de Tineret STUDEM este o structură de auto guvernanță a tinerilor din municipiul Bălți înființată în cadrul unui parteneriat Moldo-Danez de lungă durată. Scopul de bază al Centrului este consolidarea democrației în Republica Moldova prin deprinderea cu principiile democratice în rândul tinerilor.</p>
             <ul className={styles.socialIcons}>
-              <li><a href="https://www.facebook.com/studemproject" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a></li>
-              <li><a href="https://www.instagram.com/studem_md?igsh=MWxsZXVhZTBpZWt3ZQ==" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a></li>
-              <li><a href="https://www.linkedin.com/company/studem-step-up-for-democracy/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://www.facebook.com/studemproject" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.instagram.com/studem_md?igsh=MWxsZXVhZTBpZWt3ZQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/studem-step-up-for-democracy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i className="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </div>

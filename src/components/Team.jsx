@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Team.module.css';
 
-import costeaAvatar from '../img/costea .jpg';
+import costeaAvatar from '../img/costea.jpg';
 import fredAvatar from '../img/fred.jpg';
 import peterAvatar from '../img/peter.jpg';
 import aleftinaAvatar from '../img/aleftina.jpg';
