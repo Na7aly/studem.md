@@ -1,11 +1,16 @@
 import React from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import styles from './Navbar.module.css';
+import logo from '../../img/logo.png';  // import your logo image
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>STUDEM</div>
+      <div className={styles.logo}>
+        <ScrollLink to="home" smooth={true} duration={500}>
+          <img src={logo} alt="STUDEM Logo" />
+        </ScrollLink>
+      </div>
       <div className={styles.navContainer}>
         <ul className={styles.navList}>
           <li><ScrollLink to="home" smooth={true} duration={500}>Acasă</ScrollLink></li>
@@ -17,7 +22,6 @@ const Navbar = () => {
           <li><ScrollLink to="parteneri" smooth={true} duration={500}>Parteneri</ScrollLink></li>
           <li><ScrollLink to="transparenta" smooth={true} duration={500}>Transparență</ScrollLink></li>
           <li><ScrollLink to="contact" smooth={true} duration={500}>Contacte</ScrollLink></li>
-          
         </ul>
       </div>
     </nav>

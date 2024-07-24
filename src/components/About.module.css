@@ -1,65 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
 .container {
-    display: flex;
-    height: 100vh; /* Full height of the viewport */
-    padding: 0; /* Remove padding to ensure full use of space */
-    box-sizing: border-box; /* Include padding in the element's total width and height */
-  }
-  
-  .leftImageContainer {
-    flex: 1; /* Make the image container take up half the width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .image {
-    width: 100%; /* Ensure the image takes up the full container width */
-    height: 100%; /* Ensure the image takes up the full container height */
-    object-fit: cover; /* Cover the entire container without distortion */
-  }
-  
-  .content {
-    flex: 1; /* Make the text content take up half the width */
-    padding: 20px; /* Add some padding for text readability */
-    overflow-y: auto; /* Add vertical scrollbar if content overflows */
-    box-sizing: border-box;
-  }
-  
-  h2 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #394047;
-    margin-bottom: 15px;
-  }
-  
-  p {
-    margin-bottom: 15px;
-  }
-  
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  padding: 0; /* Remove padding to ensure full use of space */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.leftImageContainer {
+  display: flex;
+  justify-content: center;
+  flex: 1; /* Make the image container take up half the width */
+}
+
+.image {
+  width: 90%; /* Ensure the image takes up the full container width */
+  height: 95%; /* Ensure the image takes up the full container height */
+  object-fit: cover; /* Cover the entire container without distortion */
+}
+
+.content {
+  flex: 1; /* Make the text content take up half the width */
+   /* Add padding for text readability */
+  box-sizing: border-box;
+  margin-right: 25px;
+}
+
+.content p{
+  margin-bottom: 40px;
+}
+.content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0056b3;
+  margin-bottom: 30px;
+  font-family: serif;
+  /* padding-left: 15px; */
+  margin-top: 50px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column; /* Align icons vertically */
+  align-items: flex-start; /* Align items to the start of the flex container */
+}
+
+.icon {
+  display: flex;
+  align-items: center; /* Align items (icon, title, text) horizontally */
+  margin-bottom: 30px; /* Space between icon sections */
+}
+
+.iconImage {
+  font-size: 35px; /* Icon size */
+  color: rgb(182, 217, 251); /* Icon color */
+  border-radius: 50%; /* Make icon circular */
+  border: 3px solid rgb(182, 217, 251); /* Border color and thickness */
+  padding: 10px; /* Space between icon and border */
+  background-color: white; /* Background color of the circle */
+  margin-right: 15px; /* Space between icon and text */
+}
+
+.iconText {
+  display: flex;
+  flex-direction: column; /* Arrange title and description vertically */
+}
+
+.iconText h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0056b3;
+  margin: 0 0 5px 0;
+
+}
+
+.iconText p {
+  margin: 0;
+}
+.iconText h2 {
+  margin-top:10px;
+}
+/* Media queries for responsiveness */
+@media (max-width: 1024px) {
   .icons {
-    display: flex;
-    flex-direction: column;
+    /* Adjust layout for medium-sized screens if necessary */
   }
-  
-  .icon {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    /* Adjust layout for small screens if necessary */
   }
-  
-  .icon i {
-    font-size: 24px;
-    margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  .icons {
+    /* Adjust layout for very small screens if necessary */
   }
-  
-  .icon h2 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #394047;
-    margin-bottom: 5px;
-  }
-  
-  .icon p {
-    margin: 0;
-  }
-  
+}

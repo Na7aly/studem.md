@@ -12,7 +12,7 @@ import Newsletter from '../components/Newsletter/Newsletter';
 // import ContactsDetail from '../components/ContactsDetail/Contacts';
 import NewsSection from '../components/News/News';
 import Space from 'components/Space/Space';
-import SpaceApplication from 'components/SpaceApplication/SpaceApplication';
+
 import GrantApplication from 'components/GrantApplication/GrantApplication';
 import ContactPage from 'components/ContactPage/ContactPage';
 
@@ -29,9 +29,7 @@ const Home = () => {
       <Element name="space">
         <Space />
       </Element>
-      <Element name="SpaceApplication">
-        <SpaceApplication />
-      </Element>
+      
       <Element name="GrantApplication">
         <GrantApplication />
       </Element>

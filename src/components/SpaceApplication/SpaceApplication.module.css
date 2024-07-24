@@ -1,165 +1,124 @@
-/* SpaceApplication.module.css */
-.spaceApplication {
-    padding: 2rem;
-    background-color: #f8f9fa;
-  }
-  
-  .container {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .rulesList {
-    list-style-type: none;
-    padding: 0;
-    margin: 1rem 0;
-  }
-  
-  .rulesList li {
-    margin: 0.5rem 0;
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .formGroup {
-    margin-bottom: 1rem;
-  }
-  
-  .formGroup label {
-    display: block;
-    margin-bottom: 0.5rem;
-  }
-  
-  .formGroup input,
-  .formGroup textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    border: 1px solid #ced4da;
-  }
-  
-  .formGroup .error {
-    color: #dc3545;
-    font-size: 0.875rem;
-  }
-  
-  .buttonGroup {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .submitButton {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  .submitButton:hover {
-    background-color: #0056b3;
-  }
-  
-  .resetButton {
-    background-color: #6c757d;
-    color: #fff;
-  }
-  
-  .resetButton:hover {
-    background-color: #5a6268;
-  }
-  /* SpaceApplication.module.css */
-
-/* Stiluri pentru modală */
-/* SpaceApplication.module.css */
-
-.spaceApplication {
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
   padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}
+
+.spaceApplication {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
 }
 
 .formGroup {
   margin-bottom: 15px;
 }
 
-.error {
+.formGroup label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.formGroup input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+.formGroup span.error {
   color: red;
   font-size: 0.875em;
 }
 
-.buttonGroup {
-  display: flex;
-  justify-content: space-between;
-}
-
-.submitButton, .resetButton {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
 .submitButton {
+  padding: 10px 15px;
+  border: none;
   background-color: #007bff;
   color: white;
-}
-
-.resetButton {
-  background-color: #6c757d;
-  color: white;
-}
-
-.spaceApplication {
-  /* stiluri pentru secțiunea de aplicație spațiu */
-}
-
-.agreementLink {
+  border-radius: 4px;
   cursor: pointer;
-  color: blue;
+}
+
+.submitButton:disabled {
+  background-color: #cccccc;
+}
+
+.rulesButton {
+  background: none;
+  border: none;
+  color: #007bff;
   text-decoration: underline;
+  cursor: pointer;
 }
 
-.modal {
-  /* stiluri pentru modal */
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
+.rulesContainer {
   padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* SpaceApplication.module.css */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
 .overlay {
-  /* stiluri pentru overlay */
+  /* Asigură-te că overlay-ul acoperă întregul ecran */
+  background: rgba(0, 0, 0, 0.5); /* Exemplu de stil */
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
 }
-
-.closeButton {
-  /* stiluri pentru butonul de închidere */
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* SpaceApplication.module.css */
-
-.agreementLink {
-  cursor: pointer;
-  color: #007bff;
-  text-decoration: underline;
-}
-

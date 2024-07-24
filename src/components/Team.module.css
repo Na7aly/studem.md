@@ -18,8 +18,9 @@ p {
 
 .teamMembers {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 250px); /* Actualizează pentru dimensiunea specificată */
   gap: 20px;
+  justify-content: center; /* Center items horizontally */
 }
 
 .teamMember {
@@ -28,12 +29,14 @@ p {
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Dimensiunea fixă pentru echivalență */
+  height: 250px; /* Dimensiunea fixă pentru echivalență */
 }
 
 .teamMember img {
   width: 100%;
-  height: auto;
-  display: block;
+  height: 100%; /* Să se potrivească cu dimensiunea containerului */
+  object-fit: cover; /* Menține proporțiile imaginii fără a o deforma */
   border-radius: 8px;
   transition: transform 0.3s ease;
 }
@@ -71,18 +74,18 @@ p {
 
 @media (max-width: 1024px) {
   .teamMembers {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 250px); /* Dimensiuni actualizate pentru ecrane medii */
   }
 }
 
 @media (max-width: 768px) {
   .teamMembers {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 250px); /* Dimensiuni actualizate pentru ecrane mici */
   }
 }
 
 @media (max-width: 480px) {
   .teamMembers {
-    grid-template-columns: 1fr;
+    grid-template-columns: 250px; /* Dimensiuni actualizate pentru ecrane foarte mici */
   }
 }
