@@ -15,6 +15,7 @@ import Space from 'components/Space/Space';
 
 import GrantApplication from 'components/GrantApplication/GrantApplication';
 import ContactPage from 'components/ContactPage/ContactPage';
+import Partners from 'components/Partners/Partnes';
 
 const Home = () => {
   return (
@@ -43,6 +44,9 @@ const Home = () => {
       </Element>
       <Element name="testimonial">
         <Testimonial />
+      </Element>
+      <Element name="partners">
+        <Partners/>
       </Element>
       <Element name="contactpage">
         <ContactPage />
