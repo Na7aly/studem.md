@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.811f6220.css",
+    "main.css": "/studem.md/static/css/main.173e62c8.css",
     "main.js": "/studem.md/static/js/main.b1b734e2.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
@@ -21,12 +21,12 @@
     "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/studem.md/index.html",
-    "main.811f6220.css.map": "/studem.md/static/css/main.811f6220.css.map",
+    "main.173e62c8.css.map": "/studem.md/static/css/main.173e62c8.css.map",
     "main.b1b734e2.js.map": "/studem.md/static/js/main.b1b734e2.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.811f6220.css",
+    "static/css/main.173e62c8.css",
     "static/js/main.b1b734e2.js"
   ]
 }
