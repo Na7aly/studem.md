@@ -1,16 +1,31 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.ad86e527.css",
-    "main.js": "/studem.md/static/js/main.117f72be.js",
+    "main.css": "/studem.md/static/css/main.f6a280f5.css",
+    "main.js": "/studem.md/static/js/main.4f41cfa2.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
+    "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
+    "static/media/fa-solid-900.ttf": "/studem.md/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/fa-brands-400.ttf": "/studem.md/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
+    "static/media/fa-solid-900.woff2": "/studem.md/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
+    "static/media/logo.png": "/studem.md/static/media/logo.637b3c31a50ef232a2dd.png",
+    "static/media/michelle.jpg": "/studem.md/static/media/michelle.949e049b43d90a791ede.jpg",
+    "static/media/aleftina.jpg": "/studem.md/static/media/aleftina.5cbc004210e00e1fffe1.jpg",
+    "static/media/fa-brands-400.woff2": "/studem.md/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/costea .jpg": "/studem.md/static/media/costea .dade6e167d0b037179e2.jpg",
     "static/media/studem.jpg": "/studem.md/static/media/studem.6fc1495877e6d4ef049a.jpg",
+    "static/media/fa-regular-400.ttf": "/studem.md/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/ion.jpg": "/studem.md/static/media/ion.b84844cfe2e609e8cdd1.jpg",
+    "static/media/fred.jpg": "/studem.md/static/media/fred.23b383239353931c5a11.jpg",
+    "static/media/fa-regular-400.woff2": "/studem.md/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
+    "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/studem.md/index.html",
-    "main.ad86e527.css.map": "/studem.md/static/css/main.ad86e527.css.map",
-    "main.117f72be.js.map": "/studem.md/static/js/main.117f72be.js.map",
+    "main.f6a280f5.css.map": "/studem.md/static/css/main.f6a280f5.css.map",
+    "main.4f41cfa2.js.map": "/studem.md/static/js/main.4f41cfa2.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad86e527.css",
-    "static/js/main.117f72be.js"
+    "static/css/main.f6a280f5.css",
+    "static/js/main.4f41cfa2.js"
   ]
 }
