@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.8c97e2c4.css",
-    "main.js": "/studem.md/static/js/main.8c63898c.js",
+    "main.css": "/studem.md/static/css/main.811f6220.css",
+    "main.js": "/studem.md/static/js/main.b1b734e2.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
+    "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
     "static/media/fa-solid-900.ttf": "/studem.md/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/fa-brands-400.ttf": "/studem.md/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/fa-solid-900.woff2": "/studem.md/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
@@ -20,12 +21,12 @@
     "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/studem.md/index.html",
-    "main.8c97e2c4.css.map": "/studem.md/static/css/main.8c97e2c4.css.map",
-    "main.8c63898c.js.map": "/studem.md/static/js/main.8c63898c.js.map",
+    "main.811f6220.css.map": "/studem.md/static/css/main.811f6220.css.map",
+    "main.b1b734e2.js.map": "/studem.md/static/js/main.b1b734e2.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c97e2c4.css",
-    "static/js/main.8c63898c.js"
+    "static/css/main.811f6220.css",
+    "static/js/main.b1b734e2.js"
   ]
 }
