@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.173e62c8.css",
-    "main.js": "/studem.md/static/js/main.b1b734e2.js",
+    "main.css": "/studem.md/static/css/main.5201b0b6.css",
+    "main.js": "/studem.md/static/js/main.4ff39797.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
     "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
@@ -12,21 +12,39 @@
     "static/media/michelle.jpg": "/studem.md/static/media/michelle.949e049b43d90a791ede.jpg",
     "static/media/aleftina.jpg": "/studem.md/static/media/aleftina.5cbc004210e00e1fffe1.jpg",
     "static/media/fa-brands-400.woff2": "/studem.md/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
+    "static/media/probono_color-fara-background-01.png": "/studem.md/static/media/probono_color-fara-background-01.cc001e07606fbdc2d852.png",
     "static/media/costea.jpg": "/studem.md/static/media/costea.dade6e167d0b037179e2.jpg",
     "static/media/studem.jpg": "/studem.md/static/media/studem.6fc1495877e6d4ef049a.jpg",
     "static/media/fa-regular-400.ttf": "/studem.md/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/ion.jpg": "/studem.md/static/media/ion.b84844cfe2e609e8cdd1.jpg",
     "static/media/fred.jpg": "/studem.md/static/media/fred.23b383239353931c5a11.jpg",
+    "static/media/9.png": "/studem.md/static/media/9.e529a453c8b30dd17241.png",
+    "static/media/12.png": "/studem.md/static/media/12.44dae5320742d482b41b.png",
+    "static/media/8.png": "/studem.md/static/media/8.64cc1e5ef312c1d6ac6f.png",
+    "static/media/14.png": "/studem.md/static/media/14.30bc869dc7355eaa247a.png",
+    "static/media/7.png": "/studem.md/static/media/7.7987f90314c961c739a9.png",
+    "static/media/cntm_logo.png": "/studem.md/static/media/cntm_logo.44d737b028a58662502e.png",
+    "static/media/10.png": "/studem.md/static/media/10.afd4f62a810e1a56fcaa.png",
+    "static/media/13.png": "/studem.md/static/media/13.e7e83444f243e5ac1b80.png",
     "static/media/fa-regular-400.woff2": "/studem.md/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
+    "static/media/11.png": "/studem.md/static/media/11.80b24f89e8dc083b3900.png",
+    "static/media/6.png": "/studem.md/static/media/6.a4abb9fd1e86af6366ee.png",
+    "static/media/5.png": "/studem.md/static/media/5.4aa6ce14ab8fa5641810.png",
+    "static/media/18.png": "/studem.md/static/media/18.43f3a64d0f3c756ef3dc.png",
+    "static/media/4.png": "/studem.md/static/media/4.bedae1dd86407f85313d.png",
+    "static/media/1.png": "/studem.md/static/media/1.f936e19f213b725b7a68.png",
+    "static/media/15.png": "/studem.md/static/media/15.12c250ce850373fea696.png",
+    "static/media/16.png": "/studem.md/static/media/16.b908a31ab58888b91ae0.png",
+    "static/media/2.png": "/studem.md/static/media/2.4930d28a03b4297e972b.png",
     "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/studem.md/index.html",
-    "main.173e62c8.css.map": "/studem.md/static/css/main.173e62c8.css.map",
-    "main.b1b734e2.js.map": "/studem.md/static/js/main.b1b734e2.js.map",
+    "main.5201b0b6.css.map": "/studem.md/static/css/main.5201b0b6.css.map",
+    "main.4ff39797.js.map": "/studem.md/static/js/main.4ff39797.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.173e62c8.css",
-    "static/js/main.b1b734e2.js"
+    "static/css/main.5201b0b6.css",
+    "static/js/main.4ff39797.js"
   ]
 }
