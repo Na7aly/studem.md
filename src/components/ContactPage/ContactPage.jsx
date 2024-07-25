@@ -42,12 +42,12 @@ const ContactPage = () => {
 
   return (
     <section id="contact" className={styles.container}>
+      <div className={styles.contactContainer}>
       <div className={styles.textCenter}>
         <h2 className={styles.sectionHeading}>Contactați-ne</h2>
         <h3 className={styles.sectionSubheading}>Completați formularul pentru a ne contacta.</h3>
       </div>
-
-      <div className={styles.contactContainer}>
+        <div className={styles.containerForm}>
         <div className={styles.contactWrapper}>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
@@ -58,14 +58,18 @@ const ContactPage = () => {
             <div className={styles.infoItem}>
               <i className={`${styles.icon} fas fa-phone`}></i>
               <span>TELEFON</span>
-              <p>+373 (60) 229996 - Constantin Curca</p>
-              <p>+373 (79) 971786 - Ioan-Giuliano Ciomschi</p>
+              <div>
+                <p>+373 (60) 229996 - Constantin Curca</p>
+                <p>+373 (79) 971786 - Ioan-Giuliano Ciomschi</p>
+              </div>
             </div>
             <div className={styles.infoItem}>
               <i className={`${styles.icon} fas fa-envelope`}></i>
               <span>EMAIL</span>
-              <p>youth.center@studem.md</p>
-              <p>studem.balti@gmail.com</p>
+              <div>
+                <p>youth.center@studem.md</p>
+                <p>studem.balti@gmail.com</p>
+              </div>
             </div>
             <div className={styles.infoItem}>
               <i className={`${styles.icon} fas fa-clock`}></i>
@@ -73,7 +77,8 @@ const ContactPage = () => {
               <p>Luni - Duminică: 10.00-22.00</p>
             </div>
           </div>
-
+        </div>
+        <div className={styles.contactFormWrapper}>
           <div className={styles.contactForm}>
             <form id="contactForm" onSubmit={handleSubmit}>
               <div className={styles.formRow}>
@@ -141,6 +146,7 @@ const ContactPage = () => {
               </div>
             </form>
           </div>
+        </div>
         </div>
       </div>
     </section>

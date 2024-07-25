@@ -1,5 +1,5 @@
 .services {
-  padding: 20px;
+  padding: 40px;
   box-sizing: border-box;
 }
 
@@ -27,12 +27,23 @@
   background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.item:hover {
+  background-color: #e3e9f3;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
   font-size: 35px; /* Size of the icon */
   color: rgb(182, 217, 251);
   margin-right: 15px; /* Space between the icon and the text */
+  transition: color 0.3s ease; /* Smooth transition for icon color */
+}
+
+.item:hover .icon {
+  color: #6b92e5; /* Change icon color on hover */
 }
 
 .textContainer {

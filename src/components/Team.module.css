@@ -37,7 +37,7 @@
 }
 
 .teamMember:hover {
-  background: linear-gradient(to right, #016cec, #b6e1f1);
+  background: linear-gradient(to right, #c6daf3, #d9ecf3);
 }
 
 .teamMember img {
@@ -74,7 +74,7 @@
 
 /* Media Queries pentru Responsive Design */
 
-/* Ecrane mici */
+/* Ecrane mici (telefon) */
 @media (max-width: 600px) {
   .teamMember {
     width: 100%; /* Cardurile vor ocupa întreaga lățime pe ecrane mici */
@@ -94,9 +94,16 @@
   }
 }
 
-/* Ecrane medii */
+/* Ecrane medii (tablete) */
 @media (max-width: 900px) and (min-width: 601px) {
   .teamMember {
-    width: calc(50% - 20px); /* Două carduri pe rând pe ecrane medii */
+    width: calc(50% - 16px); /* Două carduri pe rând pe ecrane medii */
+  }
+}
+
+/* Ecrane mari (desktop) */
+@media (min-width: 901px) {
+  .teamMember {
+    width: calc(33.333% - 16px); /* Trei carduri pe rând pe ecrane mari */
   }
 }
