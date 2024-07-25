@@ -1,6 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif; /* Apply font globally */
+}
+
 .services {
-  padding: 40px 20px;
+  padding: 40px 20px 40px 20px;
   box-sizing: border-box;
+  background-color: rgb(233, 240, 248);
+  font-family: 'Raleway', sans-serif; /* Apply font within the services section */
 }
 
 .title {
@@ -9,6 +17,11 @@
   color: #394047;
   margin-bottom: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .list {
@@ -21,18 +34,20 @@
 }
 
 .item {
-  padding: 15px;
+
+  padding: 25px;
   display: flex;
-  flex-direction: column; /* Ensure icon and text stack vertically */
+  flex-direction: column;
   align-items: flex-start;
   background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
-  height: auto; /* Allow height to adjust based on content */
-  max-width: 100%; /* Ensure item doesn't exceed its container's width */
-  box-sizing: border-box; /* Include padding and border in element's total width and height */
-  margin: 0 auto; /* Center card within its grid cell */
+  transition: all 0.3s ease;
+  height: auto;
+  max-width: 380px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
 }
 
 .item:hover {
@@ -54,6 +69,7 @@
 .textContainer {
   display: flex;
   flex-direction: column;
+  font-family: 'Raleway', sans-serif; /* Apply font to text within textContainer */
 }
 
 .serviceTitle {
@@ -74,7 +90,12 @@
 @media (max-width: 1024px) {
   .list {
     grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    padding: 0 10px; /* Add horizontal padding */
+    padding: 0 40x; /* Add horizontal padding */
+  }
+  .item{
+    
+  /* Ensure item doesn't exceed its container's width */
+    
   }
 }
 
@@ -85,9 +106,8 @@
   }
 
   .item {
-    padding: 15px;
-    width: 90%; /* Ensure card doesn't exceed container width */
-    max-width: 100%; /* Prevent card from exceeding container width */
+    
+   /* Prevent card from exceeding container width */
     margin: 0 auto; /* Center card horizontally */
   }
 
