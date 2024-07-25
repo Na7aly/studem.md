@@ -37,7 +37,9 @@
 }
 
 .teamMember:hover {
-  background: linear-gradient(to right, #c6daf3, #d9ecf3);
+  background-color: #6780b6;
+    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #b8dae9;
+  
 }
 
 .teamMember img {

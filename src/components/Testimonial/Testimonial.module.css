@@ -12,7 +12,7 @@ html {
 
 body {
   color: #000;
-  font-family: "Shippori Antique", sans-serif;
+  
   height: 100vh;
   display: grid;
   place-items: center;

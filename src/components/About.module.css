@@ -1,72 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+/* Font global */
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0; /* Resetează marginile */
+  padding: 0; /* Resetează padding-ul */
+  box-sizing: border-box; /* Include padding și border în dimensiuni */
+}
+
+/* Stil pentru Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Z-index mare pentru a rămâne deasupra altor elemente */
+  background-color: white; /* Fundal alb pentru navbar */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adaugă umbră pentru vizibilitate */
+}
 
 /* Secțiunea About */
 .container {
+  width: 100vw;
+  height: auto;
   display: flex;
-  flex-direction: row; /* Default layout: side by side */
-  height: auto; /* Height based on content */
-  padding: 0; /* Remove padding to ensure full use of space */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
-  margin-bottom: 80px; /* Space below the container */
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 80px;
+ /* Spațiu pentru a preveni suprapunerea peste navbar */
+  position: relative;
 }
 
 .leftImageContainer {
   display: flex;
   justify-content: center;
-  flex: 1; /* Make the image container take up half the width */
+  flex: 1; /* Face ca containerul imaginii să ocupe jumătate din lățime */
 }
 
 .image {
-  width: 90%; /* Ensure the image takes up the full container width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Cover the entire container without distortion */
+  width: 90%; /* Se asigură că imaginea ocupă întreaga lățime a containerului */
+  height: auto; /* Menține proporțiile */
+  object-fit: cover; /* Acoperă întregul container fără distorsiuni */
 }
 
 .content {
-  flex: 1; /* Make the text content take up half the width */
+  flex: 1; /* Face ca textul să ocupe jumătate din lățime */
   box-sizing: border-box;
   margin-right: 25px;
 }
 
 .content p {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 .content h2 {
   font-size: 28px;
   font-weight: 700;
   color: #0056b3;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   font-family: serif;
-  margin-top: 50px;
+  margin-top: 20px;
+ 
 }
 
 .icons {
   display: flex;
-  flex-direction: column; /* Align icons vertically */
-  align-items: flex-start; /* Align items to the start of the flex container */
+  flex-direction: column; /* Afișează icoanele pe verticală */
+  align-items: flex-start; /* Aliniază icoanele la începutul containerului */
 }
 
 .icon {
   display: flex;
-  align-items: center; /* Align items (icon, title, text) horizontally */
-  margin-bottom: 30px; /* Space between icon sections */
+  align-items: center; /* Aliniază icoanele, titlul și textul pe orizontală */
+  margin-bottom: 30px; /* Spațiu între secțiunile de icoane */
 }
 
 .iconImage {
-  font-size: 35px; /* Icon size */
-  color: rgb(182, 217, 251); /* Icon color */
-  border-radius: 50%; /* Make icon circular */
-  border: 3px solid rgb(182, 217, 251); /* Border color and thickness */
-  padding: 10px; /* Space between icon and border */
-  background-color: white; /* Background color of the circle */
-  margin-right: 15px; /* Space between icon and text */
+  font-size: 35px; /* Dimensiunea icoanei */
+  color: rgb(182, 217, 251); /* Culoarea icoanei */
+  border-radius: 50%; /* Face icoana circulară */
+  border: 3px solid rgb(182, 217, 251); /* Culoarea și grosimea bordurii */
+  padding: 10px; /* Spațiu între icoană și bordură */
+  background-color: white; /* Culoarea de fundal a cercului */
+  margin-right: 15px; /* Spațiu între icoană și text */
 }
 
 .iconText {
   display: flex;
-  flex-direction: column; /* Arrange title and description vertically */
+  flex-direction: column; /* Organizează titlul și descrierea pe verticală */
 }
 
 .iconText h2 {
@@ -80,54 +105,100 @@
   margin: 0;
 }
 
-/* Media queries for responsiveness */
+/* Media queries pentru responsivitate */
 @media (max-width: 1024px) {
   .container {
-    flex-direction: column; /* Stack image and text on top of each other */
-    margin-bottom: 40px; /* Adjust bottom margin for stacked layout */
+    flex-direction: column; /* Stivuiește imaginea și textul unul deasupra altuia */
+    margin-bottom: 40px; /* Ajustează spațiul de jos pentru layout-ul stivuit */
   }
 
   .leftImageContainer {
-    order: 1; /* Ensure the image appears first */
-    width: 100%; /* Full width */
-    text-align: center; /* Center the image */
-    margin-bottom: 20px; /* Space between image and text */
+    order: 1; /* Se asigură că imaginea apare prima */
+    width: 100%; /* Lățime completă */
+    text-align: center; /* Centrează imaginea */
+    margin-bottom: 20px; /* Spațiu între imagine și text */
   }
 
   .image {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; /* Lățime completă a containerului */
+    height: auto; /* Menține proporțiile */
   }
 
   .content {
-    order: 2; /* Ensure the text appears after the image */
-    margin-right: 0; /* Remove right margin */
+    order: 2; /* Se asigură că textul apare după imagine */
+    margin-right: 0; /* Elimină marginea din dreapta */
+    margin-left: 30px;
   }
 }
 
 @media (max-width: 768px) {
   .container {
-    /* Further adjust layout for smaller tablets */
+    flex-direction: column;
+    margin-bottom: 40px;
   }
 
-  .icons {
-    /* Adjust layout for smaller tablets if necessary */
+  .leftImageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .content {
+    margin-right: 0;
   }
 }
 
 @media (max-width: 480px) {
   .container {
-    /* Further adjust layout for phones */
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .leftImageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+  .content {
+    margin-right: 0;
   }
 
   .icons {
-    /* Adjust layout for phones */
+    align-items: center;
+  }
+
+  .icon {
+    margin-bottom: 20px;
+  }
+
+  .iconImage {
+    font-size: 30px;
+    padding: 8px;
+  }
+
+  .iconText h2 {
+    font-size: 20px;
+  }
+
+  .iconText p {
+    font-size: 14px;
   }
 }
 
-/* Additional styles for preventing overlap */
+/* Stiluri adiționale pentru prevenirea suprapunerii */
 .section {
-  padding: 60px 0; /* Add padding to top and bottom of each section */
-  margin: 0; /* Reset margin */
+  padding: 60px 0; /* Adaugă padding sus și jos în fiecare secțiune */
+  margin: 0; /* Resetează marginile */
+  position: relative; /* Poziționare relativă pentru z-index */
+  z-index: 1; /* Asigură că secțiunea are un z-index superior */
 }
-

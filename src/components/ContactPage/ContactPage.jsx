@@ -144,6 +144,7 @@ const ContactPage = () => {
               <div className={styles.textCenter}>
                 <button type="submit" className={styles.submitButton}>Trimite mesaj</button>
               </div>
+              
             </form>
           </div>
         </div>
