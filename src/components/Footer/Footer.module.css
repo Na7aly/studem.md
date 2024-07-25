@@ -1,14 +1,15 @@
 /* module.css */
 
 .footer {
-    background-color: #222;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    background-color: #EDF1F6;
-    color: #666;
-    padding: 20px 0;
-    text-align: center;
+  background-color: #222;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  background-color: rgb(56 53 34);
+  color: #ffffffb0;
+  padding: 20px 0;
+  text-align: center;
+
   }
   
   .container {

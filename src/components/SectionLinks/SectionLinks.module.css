@@ -1,8 +1,8 @@
 /* Sectionlinks.module.css */
 
 .footer {
-    background: #394047; /* Background color */
-    color: #fff; /* Text color */
+  background-color: rgb(199 197 182);
+  color: #473b3bc7;
     font-size: 14px;
     padding: 40px 0;
   }
@@ -29,7 +29,7 @@
  .footer h3 {
     font-size: 16px;
     margin-bottom: 15px;
-    color: #fff;
+    color: #473b3bc7;
   }
   
   .list {
@@ -42,7 +42,7 @@
   }
   
   .list a {
-    color: #fff;
+    color: #473b3bc7;
     text-decoration: none;
   }
   

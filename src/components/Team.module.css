@@ -1,7 +1,15 @@
+/* Font global */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Raleway', sans-serif; /* Aplică fontul global */
+}
+
 .team {
-  font-family: "Poppins", sans-serif;
-  padding: 80px 0;
+  font-family: 'Raleway', sans-serif; /* Aplică fontul specific pentru secțiunea team */
+  padding: 80px 20px; /* Adaugă padding pentru margini */
   text-align: center;
+  background-color: #efefef;
 }
 
 .team h2 {
@@ -24,22 +32,20 @@
 }
 
 .teamMember {
-  margin-top: 30px;
+  margin: 15px; /* Ajustează marginile pentru spațiere uniformă */
   padding: 30px;
-  background-color: #f6f9ff;
+  background-color: #cfd0c9;
   border-radius: 5px;
   transition: background .3s;
   text-align: center;
-  width: 100%; /* Asigură că cardurile vor ocupa întreaga lățime pe ecrane mici */
+  width: calc(100% - 32px); /* Asigură că cardurile se vor ajusta corect pe ecrane mici */
   max-width: 300px; /* Lățime maximă a cardurilor */
   box-sizing: border-box;
-  margin: 8px;
 }
 
 .teamMember:hover {
-  background-color: #6780b6;
-    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #b8dae9;
-  
+  background-color: #cfd0c9;
+  box-shadow: inset 5px 5px 10px #a9b381, inset -5px -5px 6px #71784a;
 }
 
 .teamMember img {
@@ -57,21 +63,21 @@
 
 .teamMember h3 {
   margin: 10px 0;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
   color: #333;
 }
 
 .teamMember p {
-  font-size: 14px;
-  color: #016cec;
+  font-size: 12px;
+  color: #473b3b;
   text-transform: uppercase;
   margin-bottom: 0;
 }
 
 .teamMember:hover h3,
 .teamMember:hover p {
-  color: #fff;
+  color: #71784a;
 }
 
 /* Media Queries pentru Responsive Design */
@@ -79,7 +85,7 @@
 /* Ecrane mici (telefon) */
 @media (max-width: 600px) {
   .teamMember {
-    width: 100%; /* Cardurile vor ocupa întreaga lățime pe ecrane mici */
+    width: calc(100% - 32px); /* Asigură că cardurile vor ocupa întreaga lățime pe ecrane mici */
   }
 
   .teamMember img {
@@ -97,15 +103,15 @@
 }
 
 /* Ecrane medii (tablete) */
-@media (max-width: 900px) and (min-width: 601px) {
+@media (min-width: 601px) and (max-width: 900px) {
   .teamMember {
-    width: calc(50% - 16px); /* Două carduri pe rând pe ecrane medii */
+    width: calc(50% - 32px); /* Două carduri pe rând pe ecrane medii */
   }
 }
 
 /* Ecrane mari (desktop) */
 @media (min-width: 901px) {
   .teamMember {
-    width: calc(33.333% - 16px); /* Trei carduri pe rând pe ecrane mari */
+    width: calc(25% - 32px); /* Patru carduri pe rând pe ecrane mari */
   }
 }

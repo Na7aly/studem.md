@@ -60,7 +60,7 @@ body {
 .content h2 {
   font-size: 28px;
   font-weight: 700;
-  color: #0056b3;
+  color: #4b4b93;
   /* margin-bottom: 30px; */
   font-family: serif;
   margin-top: 20px;
@@ -80,13 +80,14 @@ body {
 }
 
 .iconImage {
-  font-size: 35px; /* Dimensiunea icoanei */
-  color: rgb(182, 217, 251); /* Culoarea icoanei */
-  border-radius: 50%; /* Face icoana circulară */
-  border: 3px solid rgb(182, 217, 251); /* Culoarea și grosimea bordurii */
-  padding: 10px; /* Spațiu între icoană și bordură */
-  background-color: white; /* Culoarea de fundal a cercului */
-  margin-right: 15px; /* Spațiu între icoană și text */
+  font-size: 35px;
+  color: rgb(199 216 96);
+  border-radius: 50%;
+  border: 3px solid rgb(199 216 96);
+  padding: 10px;
+  background-color: white;
+  margin-right: 15px;
+
 }
 
 .iconText {
@@ -97,7 +98,7 @@ body {
 .iconText h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #0056b3;
+  color: #4b4b93;
   margin: 0 0 5px 0;
 }
 
