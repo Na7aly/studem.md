@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.062ba60f.css",
-    "main.js": "/studem.md/static/js/main.06794a2b.js",
+    "main.css": "/studem.md/static/css/main.81ff9316.css",
+    "main.js": "/studem.md/static/js/main.e155ff56.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
     "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
@@ -38,13 +38,17 @@
     "static/media/2.png": "/studem.md/static/media/2.4930d28a03b4297e972b.png",
     "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
+    "static/media/slick.svg": "/studem.md/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/studem.md/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/studem.md/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/studem.md/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studem.md/index.html",
-    "main.062ba60f.css.map": "/studem.md/static/css/main.062ba60f.css.map",
-    "main.06794a2b.js.map": "/studem.md/static/js/main.06794a2b.js.map",
+    "main.81ff9316.css.map": "/studem.md/static/css/main.81ff9316.css.map",
+    "main.e155ff56.js.map": "/studem.md/static/js/main.e155ff56.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.062ba60f.css",
-    "static/js/main.06794a2b.js"
+    "static/css/main.81ff9316.css",
+    "static/js/main.e155ff56.js"
   ]
 }
