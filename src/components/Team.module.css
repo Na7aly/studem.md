@@ -1,91 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
+.team{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #473b3b;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.teamTitle{
+  display: flex;
+}
 
 .team {
-  padding-bottom: 20px;
-  text-align: center;
-  background-color: rgba(198, 199, 199, 0.46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+background-color: rgb(199 216 96 / 5%);
+
+}
+
+.heading {
+  margin-top: 30px;
+}
+
+.subtitle {
+ 
 }
 
 .teamMembers {
   display: flex;
-  flex-wrap: wrap; /* Enable wrapping of flex items */
   justify-content: center;
-  align-content: center;
+  /* flex-wrap: wrap; */
+  padding: 0px 15px;
+ 
+  
+  border-radius: 10px;
+  /* background-color: rgb(199 216 96 / 5%);; */
 }
 
 .teamMember {
+  width: 200px;
+  min-height: 360px;
+  background-color: #d5e2ed9e;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 220px;
-  margin: 20px;
+  border-radius: 10px;
+  transform: scale(0.8, 0.8);
+  padding: 20px;
+  transition: all 1s ease-in-out;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+}
+
+.teamMember:hover {
+    opacity: 1;
+    transform: scale(1, 1);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    /* border: 1px solid #5f6368; */
 }
 
 .pic {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  background: #FABC3C;
-  position: relative;
+  margin-top: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
   overflow: hidden;
-  margin-bottom: 10px;
-  border: 3px solid #FABC3C; /* Red border as requested */
 }
 
 .pic img {
   width: 100%;
-  /* height: 100%; */
-  /* border-radius: 50%; */
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100%;
+  object-fit: cover;
 }
-
-
 
 .title {
-  display: block;
-  font-size: 20px;
-  font-weight: 700;
-  color: #423f3f;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
+    margin: 10px 0 5px;
+    font-weight: 700;
 }
 
-.post {
-  display: block;
-  font-size: 15px;
-  color: #333;
-  text-transform: capitalize;
-  margin: 0;
-}
-
-@media only screen and (max-width: 1200px) {
-  .teamMember {
-    width: 220px;
-  }
-}
-
-@media only screen and (max-width: 990px) {
-  .teamMember {
-    width: 180px;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .teamMember {
-    width: 160px;
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .teamMembers {
-    flex-direction: column;
-  }
-
-  .teamMember {
-    width: 100%;
-    margin: 10px 0;
-  }
+.position {
+  color: #473b3b;;
 }

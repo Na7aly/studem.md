@@ -21,16 +21,16 @@ const Team = () => {
 
   return (
     <div className={styles.team}>
-      <h2>ECHIPA</h2>
-      <p>Coordonatorii STUDEM</p>
+      <h2 className={styles.heading}>ECHIPA</h2>
+      <p className={styles.subtitle}>Coordonatorii STUDEM</p>
       <div className={styles.teamMembers}>
         {teamMembers.map((member, index) => (
           <div className={styles.teamMember} key={index}>
             <div className={styles.pic}>
-              <img src={member.avatar} alt={`Team Member ${index + 1}`} />
+              <img src={member.avatar} alt={`Team Member ${index + 1}`} className={styles.avatar} />
             </div>
             <h3 className={styles.title}>{member.name}</h3>
-            <p className={styles.post}>{member.position}</p>
+            <p className={styles.position}>{member.position}</p>
           </div>
         ))}
       </div>
