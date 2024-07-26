@@ -81,12 +81,12 @@ body {
 
 .iconImage {
   font-size: 35px;
-  color: rgb(199 216 96);
-  border-radius: 50%;
-  border: 3px solid rgb(199 216 96);
-  padding: 10px;
-  background-color: white;
-  margin-right: 15px;
+    color: #ffdd40;
+    border-radius: 50%;
+    border: 3px solid #ffdd40;
+    padding: 10px;
+    background-color: white;
+    margin-right: 15px;
 
 }
 

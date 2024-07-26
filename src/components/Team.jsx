@@ -26,9 +26,11 @@ const Team = () => {
       <div className={styles.teamMembers}>
         {teamMembers.map((member, index) => (
           <div className={styles.teamMember} key={index}>
-            <img src={member.avatar} alt={`Team Member ${index + 1}`} />
-            <h3>{member.name}</h3>
-            <p>{member.position}</p>
+            <div className={styles.pic}>
+              <img src={member.avatar} alt={`Team Member ${index + 1}`} />
+            </div>
+            <h3 className={styles.title}>{member.name}</h3>
+            <p className={styles.post}>{member.position}</p>
           </div>
         ))}
       </div>
