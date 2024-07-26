@@ -50,6 +50,9 @@ const images = [
 const Partners = () => {
   return (
     <div className={styles.slider}>
+        <div className={styles.name}>
+            <h2>Parteneri și Finanțatori</h2>
+        </div>
       <div className={styles.slideTrack}>
         {images.map((src, index) => (
           <div key={index} className={styles.slide}>

@@ -1,11 +1,17 @@
 .slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 150px;
+    height: 250px;
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 100%;
+  }
+  .name{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
   }
   
   .slider::before,
