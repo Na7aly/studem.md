@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-background-color: rgb(199 216 96 / 5%);
+/* background-color: rgb(199 216 96 / 5%); */
 
 }
 
@@ -42,7 +42,7 @@ background-color: rgb(199 216 96 / 5%);
 .teamMember {
   width: 200px;
   min-height: 360px;
-  background-color: #d5e2ed9e;
+  /* background-color: #d5e2ed9e; */
   position: relative;
   display: flex;
   flex-direction: column;

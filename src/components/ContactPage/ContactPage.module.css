@@ -120,6 +120,7 @@
 textarea.formControl {
     height: 150px;
     resize: none;
+    margin-left: 40px;
 }
 
   
