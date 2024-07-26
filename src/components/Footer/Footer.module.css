@@ -1,36 +1,58 @@
 /* module.css */
 
 .footer {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-  background-color: rgb(56 53 34);
+  background-color: rgb(56, 53, 34);
   color: #ffffffb0;
   padding: 20px 0;
   text-align: center;
+}
 
-  }
-  
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 15px; /* Add padding for small screens */
+}
+
+.copyright {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.designed {
+  display: inline-block;
+}
+
+.designed a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.designed a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
   .container {
-    max-width: 960px;
-    margin: 0 auto;
+    padding: 0 10px; /* Adjust padding for better fit */
   }
   
-  .copyright {
-    display: inline-block;
-    margin-right: 20px;
+  .copyright, .designed {
+    display: block;
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: center;
+  }
+}
+
+/* Tablet view */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    padding: 0 15px; /* Adjust padding for better fit */
   }
   
-  .designed {
-    display: inline-block;
+  .copyright, .designed {
+    display: block;
+    margin: 10px 0; /* Add margin for spacing */
+    text-align: center;
   }
-  
-  .designed a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .designed a:hover {
-    text-decoration: underline;
-  }
+}

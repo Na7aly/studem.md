@@ -16,15 +16,16 @@
  
   .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
   }
-  
+  .col{
+    min-width: 150px;
+    margin-left: 30px;
+  }
   .column {
-    flex: 1;
-    min-width: 250px;
-    margin-bottom: 20px;
-  }
+    
+    min-width: 350px;
+    margin-left: 30px;}
   
  .footer h3 {
     font-size: 16px;
@@ -62,11 +63,44 @@
   }
   
   .socialIcons a {
-    color: #fff;
+    color: #473b3bc7;
     font-size: 20px;
   }
   
   .socialIcons a:hover {
-    color: #007bff;
+    color: #fff;
+  }
+  .icon{
+    margin-right: 10px;
+  }
+  .formSection {
+    display: flex; /* Aligns input and button in a row */
+    align-items: center; 
+    justify-content: center;/* Aligns input and button vertically centered */
+  }
+  .emailInput {
+    padding: 10px;
+    border: 1px solid #394047;
+    border-radius: 7px;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+    background-color: #cccccc05;
   }
   
+  .subscribeBtn {
+    background: #473b3ba3;
+    color: #473b3b;
+    border: 1px solid;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background 0.3s;
+    cursor: pointer;
+    position: relative;/* Ensures absolute positioning within the button */
+  }
+  .subscribeBtn:hover {
+    background-color: #999b74;
+    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #c8cacb;
+   /* Darker shade for hover effect */
+  }

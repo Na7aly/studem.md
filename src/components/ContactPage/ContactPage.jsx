@@ -48,7 +48,7 @@ const ContactPage = () => {
         <h3 className={styles.sectionSubheading}>Completați formularul pentru a ne contacta.</h3>
       </div>
         <div className={styles.containerForm}>
-        <div className={styles.contactWrapper}>
+        {/* <div className={styles.contactWrapper}>
           <div className={styles.contactInfo}>
             <div className={styles.infoItem}>
               <i className={`${styles.icon} fas fa-map-marker-alt`}></i>
@@ -77,7 +77,7 @@ const ContactPage = () => {
               <p>Luni - Duminică: 10.00-22.00</p>
             </div>
           </div>
-        </div>
+        </div> */}
         <div className={styles.contactFormWrapper}>
           <div className={styles.contactForm}>
             <form id="contactForm" onSubmit={handleSubmit}>
