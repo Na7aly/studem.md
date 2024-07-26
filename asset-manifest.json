@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.82fb7f2c.css",
-    "main.js": "/studem.md/static/js/main.8fc473ba.js",
+    "main.css": "/studem.md/static/css/main.062ba60f.css",
+    "main.js": "/studem.md/static/js/main.06794a2b.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
     "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
@@ -39,12 +39,12 @@
     "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
     "index.html": "/studem.md/index.html",
-    "main.82fb7f2c.css.map": "/studem.md/static/css/main.82fb7f2c.css.map",
-    "main.8fc473ba.js.map": "/studem.md/static/js/main.8fc473ba.js.map",
+    "main.062ba60f.css.map": "/studem.md/static/css/main.062ba60f.css.map",
+    "main.06794a2b.js.map": "/studem.md/static/js/main.06794a2b.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82fb7f2c.css",
-    "static/js/main.8fc473ba.js"
+    "static/css/main.062ba60f.css",
+    "static/js/main.06794a2b.js"
   ]
 }
