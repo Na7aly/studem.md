@@ -126,8 +126,7 @@ const SpaceApplication = ({ closeModal }) => {
       <button onClick={closeModal} className={styles.closeButton}>X</button>
       <div className={styles.spaceApplication}>
         <div className={styles.container}>
-          <h2>Spațiu gratuit pentru orice inițiativă de tineret</h2>
-          <h3>Aplică pentru a beneficia de spațiu</h3>
+          <h2>Aplică pentru a beneficia de spațiu</h2>
           <form className={styles.form} onSubmit={handleSubmit} onReset={handleReset}>
             <div className={styles.formGroup}>
               <label htmlFor="firstName">Nume</label>
@@ -269,7 +268,7 @@ const SpaceApplication = ({ closeModal }) => {
                 required
               />
               <label htmlFor="agreement">
-                Sunt de acord cu <button type="button" className={styles.rulesButton} onClick={openRulesModal}>regulile centrului</button>
+                Sunt de acord cu <button type="button" className={styles.rulesButton} onClick={openRulesModal}>Regulile centrului</button>
               </label>
               {errors.agreement && <span className={styles.error}>{errors.agreement}</span>}
             </div>

@@ -16,7 +16,7 @@ const Space = () => {
   return (
     <section className={styles.space}>
       <div className={styles.container}>
-        <h2>APLICĂ PENTRU SPAȚIU</h2>
+        <h2>Spațiu gratuit pentru orice inițiativă de tineret</h2>
         <p>
           Centrul de Tineret STUDEM oferă tinerilor șansa de a organiza activități interactive în spațiul centrului GRATUIT. 
           Pentru a profita de spațiu, citește cu atenție termenii și condițiile apoi completează formularul pentru aplicare. 

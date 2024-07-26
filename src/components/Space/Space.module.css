@@ -2,17 +2,17 @@
     font-family: "Poppins", sans-serif;
     padding: 80px 0;
     text-align: center;
-    background-color: #fff;
+    background-color: rgb(199 197 182 / 53%);
   }
   
   .container {
     padding: 0 20px;
   }
   
-  h2 {
+ .space h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #394047;
+    color: #888879;
     margin-bottom: 20px;
   }
   
@@ -31,21 +31,21 @@
   }
   
   .button {
-    background-color: #6b92e5;
     padding: 15px 25px;
     font-size: 1.25rem;
     font-weight: 700;
-    color: #fff;
+    color: #3940478c;
     border: none;
     border-radius: 30px;
-    box-shadow: 10px 10px 24px rgba(166, 180, 200, 0.8), -10px -10px 24px #fff;
+    box-shadow: 10px 10px 15px #b7b7a7, -10px -10px 15px rgb(199 197 182);
     cursor: pointer;
     transition: background-color 0.3s, box-shadow 0.3s;
-    margin: 10px; /* Spatiul intre butoane */
+    margin: 10px;
+    background: #d4d5d7;
   }
   
   .button:hover {
-    background-color: #6780b6;
+    background-color: #c4c7a5;
     box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #b8dae9;
   }
   

@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: white;
+  background: rgb(199 197 182);
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
@@ -72,7 +72,7 @@
 .submitButton {
   padding: 10px 15px;
   border: none;
-  background-color: #007bff;
+  background-color: rgb(199 197 182);
   color: white;
   border-radius: 4px;
   cursor: pointer;
@@ -85,7 +85,7 @@
 .rulesButton {
   background: none;
   border: none;
-  color: #007bff;
+  color: #a46767;
   text-decoration: underline;
   cursor: pointer;
 }
