@@ -1,23 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
-.team{
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    color: #473b3b;
-    text-align: center;
-    box-sizing: border-box;
+.team {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  color: #473b3b;
+  text-align: center;
+  box-sizing: border-box;
 }
 
-.teamTitle{
+.teamTitle {
   display: flex;
 }
 
 .team {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-/* background-color: rgb(199 216 96 / 5%); */
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgb(199 216 96 / 5%); */
 }
 
 .heading {
@@ -25,7 +24,6 @@
 }
 
 .subtitle {
- 
 }
 
 .teamMembers {
@@ -33,15 +31,15 @@
   justify-content: center;
   /* flex-wrap: wrap; */
   padding: 0px 15px;
- 
-  
   border-radius: 10px;
-  /* background-color: rgb(199 216 96 / 5%);; */
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
 }
 
 .teamMember {
   width: 200px;
-  min-height: 360px;
+  /* min-height: 360px; */
   /* background-color: #d5e2ed9e; */
   position: relative;
   display: flex;
@@ -53,15 +51,14 @@
   transition: all 1s ease-in-out;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
 }
 
 .teamMember:hover {
-    opacity: 1;
-    transform: scale(1, 1);
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    /* border: 1px solid #5f6368; */
+  opacity: 1;
+  transform: scale(1, 1);
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  /* border: 1px solid #5f6368; */
 }
 
 .pic {
@@ -79,10 +76,28 @@
 }
 
 .title {
-    margin: 10px 0 5px;
-    font-weight: 700;
+  margin: 10px 0 5px;
+  font-weight: 700;
 }
 
 .position {
-  color: #473b3b;;
+  color: #473b3b;
+}
+
+@media screen and (min-width: 768px) {
+  .teamMembers {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .teamMembers {
+    display: flex;
+    /* padding: 0px 15px; */
+    /* border-radius: 10px; */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

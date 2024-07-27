@@ -8,7 +8,7 @@ import About from '../components/About';
 // import ContactUs from '../components/ContactUs';
 import Services from '../components/Services';
 import Testimonial from '../components/Testimonial/Testimonial';
-// import Newsletter from '../components/Newsletter/Newsletter';
+import Newsletter from '../components/Newsletter/Newsletter';
 // import ContactsDetail from '../components/ContactsDetail/Contacts';
 import NewsSection from '../components/News/News';
 import Space from 'components/Space/Space';
@@ -56,7 +56,7 @@ const Home = () => {
         <ContactsDetail />
       </Element> */}
       {/* <ContactUs /> */}
-      {/* <Newsletter /> */}
+      <Newsletter />
       <SectionLinks />
       <Footer />
     </div>
