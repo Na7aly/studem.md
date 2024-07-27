@@ -8,6 +8,7 @@
   width: 100%;
   z-index: 1000;
   margin-bottom: 2px;
+  /* max-width: 1400px; */
 }
 
 .logo {

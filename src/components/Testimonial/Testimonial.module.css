@@ -1,7 +1,8 @@
 .reviews {
-  padding: 5rem 9%;
+  
   margin: 0 auto;
-    width: 1200px;
+  width: 100%;
+  max-width: 1400px;
 }
 .reviews p{
   width: 90%;

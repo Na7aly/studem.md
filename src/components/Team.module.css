@@ -16,11 +16,12 @@
   display: flex;
     flex-direction: column;
     /* background-color: rgb(199 216 96 / 5%); */
-    width: 1200px;
+    width: 100%;
     align-content: center;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
+    max-width: 1400px;
 }
 
 .heading {

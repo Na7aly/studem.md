@@ -16,7 +16,8 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-    width: 1200px;
+    width: 100%;
+    max-width: 1400px;
 
 }
 

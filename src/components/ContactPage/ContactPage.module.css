@@ -5,6 +5,8 @@
     font-family: 'Poppins', sans-serif;
    
     color: #423f3fa6;
+    width: 100%;
+    /* max-width: 1400px; */
 }
 
 .textCenter {
@@ -122,7 +124,7 @@
 textarea.formControl {
     height: 150px;
     resize: none;
-    margin-left: 40px;
+    
 }
 
   
