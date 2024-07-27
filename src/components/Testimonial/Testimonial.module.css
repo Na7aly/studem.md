@@ -1,5 +1,7 @@
 .reviews {
   padding: 5rem 9%;
+  margin: 0 auto;
+    width: 1200px;
 }
 .reviews p{
   width: 90%;

@@ -22,7 +22,7 @@ body {
 
 /* Secțiunea About */
 .container {
-  width: 100vw;
+  width: 1200px;
   height: auto;
   display: flex;
   flex-direction: row;
@@ -33,6 +33,7 @@ body {
   margin-bottom: 80px;
  /* Spațiu pentru a preveni suprapunerea peste navbar */
   position: relative;
+  margin: 0 auto;
 }
 
 .leftImageContainer {

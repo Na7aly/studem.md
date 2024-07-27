@@ -14,9 +14,13 @@
 
 .team {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* background-color: rgb(199 216 96 / 5%); */
+    flex-direction: column;
+    /* background-color: rgb(199 216 96 / 5%); */
+    width: 1200px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 .heading {

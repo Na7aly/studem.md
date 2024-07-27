@@ -9,7 +9,15 @@ body {
   box-sizing: border-box;
   /* background-color: rgb(233, 240, 248); */
   background-color: #f5f5f54a;
-  font-family: 'Raleway', sans-serif; /* Apply font within the services section */
+  font-family: 'Raleway', sans-serif;
+  ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+    width: 1200px;
+
 }
 
 .title {
