@@ -10,7 +10,7 @@
   max-height: 90%;
   overflow-y: auto;
   z-index: 1000;
-  min-width: 360px;
+  min-width: 300px; /* Updated for better mobile experience */
 }
 
 .overlay {
@@ -104,22 +104,76 @@
   font-size: 1.5em;
   cursor: pointer;
 }
-/* SpaceApplication.module.css */
-.closeButton {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  .modal {
+    padding: 15px;
+    min-width: 280px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  .submitButton {
+    padding: 8px 12px;
+  }
+
+  .formGroup label {
+    font-size: 0.875em;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 6px;
+  }
 }
-.overlay {
-  /* Asigură-te că overlay-ul acoperă întregul ecran */
-  background: rgba(0, 0, 0, 0.5); /* Exemplu de stil */
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .modal {
+    padding: 20px;
+    min-width: 320px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .submitButton {
+    padding: 10px 15px;
+  }
+
+  .formGroup label {
+    font-size: 1em;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .modal {
+    padding: 25px;
+    min-width: 360px;
+  }
+
+  .container {
+    padding: 25px;
+  }
+
+  .submitButton {
+    padding: 12px 18px;
+  }
+
+  .formGroup label {
+    font-size: 1.125em;
+  }
+
+  .formGroup input,
+  .formGroup textarea {
+    padding: 10px;
+  }
 }
