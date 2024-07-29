@@ -57,6 +57,7 @@ const SectionLinks = () => {
           <div className={styles.column}>
             <div><h3>Despre noi</h3>
             <p>Centrul de Tineret STUDEM este o structură de auto guvernanță a tinerilor din municipiul Bălți înființată în cadrul unui parteneriat Moldo-Danez de lungă durată. Scopul de bază al Centrului este consolidarea democrației în Republica Moldova prin deprinderea cu principiile democratice în rândul tinerilor.</p>
+            <h3>Urmărește-ne</h3>
             <ul className={styles.socialIcons}>
               <li><a href="https://www.facebook.com/studemproject" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i className="fab fa-facebook-f"></i></a></li>
               <li><a href="https://www.instagram.com/studem_md?igsh=MWxsZXVhZTBpZWt3ZQ==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i className="fab fa-instagram"></i></a></li>

@@ -56,7 +56,7 @@ const Home = () => {
         <ContactsDetail />
       </Element> */}
       {/* <ContactUs /> */}
-      <Newsletter />
+      
       <SectionLinks />
       <Footer />
     </div>
