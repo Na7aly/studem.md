@@ -2,7 +2,7 @@
   background-color: rgb(199 197 182);
   color: #473b3bc7;
   font-size: 14px;
-  padding: 30px;
+  padding: 40px 0;
   margin: 0 auto;
 }
 
@@ -19,15 +19,17 @@
 }
 
 .col {
-  min-width: 150px;
+  max-width: 170px;
   margin-left: 30px;
   flex: 1;
+  min-width: 150px;
 }
 
 .column {
+  max-width: 500px;
+  margin-left: 70px;
+  /* flex: 1; */
   min-width: 350px;
-  margin-left: 30px;
-  flex: 1;
 }
 
 .footer h3 {
@@ -119,7 +121,7 @@
   }
 
   .col, .column {
-    min-width: 200px;
+    max-width: 170px;
     margin-left: 20px;
   }
 }
@@ -159,7 +161,7 @@
 
 @media (max-width: 576px) {
   .footer {
-    padding: 20px;
+    padding: 10px 0;
   }
 
   .container {
