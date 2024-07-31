@@ -1,109 +1,178 @@
-/* Sectionlinks.module.css */
-
 .footer {
   background-color: rgb(199 197 182);
   color: #473b3bc7;
-    font-size: 14px;
-    padding: 40px 0;
-    margin: 0 auto;
-    
-  }
-  
+  font-size: 14px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  min-width: 150px;
+  margin-left: 30px;
+  flex: 1;
+}
+
+.column {
+  min-width: 350px;
+  margin-left: 30px;
+  flex: 1;
+}
+
+.footer h3 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #473b3bc7;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.list a {
+  color: #473b3bc7;
+  text-decoration: none;
+}
+
+.list a:hover {
+  text-decoration: underline;
+}
+
+.socialIcons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcons li {
+  display: inline;
+}
+
+.socialIcons a {
+  color: #473b3bc7;
+  font-size: 20px;
+}
+
+.socialIcons a:hover {
+  color: #fff;
+}
+
+.icon {
+  margin-right: 10px;
+}
+
+.formSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.emailInput {
+  padding: 10px;
+  border: 1px solid #394047;
+  border-radius: 7px;
+  font-size: 16px;
+  width: 250px;
+  margin-right: 10px;
+  background-color: #cccccc05;
+}
+
+.subscribeBtn {
+  background: #473b3ba3;
+  color: #473b3b;
+  border: 1px solid;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: background 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.subscribeBtn:hover {
+  background-color: #999b74;
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #c8cacb;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1200px) {
   .container {
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
-    width: 100%;
-    
+    padding: 0 10px;
   }
- 
-  .row {
-    display: flex;
-    flex-direction: row;
+
+  .col, .column {
+    min-width: 200px;
+    margin-left: 20px;
   }
-  .col{
+}
+
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 0;
+  }
+
+  .col, .column {
     min-width: 150px;
-    margin-left: 30px;
+    margin-left: 15px;
   }
-  .column {
-    
-    min-width: 350px;
-    margin-left: 30px;}
-  
- .footer h3 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #473b3bc7;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px 0;
   }
-  
-  .list {
-    list-style: none;
-    padding: 0;
+
+  .row {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  .list li {
-    margin-bottom: 10px;
+
+  .col, .column {
+    min-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
   }
-  
-  .list a {
-    color: #473b3bc7;
-    text-decoration: none;
-  }
-  
-  .list a:hover {
-    text-decoration: underline;
-  }
-  
-  .socialIcons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-  }
-  
-  .socialIcons li {
-    display: inline;
-  }
-  
-  .socialIcons a {
-    color: #473b3bc7;
-    font-size: 20px;
-  }
-  
-  .socialIcons a:hover {
-    color: #fff;
-  }
-  .icon{
-    margin-right: 10px;
-  }
-  .formSection {
-    display: flex; /* Aligns input and button in a row */
-    align-items: center; 
-    justify-content: center;/* Aligns input and button vertically centered */
-  }
+
   .emailInput {
-    padding: 10px;
-    border: 1px solid #394047;
-    border-radius: 7px;
-    font-size: 16px;
-    width: 250px;
-    margin-right: 10px;
-    background-color: #cccccc05;
+    width: 200px;
+    margin-right: 5px;
   }
-  
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 0 5px;
+  }
+
+  .emailInput {
+    width: 150px;
+    font-size: 14px;
+  }
+
   .subscribeBtn {
-    background: #473b3ba3;
-    color: #473b3b;
-    border: 1px solid;
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    transition: background 0.3s;
-    cursor: pointer;
-    position: relative;/* Ensures absolute positioning within the button */
+    font-size: 14px;
+    padding: 8px 15px;
   }
-  .subscribeBtn:hover {
-    background-color: #999b74;
-    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #c8cacb;
-   /* Darker shade for hover effect */
-  }
+}
