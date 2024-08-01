@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './GrantApplication.module.css'; 
+import styles from './GrantApplication.module.css';
 
 const GrantApplication = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +11,7 @@ const GrantApplication = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [uploading, setUploading] = useState(false);
 
   const handleInputChange = (event) => {
     const { id, value, type, checked, files } = event.target;
@@ -29,8 +30,60 @@ const GrantApplication = () => {
     if (!formData.document) newErrors.document = 'Trebuie să încarci documentele necesare.';
     if (!formData.confirmation) newErrors.confirmation = 'Trebuie să confirmi că informațiile sunt corecte.';
     setErrors(newErrors);
+
     if (Object.keys(newErrors).length === 0) {
-      alert('Formularul a fost trimis cu succes!');
+      setUploading(true);
+      try {
+        // Încărcați documentul pe Cloudinary
+        const formDataToUpload = new FormData();
+        formDataToUpload.append('file', formData.document);
+        formDataToUpload.append('upload_preset', 'Yzmwzm6dh'); // înlocuiți cu preset-ul dvs.
+
+       
+
+        const cloudinaryResponse = await fetch('https://api.cloudinary.com/v1_1/dbwamoqoc/upload', { // înlocuiți cu numele cloud-ului dvs.
+          method: 'POST',
+          body: formDataToUpload
+        });
+
+        const cloudinaryData = await cloudinaryResponse.json();
+
+        if (cloudinaryResponse.ok) {
+          // Trimiteți datele formularului împreună cu URL-ul documentului către Formspree
+          const formDataToSend = {
+            initiativeName: formData.initiativeName,
+            leaderName: formData.leaderName,
+            leaderEmail: formData.leaderEmail,
+            documentUrl: cloudinaryData.secure_url,
+            confirmation: formData.confirmation ? 'true' : 'false'
+          };
+
+          const response = await fetch('https://formspree.io/f/mnnadzan', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formDataToSend)
+          });
+
+          if (response.ok) {
+            alert('Formularul a fost trimis cu succes!');
+            setFormData({ initiativeName: '', leaderName: '', leaderEmail: '', document: null, confirmation: false });
+          } else {
+            const result = await response.json();
+            console.error('Eroare la trimiterea datelor:', result);
+            alert(`A apărut o eroare: ${result.errors ? result.errors.map(e => e.message).join(', ') : 'Necunoscută'}`);
+          }
+        } else {
+          console.error('Eroare la încărcarea fișierului:', cloudinaryData);
+          alert('A apărut o eroare la încărcarea fișierului. Te rugăm să încerci din nou mai târziu.');
+        }
+      } catch (error) {
+        console.error('Eroare la trimiterea datelor:', error);
+        alert('A apărut o eroare la trimiterea formularului. Te rugăm să încerci din nou mai târziu.');
+      } finally {
+        setUploading(false);
+      }
     }
   };
 
@@ -62,12 +115,11 @@ const GrantApplication = () => {
             <li>Implementați proiectul</li>
           </ol>
           <div className={styles.downloadLinks}>
-  <div><a href="/public/pdf/mpdf.pdf" download>Ghidul de Finanțare</a></div>
-  <div><a href="/path-to/application-form.pdf" download>Formularul de Aplicare</a></div>
-  <div><a href="/path-to/subgrant-agreement.pdf" download>Contractul de Subgrant</a></div>
-  <div><a href="/path-to/report-form.pdf" download>Formularul de Raportare</a></div>
-</div>
-
+            <div><a href="/public/pdf/mpdf.pdf" download>Ghidul de Finanțare</a></div>
+            <div><a href="/path-to/application-form.pdf" download>Formularul de Aplicare</a></div>
+            <div><a href="/path-to/subgrant-agreement.pdf" download>Contractul de Subgrant</a></div>
+            <div><a href="/path-to/report-form.pdf" download>Formularul de Raportare</a></div>
+          </div>
         </div>
         <div className={styles.contactFormWrapper}>
           <form className={styles.contactForm} onSubmit={handleSubmit}>
@@ -76,6 +128,7 @@ const GrantApplication = () => {
               <input
                 type="text"
                 id="initiativeName"
+                name="initiativeName"
                 value={formData.initiativeName}
                 onChange={handleInputChange}
                 className={styles.formControl}
@@ -87,6 +140,7 @@ const GrantApplication = () => {
               <input
                 type="text"
                 id="leaderName"
+                name="leaderName"
                 value={formData.leaderName}
                 onChange={handleInputChange}
                 className={styles.formControl}
@@ -98,6 +152,7 @@ const GrantApplication = () => {
               <input
                 type="email"
                 id="leaderEmail"
+                name="leaderEmail"
                 value={formData.leaderEmail}
                 onChange={handleInputChange}
                 className={styles.formControl}
@@ -109,6 +164,7 @@ const GrantApplication = () => {
               <input
                 type="file"
                 id="document"
+                name="document"
                 onChange={handleInputChange}
                 className={styles.formControl}
               />
@@ -119,6 +175,7 @@ const GrantApplication = () => {
                 <input
                   type="checkbox"
                   id="confirmation"
+                  name="confirmation"
                   checked={formData.confirmation}
                   onChange={handleInputChange}
                 />
@@ -126,7 +183,9 @@ const GrantApplication = () => {
               </label>
               {errors.confirmation && <span className={styles.error}>{errors.confirmation}</span>}
             </div>
-            <button type="submit" className={styles.submitButton}>Trimite formularul de grant</button>
+            <button type="submit" className={styles.submitButton} disabled={uploading}>
+              {uploading ? 'Se încarcă...' : 'Trimite formularul de grant'}
+            </button>
           </form>
         </div>
       </div>

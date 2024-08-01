@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import styles from './ContactPage.module.css'; // Importă stilurile module
+import styles from '../../components/ContactPage/ContactPage.module.css'; // Importă stilurile module
 
-const ContactPage = () => {
+const ContactForm = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -130,4 +130,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default ContactForm;

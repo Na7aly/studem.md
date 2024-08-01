@@ -17,6 +17,7 @@ import GrantApplication from 'components/GrantApplication/GrantApplication';
 import ContactPage from 'components/ContactPage/ContactPage';
 import Partners from 'components/Partners/Partnes';
 
+
 const Home = () => {
   return (
     <div>
@@ -34,6 +35,8 @@ const Home = () => {
       <Element name="GrantApplication">
         <GrantApplication />
       </Element>
+     
+
 
       
       <Element name="news">
