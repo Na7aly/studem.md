@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React,  { useState } from 'react';
 import styles from '../../components/ContactPage/ContactPage.module.css'; // Importă stilurile module
 
 const ContactForm = () => {
@@ -8,6 +8,7 @@ const ContactForm = () => {
     subject: '',
     phone: '',
     message: ''
+  
   });
 
   const handleInputChange = (event) => {
