@@ -13,7 +13,7 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-      <Route path="" element={<HomePage />} />
+      <Route path="/studem.md/" element={<HomePage />} />
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/granturi" element={<GrantApplication />} />
