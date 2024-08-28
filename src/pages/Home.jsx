@@ -17,16 +17,16 @@ import Space from 'components/Space/Space';
 // import ContactPage from 'components/ContactPage/ContactPage';
 import Donors from 'components/Donors/Donors';
 // import NewsList from 'components/contentful/ArticlesList';
-import ArticlesList from 'components/contentful/ArticlesList';
+// import ArticlesList from 'components/contentful/ArticlesList';
 
 
 const Home = () => {
   return (
     <div>
       
-      <Element name="ArticlesList">
+      {/* <Element name="ArticlesList">
         <ArticlesList/>
-      </Element>
+      </Element> */}
       <Element name="home">
         <About />
       </Element>
