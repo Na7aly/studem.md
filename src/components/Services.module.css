@@ -1,28 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
 
+/* Font global */
 body {
-  font-family: 'Raleway', sans-serif; /* Apply font globally */
+  font-family: 'Roboto', sans-serif; /* Apply font globally */
 }
 
+/* Stiluri pentru secțiunea de servicii */
 .services {
-  padding: 20px 20px 40px 20px;
+  /* padding: 20px 20px 40px 20px; */
   box-sizing: border-box;
-  /* background-color: rgb(233, 240, 248); */
-  background-color: #f5f5f54a;
-  font-family: 'Raleway', sans-serif;
-  ;
+  background-color: #f5f5f54a; /* Fundal semi-transparent */
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-    width: 100%;
-    max-width: 1400px;
-
+  width: 100%;
+  max-width: 1400px;
+  margin-bottom: 40px;
 }
 
 .title {
-  font-family:' sans-serif';
+  font-family: 'Roboto', sans-serif;
   font-size: 28px;
   font-weight: 700;
   color: #333333c7;
@@ -30,23 +31,19 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  align-items: center;
-  
+  align-items: center; /* Center text horizontally */
 }
 
 .list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Three columns by default */
-  gap: 20px; /* Space between items */
-  list-style: none; /* Remove bullets */
+  grid-template-columns: repeat(3, 1fr); /* Trei coloane de bază */
+  gap: 20px; /* Spațiu între elemente */
+  list-style: none; /* Elimină marcajele */
   padding: 0;
   margin: 0;
 }
 
 .item {
-
   padding: 25px;
   display: flex;
   flex-direction: column;
@@ -59,17 +56,15 @@ body {
   max-width: 380px;
   box-sizing: border-box;
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .item:hover {
-  background-color: #e3e9f3;
+  background-color: #e3e9f3; /* Schimbă culoarea de fundal la hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
-
-  
   font-size: 35px;
   color: #ffdd40;
   margin-bottom: 15px;
@@ -77,16 +72,17 @@ body {
 }
 
 .item:hover .icon {
-  color: #6b92e5; /* Change icon color on hover */
+  color: #6b92e5; /* Schimbă culoarea icoanei la hover */
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  font-family: 'Raleway', sans-serif; /* Apply font to text within textContainer */
+  font-family: 'Roboto', sans-serif; /* Aplică fontul pentru textul din textContainer */
 }
 
 .serviceTitle {
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #333333c7;
@@ -98,76 +94,69 @@ body {
   font-size: 16px;
   color: #000000bd;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-/* Media queries for responsiveness */
+/* Media queries pentru responsivitate */
 @media (max-width: 1024px) {
   .list {
-    grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
-    padding: 0 40x; /* Add horizontal padding */
-  }
-  .item{
-    
-  /* Ensure item doesn't exceed its container's width */
-    
+    grid-template-columns: repeat(2, 1fr); /* Două coloane pentru tablete */
+    padding: 0 40px; /* Adaugă padding orizontal */
   }
 }
 
 @media (max-width: 768px) {
   .list {
-    grid-template-columns: 1fr; /* One column for mobile phones */
-    padding: 0 10px; /* Add horizontal padding */
+    grid-template-columns: 1fr; /* O coloană pentru telefoane mobile */
+    padding: 0 10px; /* Adaugă padding orizontal */
   }
 
   .item {
-    
-   /* Prevent card from exceeding container width */
-    margin: 0 auto; /* Center card horizontally */
+    margin: 0 auto; /* Centrează cardul pe orizontală */
   }
 
   .icon {
-    font-size: 30px; /* Slightly smaller icon on mobile */
-    margin-bottom: 10px; /* Space between icon and text */
+    font-size: 30px; /* Icoană puțin mai mică pe mobil */
+    margin-bottom: 10px; /* Spațiu între icoană și text */
   }
 
   .textContainer {
-    text-align: center; /* Center text on mobile */
+    text-align: center; /* Centrează textul pe mobil */
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 24px;
-    font-size: 24px;
-        display: flex;
-        flex-direction: row;
-        align-content: center;
-        justify-content: flex-start;
-        margin-left: 45px;
-        color: #624e88; /* Smaller title font size for very small screens */
+    font-size: 24px; /* Dimensiune font mai mică pentru ecrane foarte mici */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 45px;
+    color: #624e88; /* Culoare mai închisă pentru titlu pe ecrane mici */
   }
 
   .serviceTitle {
-    font-size: 18px; /* Smaller service title font size */
+    font-size: 18px; /* Dimensiune font mai mică pentru titlul serviciului */
   }
 
   .serviceDescription {
-    font-size: 14px; /* Smaller service description font size */
+    font-size: 14px; /* Dimensiune font mai mică pentru descrierea serviciului */
   }
 
   .item {
-    padding: 10px; /* Smaller padding on very small screens */
-    margin: 10px 0; /* Margin to ensure spacing */
-    width: 100%; /* Ensure card takes full width of the container */
-    box-sizing: border-box; /* Ensure padding is included in width */
+    padding: 10px; /* Padding mai mic pe ecrane foarte mici */
+    margin: 10px 0; /* Margine pentru a asigura spațierea */
+    width: 100%; /* Asigură că cardul ocupă toată lățimea containerului */
+    box-sizing: border-box; /* Asigură că padding-ul este inclus în lățime */
   }
 
   .icon {
-    font-size: 25px; /* Smaller icon on very small screens */
-    margin-bottom: 8px; /* Space between icon and text */
+    font-size: 25px; /* Icoană mai mică pe ecrane foarte mici */
+    margin-bottom: 8px; /* Spațiu între icoană și text */
   }
 
   .textContainer {
-    text-align: center; /* Center text on very small screens */
+    text-align: center; /* Centrează textul pe ecrane foarte mici */
   }
 }

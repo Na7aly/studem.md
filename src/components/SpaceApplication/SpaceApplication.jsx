@@ -3,8 +3,8 @@ import Modal from 'react-modal';
 import styles from './SpaceApplication.module.css';
 import RulesContent from '../RulesContent';
 
-// // Set the element root for the modal
-// Modal.setAppElement('#root');
+// Set the element root for the modal
+Modal.setAppElement('#root');
 
 const SpaceApplication = ({ closeModal }) => {
   const [formData, setFormData] = useState({
@@ -65,7 +65,7 @@ const SpaceApplication = ({ closeModal }) => {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/space-application', {
+      const response = await fetch('https://formspree.io/f/mnnadzan', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -128,11 +128,13 @@ const SpaceApplication = ({ closeModal }) => {
         <div className={styles.container}>
           <h2>Aplică pentru a beneficia de spațiu</h2>
           <form className={styles.form} onSubmit={handleSubmit} onReset={handleReset}>
+            {/* Form fields */}
             <div className={styles.formGroup}>
               <label htmlFor="firstName">Nume</label>
               <input
                 type="text"
                 id="firstName"
+                name="firstName"
                 value={formData.firstName}
                 onChange={handleInputChange}
                 required
@@ -144,6 +146,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="text"
                 id="lastName"
+                name="lastName"
                 value={formData.lastName}
                 onChange={handleInputChange}
                 required
@@ -155,6 +158,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="text"
                 id="organization"
+                name="organization"
                 value={formData.organization}
                 onChange={handleInputChange}
                 required
@@ -166,6 +170,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="text"
                 id="organizationName"
+                name="organizationName"
                 value={formData.organizationName}
                 onChange={handleInputChange}
                 required
@@ -177,6 +182,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="tel"
                 id="phone"
+                name="phone"
                 value={formData.phone}
                 onChange={handleInputChange}
                 required
@@ -188,6 +194,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="date"
                 id="date"
+                name="date"
                 value={formData.date}
                 onChange={handleInputChange}
                 required
@@ -199,6 +206,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="email"
                 id="email"
+                name="email"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
@@ -210,6 +218,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="text"
                 id="eventName"
+                name="eventName"
                 value={formData.eventName}
                 onChange={handleInputChange}
                 required
@@ -220,6 +229,7 @@ const SpaceApplication = ({ closeModal }) => {
               <label htmlFor="eventDescription">Descrierea evenimentului</label>
               <textarea
                 id="eventDescription"
+                name="eventDescription"
                 value={formData.eventDescription}
                 onChange={handleInputChange}
                 required
@@ -231,6 +241,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="time"
                 id="startTime"
+                name="startTime"
                 value={formData.startTime}
                 onChange={handleInputChange}
                 required
@@ -242,6 +253,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="time"
                 id="endTime"
+                name="endTime"
                 value={formData.endTime}
                 onChange={handleInputChange}
                 required
@@ -253,6 +265,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="number"
                 id="participants"
+                name="participants"
                 value={formData.participants}
                 onChange={handleInputChange}
                 required
@@ -263,6 +276,7 @@ const SpaceApplication = ({ closeModal }) => {
               <input
                 type="checkbox"
                 id="agreement"
+                name="agreement"
                 checked={formData.agreement}
                 onChange={handleInputChange}
                 required

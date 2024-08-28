@@ -7,12 +7,13 @@ import peterAvatar from '../img/peter.jpg';
 import aleftinaAvatar from '../img/aleftina.jpg';
 import michelleAvatar from '../img/michelle.jpg';
 import ionAvatar from '../img/ion.jpg';
+import giuliano from '../img/giuliano.jpg';
 
 const Team = () => {
   const teamMembers = [
     { name: 'Constantin Curca', position: 'Director Executiv AO "STUDEM" din Bălți', avatar: costeaAvatar },
     { name: 'Frederikke Thorning', position: 'Coordonator de Proiect din partea Danemarcei', avatar: fredAvatar },
-    { name: 'Ioan-Giuliano Ciomschi', position: 'Coordonator de voluntari STUDEM', avatar: ionAvatar },
+    { name: 'Ioan-Giuliano Ciomschi', position: 'Coordonator de voluntari STUDEM', avatar: giuliano },
     { name: 'Peter Kolby', position: 'Comunicare și PR Manager', avatar: peterAvatar },
     { name: 'Aleftina Grebanosu', position: 'Responsabilă de Incluziune', avatar: aleftinaAvatar },
     { name: 'Michelle Luo', position: 'Comunicare și PR Manager', avatar: michelleAvatar },
@@ -20,9 +21,9 @@ const Team = () => {
   ];
 
   return (
-    <div className={styles.team}>
+    <div  id="team" className={styles.team}>
       <h2 className={styles.heading}>ECHIPA</h2>
-      <p className={styles.subtitle}>Coordonatorii STUDEM</p>
+      <p className={styles.subtitle}>COORDONATORII STUDEM</p>
       <div className={styles.teamMembers}>
         {teamMembers.map((member, index) => (
           <div className={styles.teamMember} key={index}>

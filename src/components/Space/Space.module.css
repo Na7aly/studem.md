@@ -1,74 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+/* Spațiu */
 .space {
-    font-family: "Poppins", sans-serif;
-    padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+    padding: 40px 0;
     text-align: center;
-    background-color: rgb(199 197 182 / 53%);
+    /* background-color: #ECF2FD; */
     width: 100%;
     margin: 0 auto;
-  }
-  
-  .container {
-    padding: 0 20px;
-  }
-  
- .space h2 {
-    font-size: 2.5rem;
+    margin: auto;
+    padding: 0 1rem;
+    /* max-width: 1100px; */
+    text-align: center;
+    background: linear-gradient(to bottom, #FFFFFF, #ECF2FD);
+    padding: 40px;
+}
+
+.space h2 {
+  font-size: 28px;
     font-weight: 700;
-    color: #888879;
+    color: #2E3192;
     margin-bottom: 20px;
-  }
-  
-  .space p {
-    font-size: 1.25rem;
-    font-weight: 300;
-    color: #000;
-    margin-bottom: 30px;
-    line-height: 1.6;
-    max-width: 1400px;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .buttons {
+    text-transform: uppercase;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
+}
+
+.space p {
+  font-family: 'Roboto', sans-serif; /* Aplică fontul Roboto */
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 30px;
+  line-height: 1.6;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2E3192;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px #b7b7a7, -5px -5px 10px rgb(199, 197, 182);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin: 10px;
+  background-color: #FBED21;
+  background-color: #ecf0f3;
+  box-shadow: 5px 5px 10px rgba(166, 180, 200, 0.7), -5px -5px 11px #fff;
   
+}
+
+.button:hover {
+  /* background-color: #6b92e5;; /* Culoare galbenă la hover */
+  /* box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #d8e990; */ 
+  background-color: #99a4c5;
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #c8cacb;
+}
+
+/* Media queries pentru ecrane mai mici */
+@media (max-width: 768px) {
   .button {
-    padding: 15px 25px;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #3940478c;
-    border: none;
-    border-radius: 30px;
-    box-shadow: 10px 10px 15px #b7b7a7, -10px -10px 15px rgb(199 197 182);
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    margin: 10px;
-    background: #d4d5d7;
+    font-size: 1rem;
+    padding: 10px 20px;
   }
-  
-  .button:hover {
-    background-color: #c4c7a5;
-    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 6px #b8dae9;
+
+  .space h2 {
+    font-size: 2rem;
   }
-  
-  @media (max-width: 768px) {
-    .button {
-      font-size: 1rem;
-      padding: 10px 20px;
-    }
-  
-    h2 {
-      font-size: 2rem;
-    }
-  
-    p {
-      font-size: 1rem;
-    }
+
+  .space p {
+    font-size: 1rem;
   }
-  
+}

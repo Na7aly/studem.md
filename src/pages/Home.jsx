@@ -10,18 +10,23 @@ import Services from '../components/Services';
 import Testimonial from '../components/Testimonial/Testimonial';
 // import Newsletter from '../components/Newsletter/Newsletter';
 // import ContactsDetail from '../components/ContactsDetail/Contacts';
-import NewsSection from '../components/News/News';
+// import NewsSection from '../components/News/News';
 import Space from 'components/Space/Space';
 
 import GrantApplication from 'components/GrantApplication/GrantApplication';
 import ContactPage from 'components/ContactPage/ContactPage';
-import Partners from 'components/Partners/Partnes';
+import Donors from 'components/Donors/Donors';
+// import NewsList from 'components/contentful/ArticlesList';
+import ArticlesList from 'components/contentful/ArticlesList';
 
 
 const Home = () => {
   return (
     <div>
-      <Navbar />
+      
+      <Element name="ArticlesList">
+        <ArticlesList/>
+      </Element>
       <Element name="home">
         <About />
       </Element>
@@ -32,27 +37,30 @@ const Home = () => {
         <Space />
       </Element>
       
-      <Element name="GrantApplication">
+      {/* <Element name="GrantApplication">
         <GrantApplication />
-      </Element>
+      </Element> */}
+      
      
 
 
       
-      <Element name="news">
+      {/* <Element name="NewSection">
         <NewsSection />
-      </Element>
+      </Element> */}
       <Element name="team">
         <Team />
       </Element>
       <Element name="testimonial">
         <Testimonial />
       </Element>
-      <Element name="contactpage">
-        <ContactPage />
-      </Element>
-      <Element name="partners">
-        <Partners/>
+
+      {/* <Element name="contactPage">
+        <ContactPage/>
+      </Element> */}
+      
+      <Element name="finantatori">
+        <Donors/>
       </Element>
       
       {/* <Element name="contact">
@@ -60,8 +68,8 @@ const Home = () => {
       </Element> */}
       {/* <ContactUs /> */}
       
-      <SectionLinks />
-      <Footer />
+      
+      
     </div>
   );
 };

@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.5;
+}
+
 .footer {
-  background-color: rgb(199 197 182);
+  background-color: #ECF2FD;
   color: #473b3bc7;
   font-size: 14px;
   padding: 40px 0;
@@ -28,7 +35,6 @@
 .column {
   max-width: 500px;
   margin-left: 70px;
-  /* flex: 1; */
   min-width: 350px;
 }
 
@@ -36,6 +42,7 @@
   font-size: 16px;
   margin-bottom: 15px;
   color: #473b3bc7;
+  margin-top: 0px;
 }
 
 .list {
@@ -114,7 +121,6 @@
 }
 
 /* Media Queries for Responsiveness */
-
 @media (max-width: 1200px) {
   .container {
     padding: 0 10px;

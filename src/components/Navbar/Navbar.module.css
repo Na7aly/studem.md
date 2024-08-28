@@ -1,21 +1,24 @@
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(248, 250, 248, 0.9);
+  background-color: rgba(248, 250, 248, 1); /* Schimbat opacitatea la 1 pentru a elimina transparența */
   height: 50px;
-  padding: 0 30px;
+  padding: 0 20px;
   width: 100%;
   z-index: 1000;
   margin-bottom: 2px;
-  /* max-width: 1400px; */
+  position: fixed; /* Navbar-ul va fi fixat în partea de sus */
+  top: 0;
+  left: 0;
 }
 
 .logo {
   font-size: 24px;
   font-weight: bold;
   color: blue;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif; /* Am schimbat fontul la Roboto */
 }
 
 .logo img {
@@ -52,7 +55,7 @@
   color: #423f3f;
   text-decoration: none;
   padding: 5px 10px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif; /* Am schimbat fontul la Roboto */
 }
 
 .navLinks:hover {
@@ -64,20 +67,16 @@
   list-style: none;
   text-align: center;
   margin-right: 2rem;
-  margin-bottom: 0px;
 }
 
 .navLinks {
   text-transform: uppercase;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif; /* Am schimbat fontul la Roboto */
   font-weight: 400;
-  /* letter-spacing: 1px; */
-  color: #fff;
-  color: #4b4b93;
+  color: #2E3192;
   text-decoration: none;
   height: 100%;
   border-bottom: 3px solid transparent;
-
 }
 
 .fa-code {
@@ -87,6 +86,7 @@
 .navItem {
   line-height: 40px;
   margin-right: 1rem;
+  position: relative; /* Necessary for the dropdown positioning */
 }
 
 .navItem:after {
@@ -118,8 +118,37 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
 }
+
+.dropdownMenu {
+  position: absolute;
+  top: 40px; /* Adjust to position below the "Mai Mult" */
+  left: 0;
+  background-color: rgba(248, 250, 248, 0.9);
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  list-style: none;
+  padding-left: 10px;
+}
+
+.dropdownMenu li {
+  width: 100%;
+  text-align: left;
+}
+
+.dropdownLink {
+  color: #2E3192;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+/* .dropdownLink:hover {
+  background-color: #f1f1f1;
+} */
 
 @media screen and (max-width: 960px) {
   .navMenu {

@@ -23,8 +23,8 @@ const Space = () => {
           Poți beneficia oricând de spațiu și nu uita, suntem aici și acum pentru tine!
         </p>
         <div className={styles.buttons}>
-          <button className={styles.button} onClick={openModal}>Aplică pentru Evenimente</button>
-          <button className={styles.button}>Calendarul STUDEM</button>
+          <button className={styles.button} onClick={openModal}>Aplică pentru evenimente</button>
+          {/* <button className={styles.button}>Calendarul STUDEM</button> */}
         </div>
       </div>
 

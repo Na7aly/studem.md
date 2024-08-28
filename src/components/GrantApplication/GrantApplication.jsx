@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import styles from './GrantApplication.module.css';
 
+import mpdf from '../../assetss/mpdf.pdf';
+// import applicationForm from './assets/application-form.pdf';
+// import subgrantAgreement from './assets/subgrant-agreement.pdf';
+// import reportForm from './assets/report-form.pdf';
+
 const GrantApplication = () => {
   const [formData, setFormData] = useState({
     initiativeName: '',
@@ -34,14 +39,14 @@ const GrantApplication = () => {
     if (Object.keys(newErrors).length === 0) {
       setUploading(true);
       try {
-        // Încărcați documentul pe Cloudinary
+        // Debug: log form data to be uploaded
+        console.log('FormData to upload:', formData.document);
+
         const formDataToUpload = new FormData();
         formDataToUpload.append('file', formData.document);
-        formDataToUpload.append('upload_preset', 'Yzmwzm6dh'); // înlocuiți cu preset-ul dvs.
+        formDataToUpload.append('upload_preset', 'zmwzm6dh'); // make sure this preset is correct
 
-       
-
-        const cloudinaryResponse = await fetch('https://api.cloudinary.com/v1_1/dbwamoqoc/upload', { // înlocuiți cu numele cloud-ului dvs.
+        const cloudinaryResponse = await fetch('https://api.cloudinary.com/v1_1/dbwamoqoc/upload', { // replace with your cloud name
           method: 'POST',
           body: formDataToUpload
         });
@@ -49,7 +54,6 @@ const GrantApplication = () => {
         const cloudinaryData = await cloudinaryResponse.json();
 
         if (cloudinaryResponse.ok) {
-          // Trimiteți datele formularului împreună cu URL-ul documentului către Formspree
           const formDataToSend = {
             initiativeName: formData.initiativeName,
             leaderName: formData.leaderName,
@@ -115,11 +119,11 @@ const GrantApplication = () => {
             <li>Implementați proiectul</li>
           </ol>
           <div className={styles.downloadLinks}>
-            <div><a href="/public/pdf/mpdf.pdf" download>Ghidul de Finanțare</a></div>
-            <div><a href="/path-to/application-form.pdf" download>Formularul de Aplicare</a></div>
-            <div><a href="/path-to/subgrant-agreement.pdf" download>Contractul de Subgrant</a></div>
-            <div><a href="/path-to/report-form.pdf" download>Formularul de Raportare</a></div>
-          </div>
+      <div><a href={mpdf} download>Ghidul de Finanțare</a></div>
+      <div><a href={mpdf} download>Formularul de Aplicare</a></div>
+      <div><a href={mpdf}download>Contractul de Subgrant</a></div>
+      <div><a href={mpdf}download>Formularul de Raportare</a></div>
+    </div>
         </div>
         <div className={styles.contactFormWrapper}>
           <form className={styles.contactForm} onSubmit={handleSubmit}>

@@ -1,0 +1,77 @@
+/* Partnes.module.css */
+
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 300px; /* Adjust height to match the height of images */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Adds space between the title and the slider */
+}
+
+.slider::before,
+.slider::after {
+  content: "";
+  height: 150px;
+  position: absolute;
+  width: 150px; /* Match the width of images */
+  z-index: 2;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slideTrack {
+  display: flex;
+  width: calc((150px + 30px) * 7); /* Adjust width for 7 images plus margins */
+  animation: scroll 40s linear infinite;
+}
+
+.slide {
+  height: 150px;
+  width: 150px;
+  margin-right: 30px; /* Space between images */
+  flex-shrink: 0; /* Prevent images from shrinking */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+
+}
+.title{
+  font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333c7;
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%); /* Move by the width of the track */
+  }
+}

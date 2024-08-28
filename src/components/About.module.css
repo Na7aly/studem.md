@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
 /* Font global */
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif; /* Schimbare font */
   margin: 0; /* Resetează marginile */
   padding: 0; /* Resetează padding-ul */
   box-sizing: border-box; /* Include padding și border în dimensiuni */
@@ -31,10 +31,13 @@ body {
   align-items: center;
   box-sizing: border-box;
   margin-bottom: 80px;
- /* Spațiu pentru a preveni suprapunerea peste navbar */
+  /* Spațiu pentru a preveni suprapunerea peste navbar */
   position: relative;
   margin: 0 auto;
-  max-width: 1400px;
+  /* max-width: 1400px; */
+  background-color: #ECF2FD; /* Fundal actualizat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow below the container */
+              0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .leftImageContainer {
@@ -44,9 +47,12 @@ body {
 }
 
 .image {
-  width: 90%; /* Se asigură că imaginea ocupă întreaga lățime a containerului */
-  height: auto; /* Menține proporțiile */
+  width: 80%; /* Lățimea completă a containerului */
+  height: 550px; /* Menține proporțiile imaginii */
   object-fit: cover; /* Acoperă întregul container fără distorsiuni */
+  border-radius: 30px; /* Colțuri rotunjite */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 6); /* Umbra ușoară */
+  transition: box-shadow 0.3s ease; 
 }
 
 .content {
@@ -59,20 +65,25 @@ body {
   /* margin-bottom: 40px; */
 }
 
-.content h2 {
+.conName {
   font-size: 28px;
   font-weight: 700;
-  color: #4b4b93;
+  color: #2E3192;
   /* margin-bottom: 30px; */
-  font-family: serif;
-  margin-top: 20px;
- 
+  font-family: 'Roboto', serif; /* Schimbare font */
+  margin-top: 40px;
+  text-align: center;
+	     display: flex;
+     flex-direction: column;
+    align-items: center;
+
 }
 
 .icons {
   display: flex;
   flex-direction: column; /* Afișează icoanele pe verticală */
   align-items: flex-start; /* Aliniază icoanele la începutul containerului */
+  margin-bottom: 40px;
 }
 
 .icon {
@@ -83,13 +94,12 @@ body {
 
 .iconImage {
   font-size: 35px;
-    color: #ffdd40;
-    border-radius: 50%;
-    border: 3px solid #ffdd40;
-    padding: 10px;
-    background-color: white;
-    margin-right: 15px;
-
+  color: #ffdd40;
+  border-radius: 50%;
+  border: 3px solid #ffdd40;
+  padding: 10px;
+  background-color: white;
+  margin-right: 15px;
 }
 
 .iconText {
@@ -98,14 +108,16 @@ body {
 }
 
 .iconText h2 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  color: #4b4b93;
+  color: #2E3192;
   margin: 0 0 5px 0;
+  font-family: 'Roboto', serif; /* Schimbare font */
 }
 
 .iconText p {
   margin: 0;
+  font-family: 'Roboto', sans-serif; /* Schimbare font */
 }
 
 /* Media queries pentru responsivitate */
@@ -146,7 +158,7 @@ body {
   }
 
   .image {
-    width: 100%;
+    /* width: 100%; */
     height: auto;
     margin-top: 30px;
   }

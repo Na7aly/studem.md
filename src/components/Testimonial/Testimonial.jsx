@@ -6,10 +6,6 @@ import styles from './Testimonial.module.css';
 
 // Local images
 import vladGoncearImg from '../../img/vlad.png';
-// import mariusTodericaImg from './images/marius-toderica.jpg';
-// import danielBulgaruImg from './images/daniel-bulgaru.jpg';
-// import maximCalarasiImg from './images/maxim-calarasi.jpg';
-// import alinaBogaciImg from './images/alina-bogaci.jpg';
 
 // Testimonials data
 const testimonials = [
@@ -50,30 +46,39 @@ const TestimonialsCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 2, // Show 2 slides on larger screens
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768, // For tablets and smaller devices
+        settings: {
+          slidesToShow: 1 // Show 1 slide on tablets and smaller devices
+        }
+      }
+    ]
   };
 
   return (
-    <div className={styles.testimonialSection}>
-      <h2 className={styles.title}>Ce spune Familia STUDEM</h2>
-      <Slider {...settings}>
-        {testimonials.map((testimonial, index) => (
-          <div className={styles.testimonial} key={index}>
-            <div className={styles.headTestimonial}>
-              <img src={testimonial.img} alt={testimonial.name} className={styles.img}/>
-            </div>
-            <div className={styles.bodyTestimonial}>
-              <div className={styles.nameTestimonial}>{testimonial.name}</div>
-              <div className={styles.roleTestimonial}>{testimonial.role}</div>
-              <div className={styles.descTestimonial}>{testimonial.desc}</div>
-            </div>
+    <div className={styles.container}>
+      <div className={styles.testimonialSection}>
+    <h2 className={styles.title}>CE SPUNE FAMILIA STUDEM</h2>
+    <Slider {...settings}>
+      {testimonials.map((testimonial, index) => (
+        <div className={styles.testimonial} key={index}>
+          <div className={styles.headTestimonial}>
+            <img src={testimonial.img} alt={testimonial.name} className={styles.img}/>
           </div>
-        ))}
-      </Slider>
-    </div>
+          <div className={styles.bodyTestimonial}>
+            <div className={styles.nameTestimonial}>{testimonial.name}</div>
+            <div className={styles.roleTestimonial}>{testimonial.role}</div>
+            <div className={styles.descTestimonial}>{testimonial.desc}</div>
+          </div>
+        </div>
+      ))}
+    </Slider>
+  </div></div>
   );
 };
 

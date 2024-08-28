@@ -1,12 +1,12 @@
 import React from 'react';
-import styles from './Partnes.module.css';
+import styles from './Partners.module.css';
 
 // Import all images
 import img1 from '../../img/1.png';
 import img2 from '../../img/2.png';
 import img3 from '../../img/3.png';
 import img4 from '../../img/4.png';
-import img5 from '../../img/5.png';
+import img5 from '../../img//5.png';
 import img6 from '../../img/6.png';
 import img7 from '../../img/7.png';
 import img8 from '../../img/8.png';
@@ -21,42 +21,23 @@ import img16 from '../../img/16.png';
 import img17 from '../../img/17.png';
 import img18 from '../../img/18.png';
 import img19 from '../../img/cntm_logo.png';
-import img20 from '../../img/probono_color-fara-background-01.png';
+
+
 
 // Create an array with all the imported images
 const images = [
-  img1,
-  img2,
-  img3,
-  img4,
-  img5,
-  img6,
-  img7,
-  img8,
-  img9,
-  img10,
-  img11,
-  img12,
-  img13,
-  img14,
-  img15,
-  img16,
-  img17,
-  img18,
-  img19,
-  img20,
+  img1, img2, img3, img4, img5, img6, img7, img8, img9, img10,
+  img11, img12, img13, img14, img15, img16, img17, img18, img19
 ];
 
 const Partners = () => {
   return (
-    <div className={styles.slider}>
-        <div className={styles.name}>
-            <h2>Parteneri și Finanțatori</h2>
-        </div>
-      <div className={styles.slideTrack}>
+    <div className={styles.container}>
+      <h2 className={styles.title}>PARTENERI</h2>
+      <div className={styles.grid}>
         {images.map((src, index) => (
-          <div key={index} className={styles.slide}>
-            <img src={src} alt={`Slide ${index + 1}`} />
+          <div key={index} className={styles.item}>
+            <img src={src} alt={`Partner ${index + 1}`} />
           </div>
         ))}
       </div>
