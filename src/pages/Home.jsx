@@ -1,8 +1,8 @@
 import React from 'react';
 import { Element } from 'react-scroll';
-import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
-import SectionLinks from '../components/SectionLinks/Sectionlinks';
+// import Navbar from '../components/Navbar/Navbar';
+// import Footer from '../components/Footer/Footer';
+// import SectionLinks from '../components/SectionLinks/Sectionlinks';
 import Team from '../components/Team';
 import About from '../components/About';
 // import ContactUs from '../components/ContactUs';
@@ -13,8 +13,8 @@ import Testimonial from '../components/Testimonial/Testimonial';
 // import NewsSection from '../components/News/News';
 import Space from 'components/Space/Space';
 
-import GrantApplication from 'components/GrantApplication/GrantApplication';
-import ContactPage from 'components/ContactPage/ContactPage';
+// import GrantApplication from 'components/GrantApplication/GrantApplication';
+// import ContactPage from 'components/ContactPage/ContactPage';
 import Donors from 'components/Donors/Donors';
 // import NewsList from 'components/contentful/ArticlesList';
 import ArticlesList from 'components/contentful/ArticlesList';
