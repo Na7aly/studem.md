@@ -34,13 +34,16 @@ body {
   /* Spațiu pentru a preveni suprapunerea peste navbar */
   position: relative;
   margin: 0 auto;
-  /* max-width: 1400px; */
+  max-width: 1300px;
   background-color: #ECF2FD; /* Fundal actualizat */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), /* Shadow below the container */
-              0 -4px 8px rgba(0, 0, 0, 0.1);
+ 
               margin-top: 50px;
 }
-
+.containerSpace{
+  /* max-width: 1200px; */
+  background-color: #ECF2FD;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
 .leftImageContainer {
   display: flex;
   justify-content: center;

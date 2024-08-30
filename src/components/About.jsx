@@ -39,7 +39,8 @@ const About = () => {
   }, []);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.containerSpace} >
+      <div className={styles.container}>
       <div className={styles.leftImageContainer}>
         <img
           src={images[currentImageIndex]}
@@ -77,6 +78,8 @@ const About = () => {
         </div>
       </div>
     </div>
+    </div>
+    
   );
 };
 
