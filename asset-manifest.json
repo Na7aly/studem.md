@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.07620f32.css",
-    "main.js": "/studem.md/static/js/main.571faffb.js",
+    "main.css": "/studem.md/static/css/main.6bc360cd.css",
+    "main.js": "/studem.md/static/js/main.fc59c639.js",
     "static/js/787.6b7abe35.chunk.js": "/studem.md/static/js/787.6b7abe35.chunk.js",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
     "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
     "static/media/usaid_.jpg": "/studem.md/static/media/usaid_.4374236c7f0e9774c9f4.jpg",
+    "static/media/vladislav.jpg": "/studem.md/static/media/vladislav.160f259593430c30a0a4.jpg",
+    "static/media/GHID DE FINANŢARE.docx": "/studem.md/static/media/GHID DE FINANŢARE.9a7e9e3b00e6d311d9b3.docx",
     "static/media/ant_.jpg": "/studem.md/static/media/ant_.60871afd4a3fca0fd4cc.jpg",
     "static/media/fa-solid-900.ttf": "/studem.md/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
+    "static/media/Formular de aplicare.docx": "/studem.md/static/media/Formular de aplicare.8403e08f1f623ef94a6b.docx",
+    "static/media/Model de buget detaliat.docx": "/studem.md/static/media/Model de buget detaliat.8c1cdbd3240e870965af.docx",
     "static/media/leftImage12.jpg": "/studem.md/static/media/leftImage12.aee8a397a09e583a6e7b.jpg",
     "static/media/leftImage7.jpg": "/studem.md/static/media/leftImage7.9da1df7708f001b01f38.jpg",
     "static/media/leftImage10.jpg": "/studem.md/static/media/leftImage10.0e534def6511914c3880.jpg",
@@ -28,17 +32,16 @@
     "static/media/leftImage2.jpg": "/studem.md/static/media/leftImage2.e8880e14329c41947cce.jpg",
     "static/media/costea.jpg": "/studem.md/static/media/costea.dade6e167d0b037179e2.jpg",
     "static/media/silba.png": "/studem.md/static/media/silba.183b3f0d6807e895b942.png",
-    "static/media/mpdf.pdf": "/studem.md/static/media/mpdf.73ce2d3d5eeee3191f56.pdf",
     "static/media/leftImage5.jpg": "/studem.md/static/media/leftImage5.8e65953cfa7f8bba24e3.jpg",
     "static/media/fee_logo.jpg": "/studem.md/static/media/fee_logo.b347c3113f943bba9c2b.jpg",
     "static/media/fa-regular-400.ttf": "/studem.md/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
     "static/media/ion.jpg": "/studem.md/static/media/ion.b84844cfe2e609e8cdd1.jpg",
     "static/media/sparkfund.jpg": "/studem.md/static/media/sparkfund.34b09eddae2a9aa47f8c.jpg",
     "static/media/fred.jpg": "/studem.md/static/media/fred.23b383239353931c5a11.jpg",
-    "static/media/duf.png": "/studem.md/static/media/duf.f0823257678a135fac05.png",
     "static/media/9.png": "/studem.md/static/media/9.e529a453c8b30dd17241.png",
     "static/media/12.png": "/studem.md/static/media/12.44dae5320742d482b41b.png",
     "static/media/8.png": "/studem.md/static/media/8.64cc1e5ef312c1d6ac6f.png",
+    "static/media/dufff.jpg": "/studem.md/static/media/dufff.0c656c17cde83dc6f4a1.jpg",
     "static/media/14.png": "/studem.md/static/media/14.30bc869dc7355eaa247a.png",
     "static/media/7.png": "/studem.md/static/media/7.7987f90314c961c739a9.png",
     "static/media/cntm_logo.png": "/studem.md/static/media/cntm_logo.44d737b028a58662502e.png",
@@ -61,12 +64,12 @@
     "static/media/slick.ttf": "/studem.md/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/studem.md/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studem.md/index.html",
-    "main.07620f32.css.map": "/studem.md/static/css/main.07620f32.css.map",
-    "main.571faffb.js.map": "/studem.md/static/js/main.571faffb.js.map",
+    "main.6bc360cd.css.map": "/studem.md/static/css/main.6bc360cd.css.map",
+    "main.fc59c639.js.map": "/studem.md/static/js/main.fc59c639.js.map",
     "787.6b7abe35.chunk.js.map": "/studem.md/static/js/787.6b7abe35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07620f32.css",
-    "static/js/main.571faffb.js"
+    "static/css/main.6bc360cd.css",
+    "static/js/main.fc59c639.js"
   ]
 }
