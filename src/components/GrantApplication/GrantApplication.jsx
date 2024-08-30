@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
 import styles from './GrantApplication.module.css';
 
-import mpdf from '../../assetss/mpdf.pdf';
-// import applicationForm from './assets/application-form.pdf';
-// import subgrantAgreement from './assets/subgrant-agreement.pdf';
-// import reportForm from './assets/report-form.pdf';
+// import mpdf from '../../assetss/mpdf.pdf';
+import ghid from '../../assetss/GHID DE FINANŢARE.docx';
+import model from '../../assetss/Model de buget detaliat.docx';
+import formular from '../../assetss/Formular de aplicare.docx';
+
 
 const GrantApplication = () => {
   const [formData, setFormData] = useState({
     initiativeName: '',
     leaderName: '',
     leaderEmail: '',
-    document: null,
+    document: [],
     confirmation: false
   });
 
@@ -20,67 +21,80 @@ const GrantApplication = () => {
 
   const handleInputChange = (event) => {
     const { id, value, type, checked, files } = event.target;
-    setFormData({
-      ...formData,
-      [id]: type === 'checkbox' ? checked : (type === 'file' ? files[0] : value)
-    });
+    if (type === 'file') {
+      // Add selected files to the existing document array
+      setFormData(prevState => ({
+        ...prevState,
+        document: [...prevState.document, ...Array.from(files)]
+      }));
+    } else {
+      setFormData({
+        ...formData,
+        [id]: type === 'checkbox' ? checked : value
+      });
+    }
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
     const newErrors = {};
+
     if (!formData.initiativeName) newErrors.initiativeName = 'Denumirea grupului este obligatorie.';
     if (!formData.leaderName) newErrors.leaderName = 'Numele liderului este obligatoriu.';
     if (!formData.leaderEmail || !/\S+@\S+\.\S+/.test(formData.leaderEmail)) newErrors.leaderEmail = 'Email-ul liderului este invalid.';
-    if (!formData.document) newErrors.document = 'Trebuie să încarci documentele necesare.';
+    if (!formData.document || formData.document.length === 0) newErrors.document = 'Trebuie să încarci documentele necesare.';
     if (!formData.confirmation) newErrors.confirmation = 'Trebuie să confirmi că informațiile sunt corecte.';
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
       setUploading(true);
       try {
-        // Debug: log form data to be uploaded
-        console.log('FormData to upload:', formData.document);
+        const documentUrls = [];
 
-        const formDataToUpload = new FormData();
-        formDataToUpload.append('file', formData.document);
-        formDataToUpload.append('upload_preset', 'zmwzm6dh'); // make sure this preset is correct
+        for (const file of formData.document) {
+          const formDataToUpload = new FormData();
+          formDataToUpload.append('file', file);
+          formDataToUpload.append('upload_preset', 'zmwzm6dh'); // Asigură-te că acest preset este corect
 
-        const cloudinaryResponse = await fetch('https://api.cloudinary.com/v1_1/dbwamoqoc/upload', { // replace with your cloud name
-          method: 'POST',
-          body: formDataToUpload
-        });
-
-        const cloudinaryData = await cloudinaryResponse.json();
-
-        if (cloudinaryResponse.ok) {
-          const formDataToSend = {
-            initiativeName: formData.initiativeName,
-            leaderName: formData.leaderName,
-            leaderEmail: formData.leaderEmail,
-            documentUrl: cloudinaryData.secure_url,
-            confirmation: formData.confirmation ? 'true' : 'false'
-          };
-
-          const response = await fetch('https://formspree.io/f/mnnadzan', {
+          const cloudinaryResponse = await fetch('https://api.cloudinary.com/v1_1/dbwamoqoc/upload', { // Înlocuiește cu numele tău cloud
             method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formDataToSend)
+            body: formDataToUpload
           });
 
-          if (response.ok) {
-            alert('Formularul a fost trimis cu succes!');
-            setFormData({ initiativeName: '', leaderName: '', leaderEmail: '', document: null, confirmation: false });
+          const cloudinaryData = await cloudinaryResponse.json();
+
+          if (cloudinaryResponse.ok) {
+            documentUrls.push(cloudinaryData.secure_url);
           } else {
-            const result = await response.json();
-            console.error('Eroare la trimiterea datelor:', result);
-            alert(`A apărut o eroare: ${result.errors ? result.errors.map(e => e.message).join(', ') : 'Necunoscută'}`);
+            console.error('Eroare la încărcarea fișierului:', cloudinaryData);
+            alert('A apărut o eroare la încărcarea fișierului. Te rugăm să încerci din nou mai târziu.');
+            return;
           }
+        }
+
+        const formDataToSend = {
+          initiativeName: formData.initiativeName,
+          leaderName: formData.leaderName,
+          leaderEmail: formData.leaderEmail,
+          documentUrls,  // Trimite toate URL-urile fișierelor încărcate
+          confirmation: formData.confirmation ? 'true' : 'false'
+        };
+
+        const response = await fetch('https://formspree.io/f/mnnadzan', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formDataToSend)
+        });
+
+        if (response.ok) {
+          alert('Formularul a fost trimis cu succes!');
+          setFormData({ initiativeName: '', leaderName: '', leaderEmail: '', document: [], confirmation: false });
         } else {
-          console.error('Eroare la încărcarea fișierului:', cloudinaryData);
-          alert('A apărut o eroare la încărcarea fișierului. Te rugăm să încerci din nou mai târziu.');
+          const result = await response.json();
+          console.error('Eroare la trimiterea datelor:', result);
+          alert(`A apărut o eroare: ${result.errors ? result.errors.map(e => e.message).join(', ') : 'Necunoscută'}`);
         }
       } catch (error) {
         console.error('Eroare la trimiterea datelor:', error);
@@ -119,11 +133,11 @@ const GrantApplication = () => {
             <li>Implementați proiectul</li>
           </ol>
           <div className={styles.downloadLinks}>
-      <div><a href={mpdf} download>Ghidul de Finanțare</a></div>
-      <div><a href={mpdf} download>Formularul de Aplicare</a></div>
-      <div><a href={mpdf}download>Contractul de Subgrant</a></div>
-      <div><a href={mpdf}download>Formularul de Raportare</a></div>
-    </div>
+            <div><a href={ghid} download>Ghidul de Finanțare</a></div>
+            <div><a href={formular} download>Formularul de Aplicare</a></div>
+            <div><a href={model} download>Model de buget</a></div>
+            {/* <div><a href={mpdf} download>Formularul de Raportare</a></div> */}
+          </div>
         </div>
         <div className={styles.contactFormWrapper}>
           <form className={styles.contactForm} onSubmit={handleSubmit}>
@@ -171,8 +185,14 @@ const GrantApplication = () => {
                 name="document"
                 onChange={handleInputChange}
                 className={styles.formControl}
+                multiple
               />
               {errors.document && <span className={styles.error}>{errors.document}</span>}
+              <ul>
+                {formData.document && formData.document.map((file, index) => (
+                  <li key={index}>{file.name}</li>
+                ))}
+              </ul>
             </div>
             <div className={styles.formGroup}>
               <label>

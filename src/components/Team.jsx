@@ -8,12 +8,14 @@ import aleftinaAvatar from '../img/aleftina.jpg';
 import michelleAvatar from '../img/michelle.jpg';
 import ionAvatar from '../img/ion.jpg';
 import giuliano from '../img/giuliano.jpg';
+import vladislav from '../img/vladislav.jpg';
 
 const Team = () => {
   const teamMembers = [
     { name: 'Constantin Curca', position: 'Director Executiv AO "STUDEM" din Bălți', avatar: costeaAvatar },
     { name: 'Frederikke Thorning', position: 'Coordonator de Proiect din partea Danemarcei', avatar: fredAvatar },
     { name: 'Ioan-Giuliano Ciomschi', position: 'Coordonator de voluntari STUDEM', avatar: giuliano },
+    { name: 'Vladislav Goncear', position: 'Manager de Oficiu', avatar: vladislav },
     { name: 'Peter Kolby', position: 'Comunicare și PR Manager', avatar: peterAvatar },
     { name: 'Aleftina Grebanosu', position: 'Responsabilă de Incluziune', avatar: aleftinaAvatar },
     { name: 'Michelle Luo', position: 'Comunicare și PR Manager', avatar: michelleAvatar },

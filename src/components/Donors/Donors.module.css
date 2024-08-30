@@ -23,7 +23,7 @@
   position: absolute;
   width: 150px; /* Match the width of images */
   z-index: 2;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%); */
 }
 
 .slider::after {

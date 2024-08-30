@@ -1,11 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap'); */
-
+/* Resetări generale și setări de bază */
 .team {
   font-family: 'Roboto', sans-serif;
-  /* font-size: 15px; */
   color: #473b3b;
   text-align: center;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 .teamTitle {
@@ -13,29 +19,17 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.team {
-  display: flex;
-    flex-direction: column;
-    /* background-color: rgb(199 216 96 / 5%); */
-    width: 100%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: 1400px;
-}
-
 .heading {
   margin-top: 30px;
   font-family: 'Roboto', sans-serif;
-    font-size: 28px;
-    font-weight: 700;
-    color: #333333c7;
-    margin-bottom: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333333c7;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .subtitle {
@@ -46,8 +40,7 @@
 .teamMembers {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  padding: 0px 15px;
+  padding: 0px 30px;
   border-radius: 10px;
   flex-direction: column;
   align-content: center;
@@ -55,9 +48,8 @@
 }
 
 .teamMember {
-  width: 200px;
-  /* min-height: 360px; */
-  /* background-color: #d5e2ed9e; */
+  width: 100%;
+  max-width: 250px; /* Setare explicită a dimensiunii maxime */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -75,7 +67,6 @@
   transform: scale(1, 1);
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  /* border: 1px solid #5f6368; */
 }
 
 .pic {
@@ -104,20 +95,44 @@
   font-size: 18px;
 }
 
-@media screen and (min-width: 768px) {
+/* Styling pentru Desktop */
+@media screen and (min-width: 1200px) {
   .teamMembers {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between; /* Adaugă spațiu între carduri */
+  }
+
+  .teamMember {
+    width: calc(25% - 30px); /* 4 carduri pe rând, minus margini */
+    margin: 15px; 
   }
 }
 
-@media screen and (min-width: 1200px) {
+/* Styling pentru Tabletă */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .teamMembers {
-    display: flex;
-    /* padding: 0px 15px; */
-    /* border-radius: 10px; */
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    /* width: 1000px; */
+  }
+
+  .teamMember {
+    width: calc(33.33% - 30px); /* 3 carduri pe rând */
+    margin: 15px;
+  }
+}
+
+/* Styling pentru Mobil */
+@media screen and (max-width: 767px) {
+  .teamMembers {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamMember {
+    width: calc(100% - 30px); /* 1 card pe rând */
+    margin: 15px 0;
   }
 }
