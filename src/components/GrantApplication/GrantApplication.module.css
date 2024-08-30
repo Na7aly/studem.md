@@ -6,6 +6,7 @@
       color: #333333;
       /* width: 100%; */
       padding: 40px;
+      max-width: 1400px;
 }
 
 .textCenter {
