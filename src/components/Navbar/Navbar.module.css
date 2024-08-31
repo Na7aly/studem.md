@@ -150,6 +150,7 @@
   background-color: #f1f1f1;
 } */
 
+
 @media screen and (max-width: 960px) {
   .navMenu {
     display: flex;
@@ -191,6 +192,6 @@
     font-size: 1.8rem;
     cursor: pointer;
     color: #ffdd40;
-    margin-right:30px;
+    margin-right:35px;
   }
 }

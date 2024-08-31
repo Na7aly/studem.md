@@ -92,6 +92,7 @@
     overflow-x: auto;
     scroll-snap-type: x mandatory; /* Optional: pentru scroll snapping */
     scroll-padding: 10px;
+    margin-left: 20px;
   }
 
   .articleItem {
