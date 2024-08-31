@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { Link as ScrollLink, scroller } from 'react-scroll';
+import { scroller } from 'react-scroll'; // Import corect pentru scroller
 import styles from './SectionLinks.module.css';
 
 const SectionLinks = () => {
@@ -8,8 +8,6 @@ const SectionLinks = () => {
 
     const navigate = useNavigate();
     const location = useLocation();
-
-    const handleClick = () => setClick(!click);
 
     const handleSectionClick = (section, external = false) => {
         setClick(false);  // Închide meniul la click
@@ -25,10 +23,6 @@ const SectionLinks = () => {
                 scroller.scrollTo(section, { smooth: true, duration: 500, offset: -100 });
             }, 100);
         }
-    };
-
-    const handleLogoClick = () => {
-        handleSectionClick('ArticlesList');
     };
 
     return (
