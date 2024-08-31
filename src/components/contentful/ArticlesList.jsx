@@ -14,7 +14,7 @@ const ArticlesList = () => {
         console.log('Fetched articles:', data); // Debug
         setArticles(data);
         if (data.length > 0) {
-          setSelectedArticle(data[0]); // Primul articol implicit
+          setSelectedArticle(data[0]); 
         }
       } catch (error) {
         console.error('Error fetching articles:', error);
@@ -25,6 +25,12 @@ const ArticlesList = () => {
 
   const handleArticleClick = (article) => {
     setSelectedArticle(article);
+
+    
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
   };
 
   return (
