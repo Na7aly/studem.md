@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Team.module.css';
 
-import costeaAvatar from '../img/costea.jpg';
-import fredAvatar from '../img/fred.jpg';
-import peterAvatar from '../img/peter.jpg';
-import aleftinaAvatar from '../img/aleftina.jpg';
-import michelleAvatar from '../img/michelle.jpg';
-import ionAvatar from '../img/ion.jpg';
-import giuliano from '../img/giuliano.jpg';
-import vladislav from '../img/vladislav.jpg';
+import costeaAvatar from '../../img/costea.jpg';
+import fredAvatar from '../../img/fred.jpg';
+import peterAvatar from '../../img/peter.jpg';
+import aleftinaAvatar from '../../img/aleftina.jpg';
+import michelleAvatar from '../../img/michelle.jpg';
+import ionAvatar from '../../img/ion.jpg';
+import giuliano from '../../img/giuliano.jpg';
+import vladislav from '../../img/vladislav.jpg';
 
 const Team = () => {
   const teamMembers = [

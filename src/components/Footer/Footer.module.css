@@ -1,4 +1,4 @@
-/* module.css */
+
 
 .footer {
   background-color: #535359;
@@ -12,7 +12,7 @@
 .containerFooter {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 15px; /* Add padding for small screens */
+  padding: 0 15px; 
 }
 
 .copyright {
@@ -33,28 +33,28 @@
   text-decoration: underline;
 }
 
-/* Mobile view */
+
 @media (max-width: 768px) {
   .container {
-    padding: 0 10px; /* Adjust padding for better fit */
+    padding: 0 10px; 
   }
   
   .copyright, .designed {
     display: block;
-    margin: 10px 0; /* Add margin for spacing */
+    margin: 10px 0; 
     text-align: center;
   }
 }
 
-/* Tablet view */
+
 @media (min-width: 769px) and (max-width: 1024px) {
   .container {
-    padding: 0 15px; /* Adjust padding for better fit */
+    padding: 0 15px; 
   }
   
   .copyright, .designed {
     display: block;
-    margin: 10px 0; /* Add margin for spacing */
+    margin: 10px 0;
     text-align: center;
   }
 }

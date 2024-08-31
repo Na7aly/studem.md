@@ -39,7 +39,7 @@
   }
 }
 
-/* Stiluri pentru butoane */
+
 .button {
   background-color: #6b92e5;
   padding: 15px 25px;
@@ -51,7 +51,7 @@
   box-shadow: 10px 10px 24px rgba(166, 180, 200, 0.8), -10px -10px 24px #fff;
   cursor: pointer;
   transition: background-color 0.3s, box-shadow 0.3s;
-  margin: 10px; /* Spatiul intre butoane */
+  margin: 10px; 
 }
 
 .button:hover {
@@ -59,7 +59,7 @@
   box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #fff;
 }
 
-/* Media Queries pentru Responsive Design */
+
 @media (max-width: 768px) {
   .button {
     font-size: 1rem;

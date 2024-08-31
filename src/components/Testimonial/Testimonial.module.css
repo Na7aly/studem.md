@@ -99,5 +99,8 @@ border-radius: 25px;
   .testimonial {
     min-width: auto; /* Adjust for smaller screens */
   }
+  .title {
+    font-size: 24px;
+  }
 }
 

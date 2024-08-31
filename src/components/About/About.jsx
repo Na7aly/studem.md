@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import styles from './About.module.css';
-import leftImage1 from '../img/leftImage1.jpg';
-import leftImage2 from '../img/leftImage2.jpg';
-import leftImage3 from '../img/leftImage3.jpg';
-import leftImage4 from '../img/leftImage4.jpg';
-import leftImage5 from '../img/leftImage5.jpg';
-import leftImage6 from '../img/leftImage6.jpg';
-import leftImage7 from '../img/leftImage7.jpg';
+import leftImage1 from '../../img/leftImage1.jpg';
+import leftImage2 from '../../img/leftImage2.jpg';
+import leftImage3 from '../../img/leftImage3.jpg';
+import leftImage4 from '../../img/leftImage4.jpg';
+import leftImage5 from '../../img/leftImage5.jpg';
+import leftImage6 from '../../img/leftImage6.jpg';
+import leftImage7 from '../../img/leftImage7.jpg';
 // import leftImage8 from '../img/leftImage8.jpg';
-import leftImage9 from '../img/leftImage9.jpg';
-import leftImage10 from '../img/leftImage10.jpg';
-import leftImage11 from '../img/leftImage11.jpg';
-import leftImage12 from '../img/leftImage12.jpg';
+import leftImage9 from '../../img/leftImage9.jpg';
+import leftImage10 from '../../img/leftImage10.jpg';
+import leftImage11 from '../../img/leftImage11.jpg';
+import leftImage12 from '../../img/leftImage12.jpg';
 
 const images = [
   leftImage1,

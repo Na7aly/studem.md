@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 
-/* Font global */
+
 body {
-  font-family: 'Roboto', sans-serif; /* Apply font globally */
+  font-family: 'Roboto', sans-serif; 
 }
 
-/* Stiluri pentru secțiunea de servicii */
+
 .services {
   /* padding: 20px 20px 40px 20px; */
   box-sizing: border-box;
-  background-color: #f5f5f54a; /* Fundal semi-transparent */
+  background-color: #f5f5f54a; 
   font-family: 'Roboto', sans-serif;
   display: flex;
   flex-direction: column;
@@ -31,14 +31,14 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center text horizontally */
+  align-items: center; 
 }
 
 .list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Trei coloane de bază */
-  gap: 20px; /* Spațiu între elemente */
-  list-style: none; /* Elimină marcajele */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  list-style: none; 
   padding: 0;
   margin: 0;
 }
@@ -60,7 +60,7 @@ body {
 }
 
 .item:hover {
-  background-color: #e3e9f3; /* Schimbă culoarea de fundal la hover */
+  background-color: #e3e9f3; 
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,13 +72,13 @@ body {
 }
 
 .item:hover .icon {
-  color: #6b92e5; /* Schimbă culoarea icoanei la hover */
+  color: #6b92e5; 
 }
 
 .textContainer {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif; /* Aplică fontul pentru textul din textContainer */
+  font-family: 'Roboto', sans-serif; 
 }
 
 .serviceTitle {
@@ -97,66 +97,69 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-/* Media queries pentru responsivitate */
+
 @media (max-width: 1024px) {
   .list {
-    grid-template-columns: repeat(2, 1fr); /* Două coloane pentru tablete */
-    padding: 0 40px; /* Adaugă padding orizontal */
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0 40px; 
   }
 }
 
 @media (max-width: 768px) {
   .list {
-    grid-template-columns: 1fr; /* O coloană pentru telefoane mobile */
-    padding: 0 10px; /* Adaugă padding orizontal */
+    grid-template-columns: 1fr;
+    padding: 0 10px; 
   }
+  .title {
+    
+    font-size: 24px;}
 
   .item {
-    margin: 0 auto; /* Centrează cardul pe orizontală */
+    margin: 0 auto; 
   }
 
   .icon {
-    font-size: 30px; /* Icoană puțin mai mică pe mobil */
-    margin-bottom: 10px; /* Spațiu între icoană și text */
+    font-size: 30px; 
+    margin-bottom: 10px;
   }
 
   .textContainer {
-    text-align: center; /* Centrează textul pe mobil */
+    text-align: center; 
   }
 }
 
 @media (max-width: 480px) {
   .title {
-    font-size: 24px; /* Dimensiune font mai mică pentru ecrane foarte mici */
+    font-size: 24px; 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     margin-left: 45px;
-    color: #624e88; /* Culoare mai închisă pentru titlu pe ecrane mici */
+    color:#333333c7; 
   }
 
   .serviceTitle {
-    font-size: 18px; /* Dimensiune font mai mică pentru titlul serviciului */
+    font-size: 18px; 
   }
 
   .serviceDescription {
-    font-size: 14px; /* Dimensiune font mai mică pentru descrierea serviciului */
+    font-size: 14px;
   }
 
   .item {
-    padding: 10px; /* Padding mai mic pe ecrane foarte mici */
-    margin: 10px 0; /* Margine pentru a asigura spațierea */
-    width: 100%; /* Asigură că cardul ocupă toată lățimea containerului */
-    box-sizing: border-box; /* Asigură că padding-ul este inclus în lățime */
+    padding: 10px; 
+    margin: 10px 0; 
+    width: 100%; 
+    box-sizing: border-box; 
   }
 
   .icon {
-    font-size: 25px; /* Icoană mai mică pe ecrane foarte mici */
-    margin-bottom: 8px; /* Spațiu între icoană și text */
+    font-size: 25px; 
+    margin-bottom: 8px; 
   }
 
   .textContainer {
-    text-align: center; /* Centrează textul pe ecrane foarte mici */
+    text-align: center; 
   }
 }
