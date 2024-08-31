@@ -77,10 +77,11 @@
 .socialIcons a {
   color: #473b3bc7;
   font-size: 20px;
+  /* margin-left: 10px; */
 }
 
 .socialIcons a:hover {
-  color: #fff;
+  color: #1a0ec4;
 }
 
 .icon {
@@ -151,6 +152,7 @@
   .row {
     flex-direction: column;
     align-items: center;
+    padding: 20px;
   }
 
   .col, .column {

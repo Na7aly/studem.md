@@ -1,120 +1,129 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    /* background-color: rgba(199, 216, 96, 0.05); Background color with 5% opacity */
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font globally */
-    color: #423f3fa6;
-    width: 100%;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  color: #423f3fa6;
   
+  padding: 20px;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+.contactFormWrapper {
+  width: 50%;
+}
+
+.mapWrapper {
+  width: 350px;
+  height: 350px;
+}
+
+.textCenter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sectionHeading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333333c7;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionSubheading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.formRow {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; */
+}
+
+.formColumn {
+  flex: 1;
+  min-width: 200px;
+  margin-right: 20px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formControl {
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 30px;
+  border: none;
+  background-color: #ecf0f3;
+  box-shadow: 5px 5px 10px rgba(166, 180, 200, 0.7), -5px -5px 11px #fff;
+}
+
+.formControl:hover {
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #fff;
+}
+
+textarea.formControl {
+  height: 150px;
+  resize: none;
+  /* margin-left: 30px; */
+}
+
+.submitButton {
+  font-family: 'Roboto', sans-serif;
+  background: #ecf0f3;
+  color: #473b3b;
+  border: 0.5px solid rgb(171, 186, 205);
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.submitButton:hover {
+  background-color: #99a4c5;
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #c8cacb;
+}
+
+@media (max-width: 768px) {
   .contactContainer {
-    display: flex;
-    /* flex-wrap: nowrap; */
-    justify-content: space-evenly;
-    /* margin: 0 auto; */
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    gap: 60px;
-    max-width: 1200px;
-    margin-top: 40px;
-  }
-  
-  .contactFormWrapper {
-    width: 50%;
-  }
-  
-  .mapWrapper {
-    width: 350px;
-    height: 350px;
-  }
-  
-  .textCenter {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .sectionHeading {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-    font-size: 28px;
-    font-weight: 700;
-    color: #333333c7;
-    margin-bottom: 20px;
-    text-align: center;
-    display: flex;
     flex-direction: column;
-    align-items: center;
   }
-  
-  .sectionSubheading {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-    font-size: 1.25rem;
-    font-weight: 300;
-    margin-top: 10px;
-  }
-  
-  .formRow {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .formColumn {
-    flex: 1;
-    min-width: 200px;
-    margin-right: 20px;
-  }
-  
-  .formGroup {
-    margin-bottom: 20px;
-  }
-  
-  .formControl {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+
+  .contactFormWrapper, .mapWrapper {
     width: 100%;
-    padding: 10px 15px;
-    border-radius: 30px;
-    border: none;
-    background-color: #ecf0f3;
-    box-shadow: 5px 5px 10px rgba(166, 180, 200, 0.7), -5px -5px 11px #fff;
   }
-  
-  .formControl:hover {
-    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #fff;
-  }
-  
+
   textarea.formControl {
-    height: 150px;
-    resize: none;
-    margin-left: 30px;
+    margin-left: 0; /* Elimină margin-left pentru mobil */
   }
-  
-  .submitButton {
-    font-family: 'Roboto', sans-serif; /* Apply Roboto font */
-    background: #ecf0f3;
-    color: #473b3b;
-    border: 0.5px solid rgb(171, 186, 205);
-    font-size: 16px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    cursor: pointer;
-    width: 106%;
-    transition: background 0.3s;
+}
+@media (max-width: 1024px) {
+  textarea.formControl {
+    margin-left: 0; /* Elimină margin-left pentru mobile */
   }
-  
-  .submitButton:hover {
-    background-color: #99a4c5;
-    box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #c8cacb;
-  }
-  
-  @media (max-width: 768px) {
-    .contactContainer {
-      flex-direction: column;
-    }
-  
-    .contactFormWrapper, .mapWrapper {
-      width: 100%;
-    }
-  }
-  
+ 
+}
+
+
+

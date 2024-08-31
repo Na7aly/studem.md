@@ -12,6 +12,7 @@
   z-index: 1000;
   min-width: 300px; /* Updated for better mobile experience */
   font-family: 'Roboto', sans-serif; /* Apply Roboto font */
+  margin-top: 50px;
 }
 
 .overlay {

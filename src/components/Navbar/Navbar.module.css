@@ -157,7 +157,7 @@
     width: 100%;
     border-top: 1px solid #fff;
     position: absolute;
-    top: 50px;
+    top: 30px;
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -185,11 +185,12 @@
   .navIcon {
     display: block;
     position: absolute;
-    top: -10px;
+    top: -20px;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #ffdd40;
+    margin-right:30px;
   }
 }
