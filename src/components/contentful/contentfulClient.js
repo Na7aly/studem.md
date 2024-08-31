@@ -1,11 +1,8 @@
 import { createClient } from 'contentful';
 
-// Încarcă variabilele de mediu din .env
-
 const client = createClient({
-  space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
-  accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN
+  space: 'xpckm8g47k10', 
+  accessToken: 'jCvBFbNBstia0e9P_WZjKS7ttNvEXbA3Cw3TbruN6UY' 
 });
-
 
 export default client;
