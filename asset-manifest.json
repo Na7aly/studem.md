@@ -1,13 +1,17 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.dc30bc57.css",
-    "main.js": "/studem.md/static/js/main.07a5556f.js",
+    "main.css": "/studem.md/static/css/main.daf276f6.css",
+    "main.js": "/studem.md/static/js/main.0b1aa606.js",
+    "static/media/studem2020.pdf": "/studem.md/static/media/studem2020.972e23a32155527a9184.pdf",
+    "static/media/studem2021.pdf": "/studem.md/static/media/studem2021.968dd367ed89a6e6fb7f.pdf",
+    "static/media/studem2022.pdf": "/studem.md/static/media/studem2022.b6669a6d2b31a449bbe6.pdf",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
     "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
     "static/media/usaid_.jpg": "/studem.md/static/media/usaid_.4374236c7f0e9774c9f4.jpg",
     "static/media/vladislav.jpg": "/studem.md/static/media/vladislav.160f259593430c30a0a4.jpg",
     "static/media/GHID DE FINANŢARE.docx": "/studem.md/static/media/GHID DE FINANŢARE.9a7e9e3b00e6d311d9b3.docx",
     "static/media/ant_.jpg": "/studem.md/static/media/ant_.60871afd4a3fca0fd4cc.jpg",
+    "static/media/regulamentul-de-funcționare-al-centrului-de-tineret-studem.pdf": "/studem.md/static/media/regulamentul-de-funcționare-al-centrului-de-tineret-studem.39a38174be42a35cd38c.pdf",
     "static/media/fa-solid-900.ttf": "/studem.md/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
     "static/media/Formular de aplicare.docx": "/studem.md/static/media/Formular de aplicare.8403e08f1f623ef94a6b.docx",
     "static/media/Model de buget detaliat.docx": "/studem.md/static/media/Model de buget detaliat.8c1cdbd3240e870965af.docx",
@@ -15,19 +19,25 @@
     "static/media/leftImage7.jpg": "/studem.md/static/media/leftImage7.9da1df7708f001b01f38.jpg",
     "static/media/leftImage10.jpg": "/studem.md/static/media/leftImage10.0e534def6511914c3880.jpg",
     "static/media/leftImage3.jpg": "/studem.md/static/media/leftImage3.6061032059fba1f00fb9.jpg",
+    "static/media/alina.jpg": "/studem.md/static/media/alina.b581309020ed8798fe0a.jpg",
+    "static/media/task-description-2023.pdf": "/studem.md/static/media/task-description-2023.1e1823edebaa1c46c7c7.pdf",
     "static/media/leftImage9.jpg": "/studem.md/static/media/leftImage9.1e312bce51ebdbef4f69.jpg",
     "static/media/fa-brands-400.ttf": "/studem.md/static/media/fa-brands-400.0ff70dcbf135d859ebf3.ttf",
     "static/media/leftImage6.jpg": "/studem.md/static/media/leftImage6.7687c6a7f6199288c3ab.jpg",
     "static/media/leftImage11.jpg": "/studem.md/static/media/leftImage11.a882bc54ecee0d895489.jpg",
+    "static/media/max.jpg": "/studem.md/static/media/max.903925391a0bf7565599.jpg",
     "static/media/leftImage4.jpg": "/studem.md/static/media/leftImage4.a125634d8bab3fc52b65.jpg",
     "static/media/giuliano.jpg": "/studem.md/static/media/giuliano.28a11737f51c3bf019b4.jpg",
+    "static/media/toderica-marius.jpg": "/studem.md/static/media/toderica-marius.559cf17dc24de4be239f.jpg",
     "static/media/fa-solid-900.woff2": "/studem.md/static/media/fa-solid-900.93f719f4d62bfa3e748c.woff2",
     "static/media/leftImage1.jpg": "/studem.md/static/media/leftImage1.f181aeb1b13af750f9b6.jpg",
     "static/media/logo.png": "/studem.md/static/media/logo.637b3c31a50ef232a2dd.png",
     "static/media/michelle.jpg": "/studem.md/static/media/michelle.949e049b43d90a791ede.jpg",
+    "static/media/codul-de-etică-ro.docx": "/studem.md/static/media/codul-de-etică-ro.d955d3559c9d7574988a.docx",
     "static/media/aleftina.jpg": "/studem.md/static/media/aleftina.5cbc004210e00e1fffe1.jpg",
     "static/media/fa-brands-400.woff2": "/studem.md/static/media/fa-brands-400.bb8d5a145e22822103fb.woff2",
     "static/media/ndf.png": "/studem.md/static/media/ndf.4c7cf38f9dce321a057d.png",
+    "static/media/bulgaru-daniel.jpg": "/studem.md/static/media/bulgaru-daniel.0dcc8a0a4c206319b030.jpg",
     "static/media/leftImage2.jpg": "/studem.md/static/media/leftImage2.e8880e14329c41947cce.jpg",
     "static/media/costea.jpg": "/studem.md/static/media/costea.dade6e167d0b037179e2.jpg",
     "static/media/silba.png": "/studem.md/static/media/silba.183b3f0d6807e895b942.png",
@@ -63,11 +73,11 @@
     "static/media/slick.ttf": "/studem.md/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/studem.md/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studem.md/index.html",
-    "main.dc30bc57.css.map": "/studem.md/static/css/main.dc30bc57.css.map",
-    "main.07a5556f.js.map": "/studem.md/static/js/main.07a5556f.js.map"
+    "main.daf276f6.css.map": "/studem.md/static/css/main.daf276f6.css.map",
+    "main.0b1aa606.js.map": "/studem.md/static/js/main.0b1aa606.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc30bc57.css",
-    "static/js/main.07a5556f.js"
+    "static/css/main.daf276f6.css",
+    "static/js/main.0b1aa606.js"
   ]
 }
