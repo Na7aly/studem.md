@@ -18,6 +18,7 @@ import Space from 'components/Space/Space';
 import Donors from 'components/Donors/Donors';
 // import NewsList from 'components/contentful/ArticlesList';
 import ArticlesList from 'components/contentful/ArticlesList';
+// import Transparency from 'components/Transparency/Transparency';
 
 
 const Home = () => {
@@ -62,6 +63,9 @@ const Home = () => {
       <Element name="finantatori">
         <Donors/>
       </Element>
+      {/* <Element name="transparenta">
+        <Transparency />
+      </Element> */}
       
       {/* <Element name="contact">
         <ContactsDetail />

@@ -6,6 +6,10 @@ import styles from './Testimonial.module.css';
 
 // Local images
 import vladGoncearImg from '../../img/vlad.png';
+import alinaImg from '../../img/alina.jpg';
+import mariusImg from '../../img/toderica-marius.jpg';
+import danielImg from '../../img/bulgaru-daniel.jpg';
+import maximGoncearImg from '../../img/max.jpg';
 
 // Testimonials data
 const testimonials = [
@@ -19,25 +23,25 @@ const testimonials = [
     name: 'Marius Toderică',
     role: 'Board Member 2022, 2023',
     desc: '“Nu e chiar atât de greu să faci primul pas!”',
-    img: vladGoncearImg
+    img: mariusImg
   },
   {
     name: 'Daniel Bulgaru',
     role: 'Board Member 2022',
     desc: '“STUDEM e ca o gură de aer proaspăt, înveți să trăiești viața din nou!”',
-    img: vladGoncearImg
+    img: danielImg
   },
   {
     name: 'Maxim Călărași',
     role: 'Board Member 2020',
     desc: '“STUDEM a fost un loc în care am descoperit nu doar cunoștințe noi, ci și o comunitate plină de energie și entuziasm. Datorită Centrului, am câștigat încredere în propria mea capacitate de a învăța și de a crește profesional și personal.”',
-    img: vladGoncearImg
+    img: maximGoncearImg
   },
   {
     name: 'Alina Bogaci',
     role: 'Board Member 2020, 2021',
     desc: '“E imposibil să redau în doua promoții toate cunoștințele, emoțiile și experiențele ce le-am acumulat în doi ani și jumătate fiind membră a familie STUDEM. STUDEM a fost startul meu în viață, m-a făcut să-mi găsesc punctele tari a caracterului și mi-a perfectat neajunsurile. Formarea mea ca personalitate a avut loc aici, la STUDEM. Mereu în inimă și în gând. Spun succes celor ce se alătură familiei. ❤️”',
-    img: vladGoncearImg
+    img: alinaImg
   }
 ];
 

@@ -85,9 +85,9 @@ const Navbar = () => {
                   <li>
                     <Link to="/parteneri" className={styles.dropdownLink} onClick={() => handleSectionClick('parteneri', true)}>Parteneri</Link>
                   </li>
-                  {/* <li>
+                  <li>
                     <Link to="/transparenta" className={styles.dropdownLink} onClick={() => handleSectionClick('transparenta', true)}>Transparență</Link>
-                  </li> */}
+                  </li>
                 </ul>
               )}
             </li>
