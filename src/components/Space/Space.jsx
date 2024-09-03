@@ -13,6 +13,10 @@ const Space = () => {
     setModalIsOpen(false);
   };
 
+  const goToCalendar = () => {
+    window.location.href = 'https://calendar.online/4dd8a31656689e8bd707';
+  };
+
   return (
     <section className={styles.space}>
       <div className={styles.container}>
@@ -24,7 +28,7 @@ const Space = () => {
         </p>
         <div className={styles.buttons}>
           <button className={styles.button} onClick={openModal}>Aplică pentru evenimente</button>
-          {/* <button className={styles.button}>Calendarul STUDEM</button> */}
+          <button className={styles.button} onClick={goToCalendar}>Calendarul STUDEM</button>
         </div>
       </div>
 

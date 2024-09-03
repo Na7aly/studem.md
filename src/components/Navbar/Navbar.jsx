@@ -88,6 +88,10 @@ const Navbar = () => {
                   <li>
                     <Link to="/transparenta" className={styles.dropdownLink} onClick={() => handleSectionClick('transparenta', true)}>Transparență</Link>
                   </li>
+                  <li>
+  <Link to="/board" className={styles.dropdownLink} onClick={() => handleSectionClick('board', true)}>Membrii Boardului</Link>
+</li>
+
                 </ul>
               )}
             </li>

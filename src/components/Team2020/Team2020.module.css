@@ -1,0 +1,84 @@
+.teamContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+  }
+  
+  .sectionHeading {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333c7;
+    margin-bottom: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .membersGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .memberCard {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px; /* Set the width for a portrait orientation */
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .memberCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .memberImage {
+    width: 100%;
+    height: 320px; /* Portrait orientation */
+    object-fit: cover;
+    margin-bottom: 0;
+  }
+  
+  .memberName {
+    font-size: 18px;
+    font-weight: 600;
+    color: #34495e;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
+  
+  .memberTitle {
+    font-size: 14px;
+    font-weight: 400;
+    color: #7f8c8d;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .teamContainer {
+      padding: 20px;
+    }
+  
+    .sectionHeading {
+      font-size: 24px;
+    }
+  
+    .memberCard {
+      width: 100%;
+    }
+  
+    .memberImage {
+      height: 300px; 
+    }
+  }
+  

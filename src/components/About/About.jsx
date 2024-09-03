@@ -8,7 +8,7 @@ import leftImage5 from '../../img/leftImage5.jpg';
 import leftImage6 from '../../img/leftImage6.jpg';
 import leftImage7 from '../../img/leftImage7.jpg';
 // import leftImage8 from '../img/leftImage8.jpg';
-import leftImage9 from '../../img/leftImage9.jpg';
+// import leftImage9 from '../../img/leftImage9.jpg';
 import leftImage10 from '../../img/leftImage10.jpg';
 import leftImage11 from '../../img/leftImage11.jpg';
 import leftImage12 from '../../img/leftImage12.jpg';
@@ -21,7 +21,6 @@ const images = [
   leftImage5,
   leftImage6,
   leftImage7,
-  leftImage9,
   leftImage10,
   leftImage11,
   leftImage12,

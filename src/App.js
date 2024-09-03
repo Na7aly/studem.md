@@ -8,6 +8,11 @@ import SectionLinks from './components/SectionLinks/Sectionlinks';
 import GrantApplication from 'components/GrantApplication/GrantApplication';
 import Partners from 'components/Partners/Partners';
 import Transparency from 'components/Transparency/Transparency';
+import BoardMembers from 'components/BoardMembers/BoardMembers';
+import Team2020 from 'components/Team2020/Team2020';
+import Team2021 from 'components/Team2021/Team2021';
+import Team2022 from 'components/Team2022/Team2022';
+import Team2023 from 'components/Team2023/Team2023';
 
 function App() {
   return (
@@ -20,6 +25,11 @@ function App() {
         <Route path="/granturi" element={<GrantApplication />} />
         <Route path="/parteneri" element={<Partners />} />
         <Route path="/transparenta" element={<Transparency/>} />
+        <Route path="/board" element={<BoardMembers />} />
+        <Route path="/board/2020" element={<Team2020 />} />
+        <Route path="/board/2021" element={<Team2021 />} />
+        <Route path="/board/2022" element={<Team2022 />} />
+        <Route path="/board/2023" element={<Team2023 />} />
       </Routes>
       <SectionLinks />
       <Footer />
