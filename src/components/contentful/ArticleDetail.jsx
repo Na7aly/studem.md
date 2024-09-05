@@ -29,7 +29,7 @@ const ArticleDetail = () => {
     setSelectedImage(null);
   };
 
-  if  (!article) {
+  if (!article) {
     return <div>Loading...</div>;
   }
 
@@ -39,7 +39,7 @@ const ArticleDetail = () => {
       {article.fields.studemfoto && (
         <img
           src={article.fields.studemfoto.fields.file.url}
-          alt={article.fields.studemfoto.fields.title || 'Main visual content related to the article'}
+          alt={article.fields.studemfoto.fields.title || 'Main visual related to the article'}
           className={styles.articleImage}
           onClick={() => handleImageClick(article.fields.studemfoto.fields.file.url)}
         />
@@ -47,12 +47,12 @@ const ArticleDetail = () => {
       <div className={styles.content}>
         {documentToReactComponents(article.fields.studemtext)}
       </div>
-      {/* Additional photos  */}
+      {/* Additional photos */}
       {article.fields.manyphoto && article.fields.manyphoto.map((photo, index) => (
         <img
           key={index}
           src={photo.fields.file.url}
-          alt={`Additional content ${index + 1}`}
+          alt={`Image ${index + 1} related to the article`}
           className={styles.additionalPhoto}
           onClick={() => handleImageClick(photo.fields.file.url)}
         />
