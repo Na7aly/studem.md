@@ -29,7 +29,7 @@ const ArticleDetail = () => {
     setSelectedImage(null);
   };
 
-  if (!article) {
+  if  (!article) {
     return <div>Loading...</div>;
   }
 
@@ -47,7 +47,7 @@ const ArticleDetail = () => {
       <div className={styles.content}>
         {documentToReactComponents(article.fields.studemtext)}
       </div>
-      {/* Additional photos */}
+      {/* Additional photos  */}
       {article.fields.manyphoto && article.fields.manyphoto.map((photo, index) => (
         <img
           key={index}
