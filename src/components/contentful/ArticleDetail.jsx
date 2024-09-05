@@ -64,13 +64,21 @@ const ArticleDetail = () => {
           <p className={styles.meta}>Publicat pe: {new Date(article.fields.data).toLocaleDateString()}</p>
         )}
       </div>
+      
 
-      {/* Modal for image preview */}
-      {selectedImage && (
-        <div className={styles.modal} onClick={handleCloseModal}>
-          <img src={selectedImage} alt="Selected image preview" className={styles.modalImage} />
-        </div>
-      )}
+    {/* Modal for image preview */}
+{selectedImage && (
+  <div className={styles.modal} onClick={handleCloseModal} role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <button onClick={handleCloseModal} aria-label="Close preview">X</button>
+    <img
+      src={selectedImage}
+      alt="Preview of selected image"
+      className={styles.modalImage}
+      id="modal-description"
+    />
+  </div>
+)}
+
     </div>
   );
 };
