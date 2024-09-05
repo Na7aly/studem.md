@@ -13,6 +13,12 @@ import Team2020 from 'components/Team2020/Team2020';
 import Team2021 from 'components/Team2021/Team2021';
 import Team2022 from 'components/Team2022/Team2022';
 import Team2023 from 'components/Team2023/Team2023';
+// import ArticlesList from './components/contentful/ArticlesList';
+// import ArticlePage from './components/contentful/ArticlePage';
+import HomePagee from './components/contentful/HomePagee';
+import ArticlesListPage from './components/contentful/ArticleListPage.jsx';
+// import ArticlePage from './components/contentful/ArticlePage';
+import ArticleDetail from './components/contentful/ArticleDetail';
 
 function App() {
   return (
@@ -30,6 +36,9 @@ function App() {
         <Route path="/board/2021" element={<Team2021 />} />
         <Route path="/board/2022" element={<Team2022 />} />
         <Route path="/board/2023" element={<Team2023 />} />
+        {/* <Route path="/" element={<HomePagee />} /> */}
+        <Route path="/articles" element={<ArticlesListPage />} />
+        <Route path="/article/:id" element={<ArticleDetail />} />
       </Routes>
       <SectionLinks />
       <Footer />

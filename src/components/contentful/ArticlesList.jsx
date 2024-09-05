@@ -1,75 +1,58 @@
-import React, { useEffect, useState } from 'react';
-import { fetchArticles } from '../contentful/api'; // Ajustează calea dacă este necesar
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-import styles from './ArticlesList.module.css';
+// // src/components/ArticlesList.jsx
+// import React, { useEffect, useState } from 'react';
+// import { Link } from 'react-router-dom'; // Import pentru link-uri
+// import { fetchArticles } from '../contentful/api'; // Funcția de fetch
+// import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
+// import styles from './ArticlesList.module.css';
 
-const ArticlesList = () => {
-  const [articles, setArticles] = useState([]);
-  const [selectedArticle, setSelectedArticle] = useState(null);
+// const ArticlesList = () => {
+//   const [articles, setArticles] = useState([]);
 
-  useEffect(() => {
-    const getArticles = async () => {
-      try {
-        const data = await fetchArticles();
-        console.log('Fetched articles:', data); // Debug
-        setArticles(data);
-        if (data.length > 0) {
-          setSelectedArticle(data[0]); 
-        }
-      } catch (error) {
-        console.error('Error fetching articles:', error);
-      }
-    };
-    getArticles();
-  }, []);
+//   useEffect(() => {
+//     const getArticles = async () => {
+//       try {
+//         const data = await fetchArticles();
+//         setArticles(data);
+//       } catch (error) {
+//         console.error('Error fetching articles:', error);
+//       }
+//     };
+//     getArticles();
+//   }, []);
 
-  const handleArticleClick = (article) => {
-    setSelectedArticle(article);
+//   const getFirstParagraph = (richTextContent) => {
+//     const paragraph = richTextContent?.content?.find((node) => node.nodeType === 'paragraph');
+//     return paragraph ? paragraph.content[0].value : '';
+//   };
 
-    
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    });
-  };
+//   return (
+//     <div className={styles.container}>
+//       {articles.map((article) => (
+//         <div key={article.sys.id} className={styles.articleItem}>
+//           {article.fields.studemfoto && (
+//             <img
+//               src={article.fields.studemfoto.fields.file.url}
+//               alt={article.fields.studemfoto.fields.title || 'Article image'}
+//               className={styles.articleImage}
+//             />
+//           )}
+//           <h2 className={styles.articleTitle}>{article.fields.studemtitle}</h2>
+//           <p className={styles.articleExcerpt}>
+//             {getFirstParagraph(article.fields.studemtext)}
+//           </p>
+//           <div className={styles.articleMeta}>
+//             {article.fields.autor && <p>Autor: {article.fields.autor}</p>}
+//             {article.fields.data && (
+//               <p>Publicat pe: {new Date(article.fields.data).toLocaleDateString()}</p>
+//             )}
+//           </div>
+//           <Link to={`/article/${article.sys.id}`} className={styles.readMore}>
+//             Citește întreg articolul
+//           </Link>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// };
 
-  return (
-    <div className={styles.container}>
-      <div className={styles.mainArticle}>
-        {selectedArticle && (
-          <div className={styles.activeArticle}>
-            {selectedArticle.fields.studemfoto && (
-              <img
-                src={selectedArticle.fields.studemfoto.fields.file.url}
-                alt={selectedArticle.fields.studemfoto.fields.title || 'Article image'}
-                className={styles.articleImageMain}
-              />
-            )}
-            <h2 className={styles.articleTitle}>{selectedArticle.fields.studemtitle}</h2>
-            <div className={styles.articleContent}>
-              {selectedArticle.fields.studemtext
-                ? documentToReactComponents(selectedArticle.fields.studemtext)
-                : 'No content available'}
-            </div>
-          </div>
-        )}
-      </div>
-      <div className={styles.sidebar}>
-        {articles.slice(1).map((article, index) => (
-          <div key={index} className={styles.articleItem} onClick={() => handleArticleClick(article)}>
-            {article.fields.studemfoto && (
-              <img
-                src={article.fields.studemfoto.fields.file.url}
-                alt={article.fields.studemfoto.fields.title || 'Article image'}
-                className={styles.articleImage}
-              />
-            )}
-            <div className={styles.articleTitle}>{article.fields.studemtitle}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default ArticlesList;
+// export default ArticlesList;

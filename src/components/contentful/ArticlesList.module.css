@@ -1,124 +1,87 @@
+/* src/components/ArticlesList.module.css */
 
+/* Default styles for desktop */
 .container {
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
-  font-family: 'Roboto', Arial, sans-serif;
-  margin-top: 40px;
-}
-
-.mainArticle {
-  flex: 3;
-  margin-right: 20px;
-}
-
-.sidebar {
-  flex: 1;
-  max-height: calc(100vh - 40px);
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding-right: 10px;
-  box-sizing: border-box;
-  padding: 20px;
-  background-color: white;
-  font-family: 'Roboto', Arial, sans-serif;
-  border-radius: 15px;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .articleItem {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
 }
 
 .articleImage {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  margin-right: 10px;
-  border-radius: 5px;
+  width: 100%;
+  height: auto;
 }
 
 .articleTitle {
-  font-size: 1rem;
-  font-weight: 700;
-  margin: 0;
-  margin-top: 20px;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
-.articleContent {
-  margin-top: 20px;
+.articleExcerpt {
+  font-size: 16px;
 }
 
-.activeArticle {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  background-color: white;
-  font-family: 'Roboto', Arial, sans-serif;
-  border-radius: 15px;
-  margin-left: 25px;
+.readMore {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.articleImageMain {
-  width: 100%;
-  height: auto;
-  max-height: 250px;
-  object-fit: cover;
-  border-radius: 15px;
+.articleMeta {
+  font-size: 16px;
+  color: #555;
 }
 
-
-@media screen and (max-width: 1024px) {
-  .container {
-    display: block;
-    padding: 10px;
-    margin-top: 20px;
-  }
-
-  .mainArticle {
-    margin-right: 0;
-    margin-bottom: 20px;
-    flex: none;
-  }
-
-  .sidebar {
-    max-height: none;
-    overflow-y: visible;
-    padding: 10px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; 
-    scroll-padding: 10px;
-    margin-left: 20px;
-  }
-
+/* Tablet and mobile styles */
+@media (max-width: 768px) {
   .articleItem {
-    min-width: 280px; 
-    flex-shrink: 0;
-    margin-bottom: 0; 
-    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
   }
 
   .articleImage {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
   }
 
-  .articleContent {
-    margin-top: 10px;
+  .articleTitle {
+    font-size: 20px;
   }
 
-  .activeArticle {
-    margin-left: 0;
-    padding: 10px;
-    box-shadow: none;
-    margin-top: 30px;
+  .articleExcerpt {
+    font-size: 14px;
   }
 
-  .articleImageMain {
-    max-height: 200px;
+  .readMore {
+    font-size: 14px;
+  }
+
+  .articleMeta {
+    font-size: 14px;
+    color: #555;
+  }
+}
+
+@media (max-width: 480px) {
+  .articleTitle {
+    font-size: 18px;
+  }
+
+  .articleExcerpt {
+    font-size: 12px;
+  }
+
+  .readMore {
+    font-size: 12px;
+  }
+
+  .articleMeta {
+    font-size: 12px;
   }
 }
