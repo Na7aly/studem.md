@@ -54,7 +54,7 @@ const Navbar = () => {
       <div className={click ? styles.mainContainer : ""} onClick={() => Close()} />
       <nav className={styles.navbar} onClick={(e) => e.stopPropagation()}>
         <div className={styles.navContainer}>
-          <ScrollLink to="ArticlesList" smooth={true} duration={500} className={styles.logo} onClick={handleLogoClick}>
+          <ScrollLink to="HomePagee" smooth={true} duration={500} className={styles.logo} onClick={handleLogoClick}>
             <img src={logo} alt="STUDEM Logo" />
           </ScrollLink>
           <ul className={click ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
