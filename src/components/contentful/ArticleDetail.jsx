@@ -72,7 +72,7 @@ const ArticleDetail = () => {
     <button onClick={handleCloseModal} aria-label="Close preview">X</button>
     <img
       src={selectedImage}
-      alt="Preview of selected image"
+      alt="img"
       className={styles.modalImage}
       id="modal-description"
     />
