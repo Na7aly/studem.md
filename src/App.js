@@ -15,7 +15,7 @@ import Team2022 from 'components/Team2022/Team2022';
 import Team2023 from 'components/Team2023/Team2023';
 // import ArticlesList from './components/contentful/ArticlesList';
 // import ArticlePage from './components/contentful/ArticlePage';
-import HomePagee from './components/contentful/HomePagee';
+// import HomePagee from './components/contentful/HomePagee';
 import ArticlesListPage from './components/contentful/ArticleListPage.jsx';
 // import ArticlePage from './components/contentful/ArticlePage';
 import ArticleDetail from './components/contentful/ArticleDetail';

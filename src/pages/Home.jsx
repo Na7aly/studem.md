@@ -17,7 +17,7 @@ import Space from 'components/Space/Space';
 // import ContactPage from 'components/ContactPage/ContactPage';
 import Donors from 'components/Donors/Donors';
 // import NewsList from 'components/contentful/ArticlesList';
-import ArticlesList from 'components/contentful/ArticlesList';
+// import ArticlesList from 'components/contentful/ArticlesList';
 import HomePagee from 'components/contentful/HomePagee';
 // import Transparency from 'components/Transparency/Transparency';
 

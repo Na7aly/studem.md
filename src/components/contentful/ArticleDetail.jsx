@@ -39,7 +39,7 @@ const ArticleDetail = () => {
       {article.fields.studemfoto && (
         <img
           src={article.fields.studemfoto.fields.file.url}
-          alt={article.fields.studemfoto.fields.title || 'Article image'}
+          alt={article.fields.studemfoto.fields.title || 'Image related to the article'}
           className={styles.articleImage}
           onClick={() => handleImageClick(article.fields.studemfoto.fields.file.url)}
         />
@@ -52,7 +52,7 @@ const ArticleDetail = () => {
         <img
           key={index}
           src={photo.fields.file.url}
-          alt={`Additional photo ${index}`}
+          alt={`Photo ${index + 1}`}
           className={styles.additionalPhoto}
           onClick={() => handleImageClick(photo.fields.file.url)}
         />
@@ -61,14 +61,14 @@ const ArticleDetail = () => {
       <div className={styles.meta}>
         {article.fields.autor && <p>Autor: {article.fields.autor}</p>} 
         {article.fields.data && (
-          <p className={styles.meta} >Publicat pe: {new Date(article.fields.data).toLocaleDateString()}</p>
+          <p className={styles.meta}>Publicat pe: {new Date(article.fields.data).toLocaleDateString()}</p>
         )}
       </div>
 
       {/* Modal for image preview */}
       {selectedImage && (
         <div className={styles.modal} onClick={handleCloseModal}>
-          <img src={selectedImage} alt="Selected" className={styles.modalImage} />
+          <img src={selectedImage} alt="Selected image preview" className={styles.modalImage} />
         </div>
       )}
     </div>
