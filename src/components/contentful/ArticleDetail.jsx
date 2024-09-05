@@ -39,7 +39,7 @@ const ArticleDetail = () => {
       {article.fields.studemfoto && (
         <img
           src={article.fields.studemfoto.fields.file.url}
-          alt={article.fields.studemfoto.fields.title || 'Description of the article image'}
+          alt={article.fields.studemfoto.fields.title || 'Main visual content related to the article'}
           className={styles.articleImage}
           onClick={() => handleImageClick(article.fields.studemfoto.fields.file.url)}
         />
@@ -52,7 +52,7 @@ const ArticleDetail = () => {
         <img
           key={index}
           src={photo.fields.file.url}
-          alt={`Description of additional photo ${index + 1}`}
+          alt={`Additional content ${index + 1}`}
           className={styles.additionalPhoto}
           onClick={() => handleImageClick(photo.fields.file.url)}
         />
