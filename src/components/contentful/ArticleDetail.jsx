@@ -67,9 +67,11 @@ const ArticleDetail = () => {
       
 
     {/* Modal for image preview */}
-{selectedImage && (
+    {selectedImage && (
   <div className={styles.modal} onClick={handleCloseModal} role="dialog" aria-labelledby="modal-title" aria-describedby="modal-description">
-    <button onClick={handleCloseModal} aria-label="Close preview">X</button>
+    <button onClick={handleCloseModal} className={styles.closeButton} aria-label="Close preview">
+      X
+    </button>
     <img
       src={selectedImage}
       alt="img"
@@ -78,6 +80,7 @@ const ArticleDetail = () => {
     />
   </div>
 )}
+
 
     </div>
   );
