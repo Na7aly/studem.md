@@ -1,4 +1,4 @@
-/* Resetări generale și setări de bază */
+
 .team {
   font-family: 'Roboto', sans-serif;
   color: #473b3b;
@@ -49,7 +49,7 @@
 
 .teamMember {
   width: 100%;
-  max-width: 250px; /* Setare explicită a dimensiunii maxime */
+  max-width: 250px; 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -95,21 +95,21 @@
   font-size: 18px;
 }
 
-/* Styling pentru Desktop */
+
 @media screen and (min-width: 1200px) {
   .teamMembers {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between; /* Adaugă spațiu între carduri */
+    /* justify-content: space-between;  */
   }
 
   .teamMember {
-    width: calc(25% - 30px); /* 4 carduri pe rând, minus margini */
+    width: calc(25% - 30px); 
     margin: 15px; 
   }
 }
 
-/* Styling pentru Tabletă */
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .teamMembers {
     flex-direction: row;
@@ -122,12 +122,12 @@
     font-size: 24px;}
 
   .teamMember {
-    width: calc(33.33% - 30px); /* 3 carduri pe rând */
+    width: calc(33.33% - 30px); 
     margin: 15px;
   }
 }
 
-/* Styling pentru Mobil */
+
 @media screen and (max-width: 767px) {
   .teamMembers {
     flex-direction: column;
@@ -135,7 +135,7 @@
   }
 
   .teamMember {
-    width: calc(100% - 30px); /* 1 card pe rând */
+    width: calc(100% - 30px); 
     margin: 15px 0;
   }
   .heading {

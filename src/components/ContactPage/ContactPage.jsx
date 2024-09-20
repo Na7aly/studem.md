@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ContactPage.module.css';
-import TabelComponent from 'components/TabelComponent/TabelComponent';
+
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
