@@ -91,6 +91,9 @@ const Navbar = () => {
                   <li>
   <Link to="/board" className={styles.dropdownLink} onClick={() => handleSectionClick('board', true)}>Membrii Boardului</Link>
 </li>
+<li>
+                    <Link to="/consiliipart" className={styles.dropdownLink} onClick={() => handleSectionClick('consiliipart', true)}>Consilii Partenere</Link> {/* Adăugat aici */}
+                  </li>
 
                 </ul>
               )}

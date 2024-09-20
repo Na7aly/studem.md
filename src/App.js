@@ -19,6 +19,9 @@ import Team2023 from 'components/Team2023/Team2023';
 import ArticlesListPage from './components/contentful/ArticleListPage.jsx';
 // import ArticlePage from './components/contentful/ArticlePage';
 import ArticleDetail from './components/contentful/ArticleDetail';
+import TabelComponent from 'components/TabelComponent/TabelComponent';
+// import Tabel from './components/Tabel/Tabel';
+
 
 function App() {
   return (
@@ -36,6 +39,7 @@ function App() {
         <Route path="/board/2021" element={<Team2021 />} />
         <Route path="/board/2022" element={<Team2022 />} />
         <Route path="/board/2023" element={<Team2023 />} />
+        <Route path="/consiliipart" element={<TabelComponent />} />
         {/* <Route path="/" element={<HomePagee />} /> */}
         <Route path="/articles" element={<ArticlesListPage />} />
         <Route path="/article/:id" element={<ArticleDetail />} />
