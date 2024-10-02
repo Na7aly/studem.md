@@ -59,7 +59,7 @@ const Navbar = () => {
           </ScrollLink>
           <ul className={click ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
             <li className={styles.navItem}>
-              <span className={styles.navLinks} onClick={() => handleSectionClick('ArticlesList')}>Noutăți</span>
+              <span className={styles.navLinks} onClick={() => handleSectionClick('HomePagee')}>Noutăți</span>
             </li>
             <li className={styles.navItem}>
               <span className={styles.navLinks} onClick={() => handleSectionClick('domains')}>Domenii</span>
@@ -91,9 +91,7 @@ const Navbar = () => {
                   <li>
   <Link to="/board" className={styles.dropdownLink} onClick={() => handleSectionClick('board', true)}>Membrii Boardului</Link>
 </li>
-<li>
-                    <Link to="/consiliipart" className={styles.dropdownLink} onClick={() => handleSectionClick('consiliipart', true)}>Consilii Partenere</Link> {/* Adăugat aici */}
-                  </li>
+
 
                 </ul>
               )}

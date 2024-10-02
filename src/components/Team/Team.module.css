@@ -46,6 +46,26 @@
   align-content: center;
   align-items: center;
 }
+.boardButton{
+  padding: 15px 25px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #2E3192;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 5px 5px 15px #b7b7a7, -5px -5px 10px rgb(199, 197, 182);
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin: 10px;
+    background-color: #FBED21;
+    background-color: #ecf0f3;
+    box-shadow: 5px 5px 10px rgba(166, 180, 200, 0.7), -5px -5px 11px #fff;
+}
+.boardButton:hover {
+  
+  background-color: #99a4c5;
+  box-shadow: inset 5px 5px 10px rgba(166, 180, 200, 0.7), inset -5px -5px 11px #c8cacb;
+}
 
 .teamMember {
   width: 100%;

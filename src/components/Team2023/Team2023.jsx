@@ -14,7 +14,7 @@ const teamMembers = [
   { name: 'Lîsenco Valeria', title: 'Responsabilă de Clubul Media', image: require('../../img/team2023/Lera Lîsenco.jpg') },
   { name: 'Țarălungă Dorina', title: 'Coordonator de Voluntari', image: require('../../img/team2023/Țaralungă Dorina.jpg') },
   { name: 'Cotună Diana', title: 'Membru cu drepturi speciale', image: require('../../img/team2023/Cotuna Diana.jpg') },
-  { name: 'Țurcanu Mihaela', title: 'Membru cu drepturi speciale', image: require('../../img/team2023/Ana Coda.jpg') },
+  { name: 'Țurcanu Mihaela', title: 'Membru cu drepturi speciale', image: require('../../img/team2022/mihaela.jpg') },
 ];
 
 const Team2023 = () => {

@@ -10,7 +10,7 @@ const SpaceApplication = ({ closeModal }) => {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
-    organization: '',
+    // organization: '',
     organizationName: '',
     phone: '',
     date: '',
@@ -31,9 +31,9 @@ const SpaceApplication = ({ closeModal }) => {
     const newErrors = {};
     if (!formData.firstName) newErrors.firstName = 'Numele este obligatoriu';
     if (!formData.lastName) newErrors.lastName = 'Prenumele este obligatoriu';
-    if (!formData.organization) newErrors.organization = 'Organizația este obligatorie';
+    // if (!formData.organization) newErrors.organization = 'Organizația este obligatorie';
     if (!formData.organizationName) newErrors.organizationName = 'Denumirea organizației este obligatorie';
-    if (!formData.phone.match(/^\d{10}$/)) newErrors.phone = 'Numărul de telefon nu este valid';
+    if (!formData.phone.match(/^\+?\d{10,}$/)) newErrors.phone = 'Numărul de telefon nu este valid';
     if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) newErrors.email = 'Email-ul nu este valid';
     if (!formData.date) newErrors.date = 'Data este obligatorie';
     if (!formData.eventName) newErrors.eventName = 'Denumirea evenimentului este obligatorie';
@@ -153,7 +153,7 @@ const SpaceApplication = ({ closeModal }) => {
               />
               {errors.lastName && <span className={styles.error}>{errors.lastName}</span>}
             </div>
-            <div className={styles.formGroup}>
+            {/* <div className={styles.formGroup}>
               <label htmlFor="organization">Organizația</label>
               <input
                 type="text"
@@ -164,7 +164,7 @@ const SpaceApplication = ({ closeModal }) => {
                 required
               />
               {errors.organization && <span className={styles.error}>{errors.organization}</span>}
-            </div>
+            </div> */}
             <div className={styles.formGroup}>
               <label htmlFor="organizationName">Denumirea organizației</label>
               <input

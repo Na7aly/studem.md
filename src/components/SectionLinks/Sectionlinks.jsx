@@ -33,7 +33,7 @@ const SectionLinks = () => {
                         <h3>LINK-URI UTILE</h3>
                         <ul className={click ? `${styles.navMenu} ${styles.active}` : styles.navMenu}>
                             <li className={styles.navItem}>
-                                <span className={styles.navLinks} onClick={() => handleSectionClick('ArticlesList')}>Noutăți</span>
+                                <span className={styles.navLinks} onClick={() => handleSectionClick('HomePagee')}>Noutăți</span>
                             </li>
                             <li className={styles.navItem}>
                                 <span className={styles.navLinks} onClick={() => handleSectionClick('domains')}>Domenii</span>
