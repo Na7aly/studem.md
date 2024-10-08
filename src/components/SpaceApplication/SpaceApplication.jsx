@@ -65,7 +65,7 @@ const SpaceApplication = ({ closeModal }) => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/mnnadzan', {
+      const response = await fetch('https://formspree.io/f/xdkonooq', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

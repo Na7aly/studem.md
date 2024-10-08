@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import styles from './ContactPage.module.css';
 
-
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -22,8 +21,14 @@ const ContactPage = () => {
     const form = event.target;
     const formData = new FormData(form);
 
+  
+    formData.append('_subject', ' Formular de contact');
+
+    
+    formData.append('message', `Mesaj primit prin formularul de contact de pe pagina Contactați-ne:\n\n${formData.get('message')}`);
+
     try {
-      const response = await fetch("https://formspree.io/f/mnnadzan", {
+      const response = await fetch("https://formspree.io/f/xdkonooq", {
         method: 'POST',
         body: formData,
         headers: {
@@ -125,22 +130,19 @@ const ContactPage = () => {
           </div>
         </div>
         <div className={styles.mapWrapper}>
-           <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.2337626795274!2d27.916646375600756!3d47.75751997754476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb67cb9eda3699%3A0x2cebd00a578f4881!2sSTUDEM!5e0!3m2!1sru!2sro!4v1724158243752!5m2!1sru!2sro"
-    width="100%"
-    height="300"
-    style={{ border: '0', borderRadius: '10px' }}
-    allowFullScreen=""
-    loading="lazy"
-    referrerPolicy="no-referrer-when-downgrade"
-    title="Google Maps Location"
-  ></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.2337626795274!2d27.916646375600756!3d47.75751997754476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cb67cb9eda3699%3A0x2cebd00a578f4881!2sSTUDEM!5e0!3m2!1sru!2sro!4v1724158243752!5m2!1sru!2sro"
+            width="100%"
+            height="300"
+            style={{ border: '0', borderRadius: '10px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Maps Location"
+          ></iframe>
         </div>
       </div>
-     
     </section>
-    
-    
   );
 };
 
