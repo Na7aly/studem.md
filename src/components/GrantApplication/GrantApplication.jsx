@@ -83,9 +83,9 @@ const GrantApplication = () => {
           initiativeName: formData.initiativeName,
           leaderName: formData.leaderName,
           leaderEmail: formData.leaderEmail,
-          documentUrls, // Trimite toate URL-urile fișierelor încărcate
+          documentUrls, 
           confirmation: formData.confirmation ? 'true' : 'false',
-          _subject: 'Formular de aplicare grant', // Adăugăm subiectul personalizat
+          _subject: 'Formular de aplicare grant', 
         };
 
         const response = await fetch('https://formspree.io/f/xdkonooq', {
