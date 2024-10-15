@@ -18,9 +18,9 @@ import img13 from '../../img/13.png';
 import img14 from '../../img/14.png';
 import img15 from '../../img/15.png';
 import img16 from '../../img/16.png';
-import img17 from '../../img/17.png';
+
 import img18 from '../../img/18.png';
-import img19 from '../../img/cntm_logo.png';
+
 
 
 
