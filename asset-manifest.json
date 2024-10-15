@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/studem.md/static/css/main.d2b35cc2.css",
-    "main.js": "/studem.md/static/js/main.b343b98a.js",
+    "main.js": "/studem.md/static/js/main.66535a26.js",
     "static/media/studem2020.pdf": "/studem.md/static/media/studem2020.972e23a32155527a9184.pdf",
     "static/media/studem2021.pdf": "/studem.md/static/media/studem2021.968dd367ed89a6e6fb7f.pdf",
     "static/media/studem2022.pdf": "/studem.md/static/media/studem2022.b6669a6d2b31a449bbe6.pdf",
@@ -90,7 +90,6 @@
     "static/media/dufff.jpg": "/studem.md/static/media/dufff.0c656c17cde83dc6f4a1.jpg",
     "static/media/14.png": "/studem.md/static/media/14.30bc869dc7355eaa247a.png",
     "static/media/7.png": "/studem.md/static/media/7.7987f90314c961c739a9.png",
-    "static/media/cntm_logo.png": "/studem.md/static/media/cntm_logo.44d737b028a58662502e.png",
     "static/media/10.png": "/studem.md/static/media/10.afd4f62a810e1a56fcaa.png",
     "static/media/13.png": "/studem.md/static/media/13.e7e83444f243e5ac1b80.png",
     "static/media/fa-regular-400.woff2": "/studem.md/static/media/fa-regular-400.bc3722686635b5f86132.woff2",
@@ -114,10 +113,10 @@
     "static/media/slick.woff": "/studem.md/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studem.md/index.html",
     "main.d2b35cc2.css.map": "/studem.md/static/css/main.d2b35cc2.css.map",
-    "main.b343b98a.js.map": "/studem.md/static/js/main.b343b98a.js.map"
+    "main.66535a26.js.map": "/studem.md/static/js/main.66535a26.js.map"
   },
   "entrypoints": [
     "static/css/main.d2b35cc2.css",
-    "static/js/main.b343b98a.js"
+    "static/js/main.66535a26.js"
   ]
 }
