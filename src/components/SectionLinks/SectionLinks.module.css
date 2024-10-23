@@ -72,7 +72,7 @@
   list-style: none;
   padding: 0;
   display: flex;
-  gap: 10px;
+  gap: 17px;
 }
 
 .socialIcons li {
@@ -120,6 +120,15 @@
   cursor: pointer;
   position: relative;
 }
+.socialIcons svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* .socialsvg:hover{
+  color: #fc842d;
+}  */
+
 
 .subscribeBtn:hover {
   background-color: #999b74;
