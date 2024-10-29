@@ -28,7 +28,7 @@ const ContactPage = () => {
     formData.append('message', `Mesaj primit prin formularul de contact de pe pagina Contactați-ne:\n\n${formData.get('message')}`);
 
     try {
-      const response = await fetch("https://formspree.io/f/xdkonooq", {
+      const response = await fetch("https://formspree.io/f/xdkoavpo", {
         method: 'POST',
         body: formData,
         headers: {

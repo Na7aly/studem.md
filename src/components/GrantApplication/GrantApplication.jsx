@@ -25,10 +25,10 @@ const GrantApplication = () => {
         document: [...prevState.document, ...Array.from(files)],
       }));
     } else {
-      setFormData({
-        ...formData,
+      setFormData((prevState) => ({
+        ...prevState,
         [id]: type === 'checkbox' ? checked : value,
-      });
+      }));
     }
   };
 
@@ -36,16 +36,21 @@ const GrantApplication = () => {
     event.preventDefault();
     const newErrors = {};
 
-    if (!formData.initiativeName)
+    if (!formData.initiativeName) {
       newErrors.initiativeName = 'Denumirea grupului este obligatorie.';
-    if (!formData.leaderName)
+    }
+    if (!formData.leaderName) {
       newErrors.leaderName = 'Numele liderului este obligatoriu.';
-    if (!formData.leaderEmail || !/\S+@\S+\.\S+/.test(formData.leaderEmail))
+    }
+    if (!formData.leaderEmail || !/\S+@\S+\.\S+/.test(formData.leaderEmail)) {
       newErrors.leaderEmail = 'Email-ul liderului este invalid.';
-    if (!formData.document || formData.document.length === 0)
+    }
+    if (formData.document.length === 0) {
       newErrors.document = 'Trebuie să încarci documentele necesare.';
-    if (!formData.confirmation)
+    }
+    if (!formData.confirmation) {
       newErrors.confirmation = 'Trebuie să confirmi că informațiile sunt corecte.';
+    }
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
@@ -72,9 +77,7 @@ const GrantApplication = () => {
             documentUrls.push(cloudinaryData.secure_url);
           } else {
             console.error('Eroare la încărcarea fișierului:', cloudinaryData);
-            alert(
-              'A apărut o eroare la încărcarea fișierului. Te rugăm să încerci din nou mai târziu.'
-            );
+            alert('A apărut o eroare la încărcarea fișierului. Te rugăm să încerci din nou mai târziu.');
             return;
           }
         }
@@ -84,11 +87,11 @@ const GrantApplication = () => {
           leaderName: formData.leaderName,
           leaderEmail: formData.leaderEmail,
           documentUrls, 
-          confirmation: formData.confirmation ? 'true' : 'false',
+          confirmation: formData.confirmation,
           _subject: 'Formular de aplicare grant', 
         };
 
-        const response = await fetch('https://formspree.io/f/xdkonooq', {
+        const response = await fetch('https://formspree.io/f/xdkoavpo', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -105,22 +108,15 @@ const GrantApplication = () => {
             document: [],
             confirmation: false,
           });
+          setErrors({});
         } else {
           const result = await response.json();
           console.error('Eroare la trimiterea datelor:', result);
-          alert(
-            `A apărut o eroare: ${
-              result.errors
-                ? result.errors.map((e) => e.message).join(', ')
-                : 'Necunoscută'
-            }`
-          );
+          alert(`A apărut o eroare: ${result.errors ? result.errors.map((e) => e.message).join(', ') : 'Necunoscută'}`);
         }
       } catch (error) {
         console.error('Eroare la trimiterea datelor:', error);
-        alert(
-          'A apărut o eroare la trimiterea formularului. Te rugăm să încerci din nou mai târziu.'
-        );
+        alert('A apărut o eroare la trimiterea formularului. Te rugăm să încerci din nou mai târziu.');
       } finally {
         setUploading(false);
       }
@@ -252,22 +248,23 @@ const GrantApplication = () => {
               )}
             </div>
             <div className={styles.formGroup}>
-              <label>
-                <input
-                  type="checkbox"
-                  id="confirmation"
-                  name="confirmation"
-                  checked={formData.confirmation}
-                  onChange={handleInputChange}
-                />
-                Confirm că informația menționată în formularul de grant și mai sus este corectă.
+              <input
+                type="checkbox"
+                id="confirmation"
+                name="confirmation"
+                checked={formData.confirmation}
+                onChange={handleInputChange}
+                className={styles.formCheckbox}
+              />
+              <label htmlFor="confirmation">
+                Confirm că informațiile sunt corecte.
               </label>
               {errors.confirmation && (
                 <span className={styles.error}>{errors.confirmation}</span>
               )}
             </div>
-            <button type="submit" className={styles.submitButton}>
-              {uploading ? 'Se încarcă...' : 'Trimite formularul'}
+            <button type="submit" className={styles.submitButton} disabled={uploading}>
+              {uploading ? 'Se încarcă...' : 'Trimite aplicația'}
             </button>
           </form>
         </div>

@@ -32,7 +32,7 @@ const SpaceApplication = ({ closeModal }) => {
     if (!formData.firstName) newErrors.firstName = 'Numele este obligatoriu';
     if (!formData.lastName) newErrors.lastName = 'Prenumele este obligatoriu';
     // if (!formData.organization) newErrors.organization = 'Organizația este obligatorie';
-    if (!formData.organizationName) newErrors.organizationName = 'Denumirea organizației este obligatorie';
+    // if (!formData.organizationName) newErrors.organizationName = 'Denumirea organizației este obligatorie';
     if (!formData.phone.match(/^\+?\d{10,}$/)) newErrors.phone = 'Numărul de telefon nu este valid';
     if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) newErrors.email = 'Email-ul nu este valid';
     if (!formData.date) newErrors.date = 'Data este obligatorie';
@@ -65,7 +65,7 @@ const SpaceApplication = ({ closeModal }) => {
     setLoading(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/xdkonooq', {
+      const response = await fetch('https://formspree.io/f/xdkoavpo', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
