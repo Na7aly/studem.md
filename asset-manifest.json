@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/studem.md/static/css/main.e49b73b4.css",
-    "main.js": "/studem.md/static/js/main.4e21d634.js",
+    "main.js": "/studem.md/static/js/main.a08b511b.js",
     "static/media/studem2020.pdf": "/studem.md/static/media/studem2020.972e23a32155527a9184.pdf",
     "static/media/studem2021.pdf": "/studem.md/static/media/studem2021.968dd367ed89a6e6fb7f.pdf",
     "static/media/studem2022.pdf": "/studem.md/static/media/studem2022.b6669a6d2b31a449bbe6.pdf",
@@ -123,10 +123,10 @@
     "static/media/slick.woff": "/studem.md/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studem.md/index.html",
     "main.e49b73b4.css.map": "/studem.md/static/css/main.e49b73b4.css.map",
-    "main.4e21d634.js.map": "/studem.md/static/js/main.4e21d634.js.map"
+    "main.a08b511b.js.map": "/studem.md/static/js/main.a08b511b.js.map"
   },
   "entrypoints": [
     "static/css/main.e49b73b4.css",
-    "static/js/main.4e21d634.js"
+    "static/js/main.a08b511b.js"
   ]
 }
