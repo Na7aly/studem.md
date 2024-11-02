@@ -1,0 +1,35 @@
+.container {
+    padding: 20px; 
+  }
+  
+  .latestArticlesTitle {
+    font-size: 24px; 
+    margin-bottom: 20px; 
+    margin-top: 0px;
+    color: #333333c7;
+  }
+  
+  .latestArticlesGrid {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .latestArticleCard {
+    display: flex; 
+    align-items: center; 
+    gap: 10px; 
+    width: 300px;
+  }
+  
+  .latestArticleImage {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  .latestArticleTitle {
+    font-size: 14px;
+  }
+  
