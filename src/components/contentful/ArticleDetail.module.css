@@ -96,7 +96,23 @@
   color: #f8f8f6;
 }
 
-
 .article5Wrapper {
   flex: 0 0 30%; 
+}
+
+
+@media (max-width: 700px) {
+  .contentWrapper {
+    flex-direction: column; 
+  }
+
+  .articleDetail {
+    margin-right: 0; 
+    margin-bottom: 20px; 
+  }
+
+  .article5Wrapper {
+    flex: none; 
+    width: 100%; 
+  }
 }
