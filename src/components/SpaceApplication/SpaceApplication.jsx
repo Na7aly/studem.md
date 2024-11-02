@@ -33,7 +33,7 @@ const SpaceApplication = ({ closeModal }) => {
     if (!formData.lastName) newErrors.lastName = 'Prenumele este obligatoriu';
     // if (!formData.organization) newErrors.organization = 'Organizația este obligatorie';
     // if (!formData.organizationName) newErrors.organizationName = 'Denumirea organizației este obligatorie';
-    if (!formData.phone.match(/^\+?\d{10,}$/)) newErrors.phone = 'Numărul de telefon nu este valid';
+    if (!formData.phone.match(/^\+?\d+$/)) newErrors.phone = 'Numărul de telefon nu este valid';
     if (!formData.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) newErrors.email = 'Email-ul nu este valid';
     if (!formData.date) newErrors.date = 'Data este obligatorie';
     if (!formData.eventName) newErrors.eventName = 'Denumirea evenimentului este obligatorie';
@@ -165,18 +165,19 @@ const SpaceApplication = ({ closeModal }) => {
               />
               {errors.organization && <span className={styles.error}>{errors.organization}</span>}
             </div> */}
-            <div className={styles.formGroup}>
-              <label htmlFor="organizationName">Denumirea organizației</label>
-              <input
-                type="text"
-                id="organizationName"
-                name="organizationName"
-                value={formData.organizationName}
-                onChange={handleInputChange}
-                required
-              />
-              {errors.organizationName && <span className={styles.error}>{errors.organizationName}</span>}
-            </div>
+           <div className={styles.formGroup}>
+  <label htmlFor="organizationName">Denumirea organizației</label>
+  <input
+    type="text"
+    id="organizationName"
+    name="organizationName"
+    value={formData.organizationName}
+    onChange={handleInputChange}
+    placeholder="Completați doar dacă e cazul"
+  />
+  {errors.organizationName && <span className={styles.error}>{errors.organizationName}</span>}
+</div>
+
             <div className={styles.formGroup}>
               <label htmlFor="phone">Telefon</label>
               <input
