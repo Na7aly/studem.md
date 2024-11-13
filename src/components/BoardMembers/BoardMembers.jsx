@@ -7,6 +7,7 @@ import board2020Img from '../../img/2020.jpg';
 import board2021Img from '../../img/2021.jpg';
 import board2022Img from '../../img/2022.jpg';
 import board2023Img from '../../img/2023.jpg';
+import board2024Img from '../../img/membriiboardului2024.png'
 
 const BoardMembers = () => {
   const boardYears = [
@@ -14,6 +15,7 @@ const BoardMembers = () => {
     { year: 2021, image: board2021Img },
     { year: 2022, image: board2022Img },
     { year: 2023, image: board2023Img },
+    { year: 2024, image: board2024Img },
   ];
 
   return (

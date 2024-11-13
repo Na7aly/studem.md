@@ -14,7 +14,7 @@ const Space = () => {
   };
 
   const goToCalendar = () => {
-    window.location.href = 'https://calendar.online/4dd8a31656689e8bd707';
+    window.location.href = 'https://calendar.online/79f4f06d7e7088f52c5e';
   };
 
   return (

@@ -20,6 +20,10 @@ const ArticlesListPage = () => {
 
   const latestArticles = articles.slice(-5);
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div id="ArticlesList" className={styles.container}>
       <h2 className={styles.latestArticlesTitle}>Cele mai recente articole</h2>
@@ -33,7 +37,11 @@ const ArticlesListPage = () => {
                 className={styles.latestArticleImage}
               />
             )}
-            <Link to={`/article/${article.sys.id}`} className={styles.latestArticleTitle}>
+            <Link
+              to={`/article/${article.sys.id}`}
+              className={styles.latestArticleTitle}
+              onClick={scrollToTop} // Scroll to top on click
+            >
               {article.fields.studemtitle}
             </Link>
           </div>

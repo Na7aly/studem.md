@@ -21,6 +21,7 @@ import ArticlesListPage from './components/contentful/ArticleListPage.jsx';
 import ArticleDetail from './components/contentful/ArticleDetail';
 // import TabelComponent from 'components/TabelComponent/TabelComponent';
 // import Tabel from './components/Tabel/Tabel';
+import Team2024 from 'components/Team2024/Team2024.jsx';
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Route path="/board/2021" element={<Team2021 />} />
         <Route path="/board/2022" element={<Team2022 />} />
         <Route path="/board/2023" element={<Team2023 />} />
+        <Route path="/board/2024" element={<Team2024 />} />
         {/* <Route path="/consiliipart" element={<TabelComponent />} /> */}
         {/* <Route path="/" element={<HomePagee />} /> */}
         <Route path="/articles" element={<ArticlesListPage />} />
