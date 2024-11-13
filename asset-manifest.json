@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/studem.md/static/css/main.707f0658.css",
-    "main.js": "/studem.md/static/js/main.ba3b9e0d.js",
+    "main.css": "/studem.md/static/css/main.706330de.css",
+    "main.js": "/studem.md/static/js/main.f08d0581.js",
     "static/media/studem2020.pdf": "/studem.md/static/media/studem2020.972e23a32155527a9184.pdf",
     "static/media/studem2021.pdf": "/studem.md/static/media/studem2021.968dd367ed89a6e6fb7f.pdf",
     "static/media/studem2022.pdf": "/studem.md/static/media/studem2022.b6669a6d2b31a449bbe6.pdf",
     "static/media/peter.jpg": "/studem.md/static/media/peter.d2dd42cdafd0409db6f1.jpg",
     "static/media/vlad.png": "/studem.md/static/media/vlad.699ed82bfc779deb77d4.png",
+    "static/media/Chironda Oliviac2024.jpeg": "/studem.md/static/media/Chironda Oliviac2024.5d00d91f0769351670a6.jpeg",
     "static/media/andrian2021.jpg": "/studem.md/static/media/andrian2021.18084449595ddffbd319.jpg",
     "static/media/Ana Coda2023.jpg": "/studem.md/static/media/Ana Coda2023.d8554406376609e926c0.jpg",
     "static/media/madina2020.jpg": "/studem.md/static/media/madina2020.389a4967296580cbbe87.jpg",
     "static/media/jul2022.jpg": "/studem.md/static/media/jul2022.04ea10c815e6cf5c5b13.jpg",
     "static/media/vlad.2022.jpg": "/studem.md/static/media/vlad.2022.321c632e25934af43ecf.jpg",
     "static/media/usaid_.jpg": "/studem.md/static/media/usaid_.4374236c7f0e9774c9f4.jpg",
+    "static/media/Elena Bajereanuc2024.jpeg": "/studem.md/static/media/Elena Bajereanuc2024.276341dec0441ada6a2f.jpeg",
     "static/media/vladislav.jpg": "/studem.md/static/media/vladislav.160f259593430c30a0a4.jpg",
     "static/media/rostudem21.png": "/studem.md/static/media/rostudem21.ee77d22988821f999d22.png",
     "static/media/alina2021.jpg": "/studem.md/static/media/alina2021.f0165c0a3aefa6f1b551.jpg",
@@ -23,6 +25,7 @@
     "static/media/Cotuna Diana2023.jpg": "/studem.md/static/media/Cotuna Diana2023.a468df1a1006f68ecf99.jpg",
     "static/media/gabi2022.jpg": "/studem.md/static/media/gabi2022.78b6fad42d05522bd6b0.jpg",
     "static/media/luminita2021.jpg": "/studem.md/static/media/luminita2021.ca08e2502e75f733d948.jpg",
+    "static/media/membriiboardului2024.png": "/studem.md/static/media/membriiboardului2024.088ad6134f0a1a8957da.png",
     "static/media/2021.jpg": "/studem.md/static/media/2021.6fa672175a3fdce70995.jpg",
     "static/media/ant_.jpg": "/studem.md/static/media/ant_.60871afd4a3fca0fd4cc.jpg",
     "static/media/giuliano2021.jpg": "/studem.md/static/media/giuliano2021.c5fbcf68d2a3d2e3bfc0.jpg",
@@ -48,6 +51,7 @@
     "static/media/nadea2022.jpg": "/studem.md/static/media/nadea2022.4276749e638d3e5439ab.jpg",
     "static/media/Chirița Sandu2023.jpg": "/studem.md/static/media/Chirița Sandu2023.e609e94860637ddfe23a.jpg",
     "static/media/mihaela2020.jpg": "/studem.md/static/media/mihaela2020.031521d505a9f25deaf3.jpg",
+    "static/media/Nastea Panovac2024.jpeg": "/studem.md/static/media/Nastea Panovac2024.9f8a7e9fb6fc8bdf30cc.jpeg",
     "static/media/Bejînari Evelina2023.jpg": "/studem.md/static/media/Bejînari Evelina2023.c494296c88937d7f9d9d.jpg",
     "static/media/alina.jpg": "/studem.md/static/media/alina.b581309020ed8798fe0a.jpg",
     "static/media/darius2022.jpg": "/studem.md/static/media/darius2022.068890546556e7e59b6e.jpg",
@@ -82,6 +86,7 @@
     "static/media/leftImage2.jpg": "/studem.md/static/media/leftImage2.e8880e14329c41947cce.jpg",
     "static/media/costea.jpg": "/studem.md/static/media/costea.dade6e167d0b037179e2.jpg",
     "static/media/gabi2020.jpg": "/studem.md/static/media/gabi2020.1a21349a7dd13a4ee05e.jpg",
+    "static/media/Chicu Daniel2024.jpeg": "/studem.md/static/media/Chicu Daniel2024.680e8b4447d85efa802b.jpeg",
     "static/media/silba.png": "/studem.md/static/media/silba.183b3f0d6807e895b942.png",
     "static/media/Lera Lîsenco2023.jpg": "/studem.md/static/media/Lera Lîsenco2023.97f068771d291d5279d6.jpg",
     "static/media/leftImage5.jpg": "/studem.md/static/media/leftImage5.8e65953cfa7f8bba24e3.jpg",
@@ -89,6 +94,7 @@
     "static/media/rostudem20.png": "/studem.md/static/media/rostudem20.2ccda968edc41eff8d11.png",
     "static/media/fee_logo.jpg": "/studem.md/static/media/fee_logo.b347c3113f943bba9c2b.jpg",
     "static/media/fa-regular-400.ttf": "/studem.md/static/media/fa-regular-400.17a6e1aebccdbaa39e78.ttf",
+    "static/media/Vladislav Fistic2024.jpg": "/studem.md/static/media/Vladislav Fistic2024.162d956c071b581e1fe9.jpg",
     "static/media/ion.jpg": "/studem.md/static/media/ion.b84844cfe2e609e8cdd1.jpg",
     "static/media/Caracaș Victoria2023.jpg": "/studem.md/static/media/Caracaș Victoria2023.7dcaf0c221ca5f279e83.jpg",
     "static/media/Marius Toderică2023.jpg": "/studem.md/static/media/Marius Toderică2023.6706fb2da1e57049bc09.jpg",
@@ -114,6 +120,7 @@
     "static/media/desc-funct.png": "/studem.md/static/media/desc-funct.12576867ed39bc98571c.png",
     "static/media/regulament.png": "/studem.md/static/media/regulament.cae15edf145b640836c7.png",
     "static/media/codetica.png": "/studem.md/static/media/codetica.b0f6b49ff5257d1e5f05.png",
+    "static/media/fotogenerala2024.png": "/studem.md/static/media/fotogenerala2024.23e0fdbc4e74a7e4975a.png",
     "static/media/2.png": "/studem.md/static/media/2.4930d28a03b4297e972b.png",
     "static/media/fa-v4compatibility.ttf": "/studem.md/static/media/fa-v4compatibility.0f6cb412603527bda691.ttf",
     "static/media/fa-v4compatibility.woff2": "/studem.md/static/media/fa-v4compatibility.6cfec8414be20e2c3426.woff2",
@@ -122,11 +129,11 @@
     "static/media/slick.ttf": "/studem.md/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/studem.md/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/studem.md/index.html",
-    "main.707f0658.css.map": "/studem.md/static/css/main.707f0658.css.map",
-    "main.ba3b9e0d.js.map": "/studem.md/static/js/main.ba3b9e0d.js.map"
+    "main.706330de.css.map": "/studem.md/static/css/main.706330de.css.map",
+    "main.f08d0581.js.map": "/studem.md/static/js/main.f08d0581.js.map"
   },
   "entrypoints": [
-    "static/css/main.707f0658.css",
-    "static/js/main.ba3b9e0d.js"
+    "static/css/main.706330de.css",
+    "static/js/main.f08d0581.js"
   ]
 }
