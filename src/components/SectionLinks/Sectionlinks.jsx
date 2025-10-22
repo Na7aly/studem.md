@@ -74,7 +74,7 @@ const SectionLinks = () => {
                                     <i className={`${styles.icon} fas fa-envelope`}></i>
                                     <span>EMAIL</span>
                                     <div>
-                                        <p>youth.center@studem.md</p>
+                                        <p>youth.center.studem@gmail.com</p>
                                         <p>studem.balti@gmail.com</p>
                                     </div>
                                 </div>
